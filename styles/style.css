@@ -75,7 +75,8 @@ body {
 
 .logo {
     width: 50%;
-    align-self: center
+    align-self: center;
+    pointer-events: none
 }
 
 .date {
