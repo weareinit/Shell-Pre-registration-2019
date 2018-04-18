@@ -90,23 +90,23 @@ body {
     display: flex;
     font-size: 14pt;
     flex-wrap: wrap;
-    flex-direction: c;
-    justify-content: space-between;
+    justify-content: center;
     margin: -10px;
 }
 
-.links .button{
+.links .button {
     display: block;
     text-align: center;
     padding: 10px;
-    background: #E61D8D;
-    border: 3px solid white;
+    background: hsla(327, 80%, 44%, 1);
+    /* border: 3px solid white; */
     color: white;
     text-decoration: none;
     margin: 10px;
     border-radius: 100px;
     min-width: 40%;
     flex: 1;
+    flex-grow: 0;
 }
 
 .button.sponsor {
