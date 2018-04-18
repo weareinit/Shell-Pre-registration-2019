@@ -64,7 +64,7 @@
 
 .signup:hover, 
 .signup:focus{
-    border-color: white;
+/*     border-color: white; */
     background: rgba(37, 30, 129, 1);
 }
 
@@ -84,6 +84,11 @@ body {
     font-size: 18pt;
     font-weight: 600;
     margin: 4% auto
+}
+
+.date.location {
+    margin: -2% auto 2%;
+    font-size: 14pt;
 }
 
 .links {
