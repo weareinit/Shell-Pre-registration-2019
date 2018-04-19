@@ -87,8 +87,9 @@ body {
 }
 
 .date.location {
-    margin: -2% auto 2%;
+    margin: -2% auto 4%;
     font-size: 14pt;
+    font-weight: 200;
 }
 
 .links {
