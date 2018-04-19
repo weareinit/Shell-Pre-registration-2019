@@ -70,7 +70,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: white
+    color: white;
+    background: #ff1f8c;
 }
 
 .logo {
