@@ -74,20 +74,21 @@ body {
 }
 
 .logo {
-    width: 50%;
+    width: 75%;
     align-self: center;
-    pointer-events: none
+    pointer-events: none;
+    padding: 2%
 }
 
 .date {
     text-align: center;
     font-size: 18pt;
     font-weight: 600;
-    margin: 4% auto
+/*    margin: 4% auto*/
 }
 
 .date.location {
-    margin: -2% auto 4%;
+    margin: 2% auto 3%;
     font-size: 14pt;
     font-weight: 200;
 }
