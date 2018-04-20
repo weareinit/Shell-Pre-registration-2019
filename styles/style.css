@@ -110,7 +110,7 @@ body {
     /* border: 2px solid white; */
     color: white;
     text-decoration: none;
-    margin: 10px;
+    margin: 10px 10px 5px 10px;
     border-radius: 100px;
     min-width: 40%;
     flex: 1;
