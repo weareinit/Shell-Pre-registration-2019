@@ -120,3 +120,13 @@ body {
 .button.sponsor {
 /*     flex-basis: 100%  */
 }
+
+.social-icons {
+    font-size: 25px;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.social-icons a{
+    color: white
+}
