@@ -53,10 +53,10 @@
     border-radius: 100px;
     border: 3px solid transparent;
     outline: none;
-    background: rgba(37, 30, 129, 0.7);
-/*    background: transparent;*/
+    background: rgba(37, 30, 129, 1);
+    border: 3px solid transparent;
     color: inherit;
-    transition: .3s border-color ease-in, .3s background-color ease-in;
+    transition: .25s border-color ease-in, .3s background-color ease-in;
     box-sizing: border-box;
     margin-bottom: 15px;
     text-decoration: none;
@@ -64,8 +64,8 @@
 
 .signup:hover, 
 .signup:focus{
-/*     border-color: white; */
-    background: rgba(37, 30, 129, 1);
+    border-color: white;
+/*     background: hsla(327, 80%, 44%, 1); */
 }
 
 body {
@@ -89,7 +89,7 @@ body {
 }
 
 .date.location {
-    margin: 2% auto 3%;
+    margin: 2% auto 5%;
     font-size: 14pt;
     font-weight: 200;
 }
@@ -106,8 +106,8 @@ body {
     display: block;
     text-align: center;
     padding: 10px;
-    background: hsla(327, 80%, 44%, 1);
-    /* border: 3px solid white; */
+    background: rgba(37, 30, 129, 0.6);
+    /* border: 2px solid white; */
     color: white;
     text-decoration: none;
     margin: 10px;
