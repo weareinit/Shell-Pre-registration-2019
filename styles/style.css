@@ -121,12 +121,15 @@ body {
 /*     flex-basis: 100%  */
 }
 
-.social-icons {
-    font-size: 25px;
+.link-group{
     margin: 20px 0 0 0;
     text-align: center;
 }
 
-.social-icons a{
-    color: white
+.link-group a{
+    color: white;
+}
+
+.social-icons{
+    font-size: 25px;
 }
