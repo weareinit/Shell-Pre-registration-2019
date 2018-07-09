@@ -1,3 +1,8 @@
+h1{
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: .5em
+}
 
 .main {
     min-height: 100vh;
@@ -9,7 +14,7 @@
     box-sizing: border-box
 }
 
-.contents {
+.main .contents {
     display: flex;
     flex-direction: column;
     padding: 40px 20px;
@@ -132,4 +137,50 @@ body {
 
 .social-icons{
     font-size: 25px;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.sponsors.page{
+    background: linear-gradient(to right bottom, #12c2e9, #c471ed, #f64f59);
+    background-size: 115% 115%;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsors img{
+    max-width: 150px;
+    max-height: 150px;
+    margin: 15px
+}
+
+.sponsors .contents {
+    width: 100%;
+    max-width: 960px;
+}
+
+.sponsors .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 500px){
+    .sponsors .logos {
+        flex-direction: column
+    }
+    
+    .sponsors img{
+        margin: 0px;
+        margin-bottom: 55px;
+    }
+
 }
