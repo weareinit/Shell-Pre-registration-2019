@@ -148,7 +148,7 @@ body {
     background: linear-gradient(to right bottom, #12c2e9, #c471ed, #f64f59);
     background-size: 115% 115%;
     box-sizing: border-box;
-    padding: 25px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
