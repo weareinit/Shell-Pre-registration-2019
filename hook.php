@@ -68,8 +68,6 @@ $data = json_decode($post_data, true);
 $headers_ok = array_matches($_SERVER, $required_headers, '$_SERVER');
 $data_ok = array_matches($data, $required_data, '$data');
 
-$is_ping = array_matches($data, )
-
 if($headers_ok && $data_ok) {
 	passthru($cmd);
 }
