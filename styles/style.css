@@ -159,6 +159,12 @@ body {
     min-height: 100vh;
 }
 
+.page .contents {
+    width: 100%;
+    max-width: 960px;
+}
+
+
 .sponsors.page {
     background: linear-gradient(to right bottom, #12c2e9, #c471ed, #f64f59);
     background-size: 115% 115%;
@@ -174,11 +180,6 @@ body {
     margin: 15px
 }
 
-.sponsors .contents {
-    width: 100%;
-    max-width: 960px;
-}
-
 .sponsors .logos {
     display: flex;
     flex-wrap: wrap;
@@ -188,6 +189,9 @@ body {
 
 .faq {
     background: linear-gradient(to bottom left, #8e2de2, #4a00e0);
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
 
 .faq p{
