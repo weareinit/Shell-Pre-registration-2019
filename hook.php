@@ -1,10 +1,10 @@
 <?php
-// where to log errors and successful requests
-define('LOGFILE', '~/github-webhook.log');
+include 'config.php';
+
 // what command to execute upon retrieval of a valid push event
 $cmd = 'git pull';
 // the shared secret, used to sign the POST data (using HMAC with SHA1)
-$secret = getenv('GITHUB_SECRET');
+$secret = GITHUB_SECRET;
 // receive POST data for signature calculation, don't change!
 $post_data = file_get_contents('php://input');
 $signature = hash_hmac('sha1', $post_data, $secret);
@@ -15,6 +15,7 @@ $required_data = array(
 		'full_name' => 'ShellHacksFIU/ShellHacks-2018-Landing',
 	),
 );
+
 // required data in headers - probably doesn't need changing
 $required_headers = array(
 	'REQUEST_METHOD' => 'POST',
@@ -66,6 +67,8 @@ $data = json_decode($post_data, true);
 // First do all checks and then report back in order to avoid timing attacks
 $headers_ok = array_matches($_SERVER, $required_headers, '$_SERVER');
 $data_ok = array_matches($data, $required_data, '$data');
+
+$is_ping = array_matches($data, )
 
 if($headers_ok && $data_ok) {
 	passthru($cmd);
