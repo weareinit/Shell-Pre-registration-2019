@@ -122,10 +122,6 @@ body {
     flex-grow: 0;
 }
 
-.button.sponsor {
-/*     flex-basis: 100%  */
-}
-
 .link-group{
     margin: 20px 0 0 0;
     text-align: center;
