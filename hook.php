@@ -10,9 +10,9 @@ $post_data = file_get_contents('php://input');
 $signature = hash_hmac('sha1', $post_data, $secret);
 // required data in POST body - set your targeted branch and repository here!
 $required_data = array(
-	'ref' => 'refs/heads/master',
+	'ref' => 'refs/heads/live',
 	'repository' => array(
-		'full_name' => 'owner/repo',
+		'full_name' => 'ShellHacksFIU/ShellHacks-2018-Landing',
 	),
 );
 // required data in headers - probably doesn't need changing
@@ -24,11 +24,13 @@ $required_headers = array(
 );
 // END OF CONFIGURATION
 error_reporting(0);
+
 function log_msg($msg) {
 	if(LOGFILE != '') {
 		file_put_contents(LOGFILE, $msg . "\n", FILE_APPEND);
 	}
 }
+
 function array_matches($have, $should, $name = 'array') {
 	$ret = true;
 	if(is_array($have)) {
@@ -56,12 +58,15 @@ function array_matches($have, $should, $name = 'array') {
 	}
 	return $ret;
 }
+
 log_msg("=== Received request from {$_SERVER['REMOTE_ADDR']} ===");
 header("Content-Type: text/plain");
 $data = json_decode($post_data, true);
+
 // First do all checks and then report back in order to avoid timing attacks
 $headers_ok = array_matches($_SERVER, $required_headers, '$_SERVER');
 $data_ok = array_matches($data, $required_data, '$data');
+
 if($headers_ok && $data_ok) {
 	passthru($cmd);
 }
