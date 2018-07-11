@@ -1,7 +1,21 @@
-h1{
+body{
+    font-size: 16px
+}
+
+h1, h2, h3 {
     font-size: 3em;
     font-weight: 700;
     margin-bottom: .5em
+}
+
+h2{
+    font-size: 2.5em;
+    margin-bottom: .3em;
+}
+
+p{
+    margin-bottom: 1em;
+    line-height: 1.25em;
 }
 
 .main {
@@ -21,11 +35,11 @@ h1{
     flex-basis: 450px
 }
 
-.mailchimp{
+.mailchimp {
     margin-bottom: 15px
 }
 
-.mailchimp input{
+.mailchimp input {
     font-size: 18pt;
     padding: 10px;
     width: 100%;
@@ -34,24 +48,24 @@ h1{
     border: 3px solid transparent;
     outline: none;
     background: rgba(37, 30, 129, 0.7);
-/*    background: transparent;*/
+    /*    background: transparent;*/
     color: inherit;
     transition: .3s border-color ease-in, .3s background-color ease-in;
     box-sizing: border-box
 }
 
-.mailchimp input::placeholder{
-    color: rgba(255,255,255,.5)
+.mailchimp input::placeholder {
+    color: rgba(255, 255, 255, .5)
 }
 
-.mailchimp input:hover, 
-.mailchimp input:focus{
+.mailchimp input:hover,
+.mailchimp input:focus {
     border-color: white;
     background: rgba(37, 30, 129, 1);
 }
 
 
-.signup{
+.signup {
     font-size: 18pt;
     padding: 10px;
     text-align: center;
@@ -67,10 +81,10 @@ h1{
     text-decoration: none;
 }
 
-.signup:hover, 
-.signup:focus{
+.signup:hover,
+.signup:focus {
     border-color: white;
-/*     background: hsla(327, 80%, 44%, 1); */
+    /*     background: hsla(327, 80%, 44%, 1); */
 }
 
 body {
@@ -90,7 +104,7 @@ body {
     text-align: center;
     font-size: 18pt;
     font-weight: 600;
-/*    margin: 4% auto*/
+    /*    margin: 4% auto*/
 }
 
 .date.location {
@@ -122,36 +136,39 @@ body {
     flex-grow: 0;
 }
 
-.link-group{
+.link-group {
     margin: 20px 0 0 0;
     text-align: center;
 }
 
-.link-group a{
+.link-group a {
     color: white;
 }
 
-.social-icons{
+.social-icons {
     font-size: 25px;
 }
 
 .page {
     width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.page.full {
     min-height: 100vh;
 }
 
-.sponsors.page{
+.sponsors.page {
     background: linear-gradient(to right bottom, #12c2e9, #c471ed, #f64f59);
     background-size: 115% 115%;
-    box-sizing: border-box;
-    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.sponsors img{
+.sponsors img {
     max-width: 150px;
     max-height: 150px;
     margin: 15px
@@ -169,12 +186,28 @@ body {
     align-items: center;
 }
 
-@media (max-width: 500px){
+.faq {
+    background: linear-gradient(to bottom left, #8e2de2, #4a00e0);
+}
+
+.faq p{
+    font-size: 18px;
+}
+
+.faq a{
+    color: yellow;
+}
+
+.faq a:visited{
+    color: orange;
+}
+
+@media (max-width: 500px) {
     .sponsors .logos {
         flex-direction: column
     }
-    
-    .sponsors img{
+
+    .sponsors img {
         margin: 0px;
         margin-bottom: 55px;
     }
