@@ -213,6 +213,9 @@ body {
 
     .sponsors img {
         margin: 0px;
+    }
+    
+    .sponsors a {
         margin-bottom: 55px;
     }
 
