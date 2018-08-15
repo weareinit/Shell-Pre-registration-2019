@@ -4,12 +4,14 @@ include 'config.php';
 $cmd = 'git pull';
 // the shared secret, used to sign the POST data (using HMAC with SHA1)
 $secret = GITHUB_SECRET;
+//Selected branch to watch
+$branch = BRANCH;
 // receive POST data for signature calculation, don't change!
 $post_data = file_get_contents('php://input');
 $signature = hash_hmac('sha1', $post_data, $secret);
 // required data in POST body - set your targeted branch and repository here!
 $required_data = array(
-	'ref' => 'refs/heads/live',
+	'ref' => 'refs/heads/' . $branch,
 	'repository' => array(
 		'full_name' => 'ShellHacksFIU/ShellHacks-2018-Landing',
 	),
