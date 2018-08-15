@@ -167,6 +167,13 @@ body {
     padding: 50px;
 }
 
+.page.centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .page.full {
     min-height: 100vh;
 }
@@ -176,14 +183,41 @@ body {
     max-width: 960px;
 }
 
+.organizers{
+    background: var(--tertiary-color);
+}
+
+.organizers .blurb{
+    flex-shrink: 2
+}
+
+.organizers .contents{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.organizers .upe-logo{
+    width: 100%;
+    height: auto;
+    transform: scale(.8)
+}
+
+.organizers .logo{
+    flex-shrink: 1
+}
+
+.organizers a{
+    color: yellow;
+}
+
+.organizers a:visited{
+    color: orange;
+}
 
 .sponsors.page {
     background: linear-gradient(to right bottom, #12c2e9, #c471ed, #f64f59);
     background-size: 115% 115%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .sponsors img {
@@ -267,9 +301,6 @@ body {
 
 .faq {
     background: linear-gradient(to bottom left, #8e2de2, #4a00e0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-size: 18px
 }
 
@@ -318,5 +349,15 @@ body {
     .sponsors.current > div img{
         width: 100% !important;
     }
+    
+    .organizers .contents{
+        flex-direction: column
+    }
+    
+    .organizers .upe-logo{
+        transform: none;
+    }
+    
+    
 
 }

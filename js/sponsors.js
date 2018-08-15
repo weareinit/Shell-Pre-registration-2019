@@ -142,7 +142,7 @@ sponsorJson =
     "name": "UPE National",
     "tier": "sand-dollar",
     "url": "http://upe.acm.org",
-    "logo": "upe-national-logo.svg"
+    "logo": "upe-national-logo.png"
   },
   {
     "name": "FIU SCIS",
