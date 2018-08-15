@@ -106,7 +106,7 @@ sponsorJson =
     "name": "4Geeks",
     "tier": "scallop",
     "url": "http://4geeksacademy.co",
-    "logo": "4geeks-logo.png"
+    "logo": "4Geeks-logo.png"
   },
   {
     "name": "FIU Online",
@@ -163,16 +163,16 @@ sponsorJson =
     "logo": "mcafee-logo.svg"
   },
   {
-    "name": "Matrix Labs",
-    "tier": "cone",
-    "url": "http://matrixlabs.ai",
-    "logo": "matrix-labs-logo.svg"
-  },
-  {
     "name": "Origin PC",
     "tier": "sand-dollar",
     "url": "http://originpc.com",
     "logo": "origin-logo.svg"
+  },
+  {
+    "name": "Matrix Labs",
+    "tier": "sand-dollar",
+    "url": "http://matrixlabs.ai",
+    "logo": "matrix-labs-logo.svg"
   },
   {
     "name": "Twilio",
