@@ -7,22 +7,52 @@ sponsorJson =
     "logo": "wix-logo.svg"
   },
   {
-    "name": "AutoNation",
+    "name": "Google",
     "tier": "cone",
-    "url": "http://autonation.com",
-    "logo": "autonation-logo.svg"
+    "url": "http://google.com",
+    "logo": "google-logo.svg"
   },
   {
-    "name": "Chevron",
+    "name": "Microsoft",
     "tier": "cone",
-    "url": "http://chevron.com",
-    "logo": "chevron-logo.svg"
+    "url": "http://microsoft.com",
+    "logo": "microsoft-logo.svg"
+  },
+  {
+    "name": "Amazon",
+    "tier": "cone",
+    "url": "http://amazon.com",
+    "logo": "amazon-logo.svg"
+  },
+  {
+    "name": "Spotify",
+    "tier": "cone",
+    "url": "http://spotify.com",
+    "logo": "spotify-logo.svg"
+  },
+  {
+    "name": "Cisco",
+    "tier": "cone",
+    "url": "http://cisco.com",
+    "logo": "cisco-logo.svg"
+  },
+  {
+    "name": "General Electric",
+    "tier": "cone",
+    "url": "http://ge.com",
+    "logo": "ge-logo.svg"
   },
   {
     "name": "JP Morgan Chase",
     "tier": "cone",
     "url": "http://www.jpmorganchase.com",
     "logo": "jp-morgan-chase-logo.svg"
+  },
+  {
+    "name": "Chevron",
+    "tier": "cone",
+    "url": "http://chevron.com",
+    "logo": "chevron-logo.svg"
   },
   {
     "name": "Oath",
@@ -49,22 +79,22 @@ sponsorJson =
     "logo": "citrix-logo.svg"
   },
   {
-    "name": "Assurant",
-    "tier": "cone",
-    "url": "http://assurant.com",
-    "logo": "assurant-logo.svg"
-  },
-  {
     "name": "World Fuel Services",
     "tier": "cone",
     "url": "https://www.wfscorp.com",
     "logo": "world-fuel-services-logo.svg"
   },
   {
-    "name": "Spotify",
+    "name": "Assurant",
     "tier": "cone",
-    "url": "http://spotify.com",
-    "logo": "spotify-logo.svg"
+    "url": "http://assurant.com",
+    "logo": "assurant-logo.svg"
+  },
+  {
+    "name": "AutoNation",
+    "tier": "cone",
+    "url": "http://autonation.com",
+    "logo": "autonation-logo.svg"
   },
   {
     "name": "Amadeus",
@@ -73,40 +103,28 @@ sponsorJson =
     "logo": "amadeus-logo.svg"
   },
   {
+    "name": "4Geeks",
+    "tier": "scallop",
+    "url": "http://4geeksacademy.co",
+    "logo": "4geeks-logo.png"
+  },
+  {
     "name": "FIU Online",
     "tier": "scallop",
     "url": "http://online.fiu.edu",
     "logo": "fiu-online-logo.svg"
   },
   {
-    "name": "Cisco",
-    "tier": "cone",
-    "url": "http://cisco.com",
-    "logo": "cisco-logo.svg"
+    "name": "Facebook",
+    "tier": "sand-dollar",
+    "url": "http://facebook.com",
+    "logo": "facebook-logo.svg"
   },
   {
-    "name": "Google",
-    "tier": "cone",
-    "url": "http://google.com",
-    "logo": "google-logo.svg"
-  },
-  {
-    "name": "Microsoft",
-    "tier": "conch",
-    "url": "http://microsoft.com",
-    "logo": "microsoft-logo.svg"
-  },
-  {
-    "name": "Amazon",
-    "tier": "cone",
-    "url": "http://amazon.com",
-    "logo": "amazon-logo.svg"
-  },
-  {
-    "name": "4Geeks",
-    "tier": "scallop",
-    "url": "http://4geeksacademy.co",
-    "logo": "4geeks-logo.png"
+    "name": "Intel",
+    "tier": "sand-dollar",
+    "url": "http://intel.com",
+    "logo": "intel-logo.svg"
   },
   {
     "name": "Deloitte",
@@ -121,70 +139,16 @@ sponsorJson =
     "logo": "farelogix-logo.svg"
   },
   {
-    "name": "FIU SCIS",
-    "tier": "sand-dollar",
-    "url": "http://scis.fiu.edu",
-    "logo": "fiu-scis-logo.svg"
-  },
-  {
-    "name": "Intel",
-    "tier": "sand-dollar",
-    "url": "http://intel.com",
-    "logo": "intel-logo.svg"
-  },
-  {
     "name": "UPE National",
     "tier": "sand-dollar",
     "url": "http://upe.acm.org",
     "logo": "upe-national-logo.svg"
   },
   {
-    "name": "Facebook",
+    "name": "FIU SCIS",
     "tier": "sand-dollar",
-    "url": "http://facebook.com",
-    "logo": "facebook-logo.svg"
-  },
-  {
-    "name": "Carvel",
-    "tier": "sand-dollar",
-    "url": "http://carvel.com",
-    "logo": "carvel-logo.svg"
-  },
-  {
-    "name": "Chipotle",
-    "tier": "sand-dollar",
-    "url": "http://chipotle.com",
-    "logo": "chipotle-logo.svg"
-  },
-  {
-    "name": "Clarifai",
-    "tier": "sand-dollar",
-    "url": "http://clarifai.com",
-    "logo": "clarifai-logo.svg"
-  },
-  {
-    "name": "Devpost",
-    "tier": "sand-dollar",
-    "url": "http://devpost.com",
-    "logo": "devpost-logo.svg"
-  },
-  {
-    "name": "DigitalOcean",
-    "tier": "sand-dollar",
-    "url": "http://digitalocean.com",
-    "logo": "digitalocean-logo.svg"
-  },
-  {
-    "name": "Discord",
-    "tier": "sand-dollar",
-    "url": "http://discord.com",
-    "logo": "discord-logo.svg"
-  },
-  {
-    "name": "Florida Panthers",
-    "tier": "sand-dollar",
-    "url": "http://floridapanthers.com",
-    "logo": "florida-panthers-logo.svg"
+    "url": "http://scis.fiu.edu",
+    "logo": "fiu-scis-logo.svg"
   },
   {
     "name": "GitHub",
@@ -193,46 +157,16 @@ sponsorJson =
     "logo": "github-logo.svg"
   },
   {
-    "name": "Heroku",
-    "tier": "sand-dollar",
-    "url": "http://heroku.com",
-    "logo": "heroku-logo.svg"
-  },
-  {
-    "name": "Insomnia Cookies",
-    "tier": "sand-dollar",
-    "url": "http://insomniacookies.com",
-    "logo": "insomnia-cookies-logo.svg"
-  },
-  {
-    "name": "JetBrains",
-    "tier": "sand-dollar",
-    "url": "http://jetbrains.com",
-    "logo": "jetbrains-logo.svg"
-  },
-  {
     "name": "McAfee",
     "tier": "sand-dollar",
     "url": "http://mcafee.com",
     "logo": "mcafee-logo.svg"
   },
   {
-    "name": "MixMax",
-    "tier": "sand-dollar",
-    "url": "http://mixmax.com",
-    "logo": "mixmax-logo.svg"
-  },
-  {
-    "name": "Monster",
-    "tier": "sand-dollar",
-    "url": "http://monsterenergy.com",
-    "logo": "monster-logo.svg"
-  },
-  {
-    "name": "Night Owl Cookies",
-    "tier": "sand-dollar",
-    "url": "http://nightowlcookieco.com",
-    "logo": "night-owl-cookies-logo.svg"
+    "name": "Matrix Labs",
+    "tier": "cone",
+    "url": "http://matrixlabs.ai",
+    "logo": "matrix-labs-logo.svg"
   },
   {
     "name": "Origin PC",
@@ -241,34 +175,22 @@ sponsorJson =
     "logo": "origin-logo.svg"
   },
   {
-    "name": "Sketch",
-    "tier": "sand-dollar",
-    "url": "http://sketch.io",
-    "logo": "sketch-logo.svg"
-  },
-  {
-    "name": "Soylent",
-    "tier": "sand-dollar",
-    "url": "http://soylent.com",
-    "logo": "soylent-logo.svg"
-  },
-  {
-    "name": "Stickermule",
-    "tier": "sand-dollar",
-    "url": "http://stickermule.com",
-    "logo": "stickermule-logo.svg"
-  },
-  {
     "name": "Twilio",
     "tier": "sand-dollar",
     "url": "http://twilio.com",
     "logo": "twilio-logo.svg"
   },
   {
-    "name": "UltraPress",
+    "name": "Clarifai",
     "tier": "sand-dollar",
-    "url": "http://ultrapress.com",
-    "logo": "ultrapress-logo.svg"
+    "url": "http://clarifai.com",
+    "logo": "clarifai-logo.svg"
+  },
+  {
+    "name": "JetBrains",
+    "tier": "sand-dollar",
+    "url": "http://jetbrains.com",
+    "logo": "jetbrains-logo.svg"
   },
   {
     "name": "Wolfram",
@@ -277,21 +199,99 @@ sponsorJson =
     "logo": "wolfram-logo.svg"
   },
   {
+    "name": "Sketch",
+    "tier": "sand-dollar",
+    "url": "http://sketch.io",
+    "logo": "sketch-logo.svg"
+  },
+  {
+    "name": "Discord",
+    "tier": "sand-dollar",
+    "url": "http://discord.com",
+    "logo": "discord-logo.svg"
+  },
+  {
+    "name": "DigitalOcean",
+    "tier": "sand-dollar",
+    "url": "http://digitalocean.com",
+    "logo": "digitalocean-logo.svg"
+  },
+  {
+    "name": "Heroku",
+    "tier": "sand-dollar",
+    "url": "http://heroku.com",
+    "logo": "heroku-logo.svg"
+  },
+  {
+    "name": "MixMax",
+    "tier": "sand-dollar",
+    "url": "http://mixmax.com",
+    "logo": "mixmax-logo.svg"
+  },
+  {
+    "name": "Devpost",
+    "tier": "sand-dollar",
+    "url": "http://devpost.com",
+    "logo": "devpost-logo.svg"
+  },
+  {
+    "name": "Florida Panthers",
+    "tier": "sand-dollar",
+    "url": "http://floridapanthers.com",
+    "logo": "florida-panthers-logo.svg"
+  },
+  {
+    "name": "UltraPress",
+    "tier": "sand-dollar",
+    "url": "http://ultrapress.com",
+    "logo": "ultrapress-logo.svg"
+  },
+  {
+    "name": "Stickermule",
+    "tier": "sand-dollar",
+    "url": "http://stickermule.com",
+    "logo": "stickermule-logo.svg"
+  },
+  {
+    "name": "Monster",
+    "tier": "sand-dollar",
+    "url": "http://monsterenergy.com",
+    "logo": "monster-logo.svg"
+  },
+  {
+    "name": "Soylent",
+    "tier": "sand-dollar",
+    "url": "http://soylent.com",
+    "logo": "soylent-logo.svg"
+  },
+  {
+    "name": "Chipotle",
+    "tier": "sand-dollar",
+    "url": "http://chipotle.com",
+    "logo": "chipotle-logo.svg"
+  },
+  {
+    "name": "Night Owl Cookies",
+    "tier": "sand-dollar",
+    "url": "http://nightowlcookieco.com",
+    "logo": "night-owl-cookies-logo.svg"
+  },
+  {
+    "name": "Carvel",
+    "tier": "sand-dollar",
+    "url": "http://carvel.com",
+    "logo": "carvel-logo.svg"
+  },
+  {
+    "name": "Insomnia Cookies",
+    "tier": "sand-dollar",
+    "url": "http://insomniacookies.com",
+    "logo": "insomnia-cookies-logo.svg"
+  },
+  {
     "name": "MLH",
     "tier": "sand-dollar",
     "url": "http://mlh.io",
     "logo": "mlh-logo.svg"
-  },
-  {
-    "name": "General Electric",
-    "tier": "cone",
-    "url": "http://ge.com",
-    "logo": "ge-logo.svg"
-  },
-  {
-    "name": "Matrix Labs",
-    "tier": "cone",
-    "url": "http://matrixlabs.ai",
-    "logo": "matrix-labs-logo.svg"
   }
 ]`;
