@@ -93,6 +93,12 @@ p{
     /*     background: hsla(327, 80%, 44%, 1); */
 }
 
+.signup.open{
+    color: var(--tertiary-color);
+    background: var(--secondary-color);
+    font-weight: bold
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: white;

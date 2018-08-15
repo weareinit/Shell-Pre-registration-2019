@@ -281,5 +281,17 @@ sponsorJson =
     "tier": "sand-dollar",
     "url": "http://mlh.io",
     "logo": "mlh-logo.svg"
+  },
+  {
+    "name": "General Electric",
+    "tier": "cone",
+    "url": "http://ge.com",
+    "logo": "ge-logo.svg"
+  },
+  {
+    "name": "Matrix Labs",
+    "tier": "cone",
+    "url": "http://matrixlabs.ai",
+    "logo": "matrix-labs-logo.svg"
   }
 ]`;
