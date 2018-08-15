@@ -1,5 +1,7 @@
 <?php
 include 'config.php';
+
+//test
 // what command to execute upon retrieval of a valid push event
 $cmd = 'git pull';
 // the shared secret, used to sign the POST data (using HMAC with SHA1)
