@@ -88,7 +88,7 @@ sponsorJson =
     "name": "Assurant",
     "tier": "cone",
     "url": "http://assurant.com",
-    "logo": "assurant-logo.svg"
+    "logo": "assurant-logo.png"
   },
   {
     "name": "AutoNation",
