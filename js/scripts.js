@@ -10,6 +10,7 @@ let addSponsors = () => {
       let link = $('<a>');
       link.attr('href', sponsor.url);
       link.attr('target', '_blank');
+      link.attr('title', sponsor.name);
       link.addClass(sponsor.tier + ' ' + sponsor.name.toLocaleLowerCase().replace(/ /gi, '-'));
 
       link.append(image);

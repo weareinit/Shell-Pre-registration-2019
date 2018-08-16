@@ -235,6 +235,12 @@ sponsorJson =
     "logo": "devpost-logo.svg"
   },
   {
+    "name": "CrowdForge",
+    "tier": "sand-dollar",
+    "url": "http://crowdforge.iom",
+    "logo": "crowdforge-logo.png"
+  },
+  {
     "name": "Florida Panthers",
     "tier": "sand-dollar",
     "url": "http://floridapanthers.com",
