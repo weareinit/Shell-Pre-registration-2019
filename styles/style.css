@@ -340,6 +340,15 @@ body {
 }
 
 @media (max-width: 600px) {
+    
+    h1{
+        font-size: 2.25em;
+    }
+    
+    h2{
+        font-size: 1.7em;
+    }
+    
     .sponsors .logos {
         flex-direction: column
     }

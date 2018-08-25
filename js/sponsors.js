@@ -88,7 +88,7 @@ sponsorJson =
     "name": "Assurant",
     "tier": "cone",
     "url": "http://assurant.com",
-    "logo": "assurant-logo.svg"
+    "logo": "assurant-logo.png"
   },
   {
     "name": "AutoNation",
@@ -233,6 +233,12 @@ sponsorJson =
     "tier": "sand-dollar",
     "url": "http://devpost.com",
     "logo": "devpost-logo.svg"
+  },
+  {
+    "name": "CrowdForge",
+    "tier": "sand-dollar",
+    "url": "http://crowdforge.iom",
+    "logo": "crowdforge-logo.png"
   },
   {
     "name": "Florida Panthers",
