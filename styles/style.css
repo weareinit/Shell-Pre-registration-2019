@@ -112,6 +112,12 @@ body {
     padding: 2%
 }
 
+
+.shellhacks.logo{
+    width: 100%;
+}
+
+
 .date {
     text-align: center;
     font-size: 18pt;
