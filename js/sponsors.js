@@ -97,6 +97,18 @@ sponsorJson =
     "logo": "autonation-logo.svg"
   },
   {
+    "name": "Newport News Shipbuilding",
+    "tier": "cone",
+    "url": "https://nns.huntingtoningalls.com/",
+    "logo": "newport-news-logo.jpg"
+  },
+  {
+    "name": "Akamai",
+    "tier": "cone",
+    "url": "http://akamai.com",
+    "logo": "akamai-logo.svg"
+  },
+  {
     "name": "Amadeus",
     "tier": "scallop",
     "url": "http://amadeus.com",
