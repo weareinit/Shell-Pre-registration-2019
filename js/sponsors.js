@@ -249,7 +249,7 @@ sponsorJson =
   {
     "name": "CrowdForge",
     "tier": "sand-dollar",
-    "url": "http://crowdforge.iom",
+    "url": "http://crowdforge.io",
     "logo": "crowdforge-logo.png"
   },
   {
