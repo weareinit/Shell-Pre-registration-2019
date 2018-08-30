@@ -97,10 +97,10 @@ sponsorJson =
     "logo": "autonation-logo.svg"
   },
   {
-    "name": "Newport News Shipbuilding",
+    "name": "IronHack",
     "tier": "cone",
-    "url": "https://nns.huntingtoningalls.com/",
-    "logo": "newport-news-logo.jpg"
+    "url": "https://ironhack.com/",
+    "logo": "ironhack-logo.svg"
   },
   {
     "name": "Akamai",
@@ -293,6 +293,12 @@ sponsorJson =
     "tier": "sand-dollar",
     "url": "http://nightowlcookieco.com",
     "logo": "night-owl-cookies-logo.svg"
+  },
+  {
+    "name": "Newport News Shipbuilding",
+    "tier": "sand-dollar",
+    "url": "https://nns.huntingtoningalls.com/",
+    "logo": "newport-news-logo.jpg"
   },
   {
     "name": "Carvel",
