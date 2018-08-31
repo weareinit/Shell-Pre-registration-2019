@@ -301,21 +301,6 @@ sponsorJson =
     "logo": "chipotle-logo.svg"
   },
   {
-<<<<<<< HEAD
-    "name": "Night Owl Cookies",
-    "tier": "sand-dollar",
-    "url": "http://nightowlcookieco.com",
-    "logo": "night-owl-cookies-logo.svg"
-  },
-  {
-    "name": "Newport News Shipbuilding",
-    "tier": "sand-dollar",
-    "url": "https://nns.huntingtoningalls.com/",
-    "logo": "newport-news-logo.jpg"
-  },
-  {
-=======
->>>>>>> develop
     "name": "Carvel",
     "tier": "sand-dollar",
     "url": "http://carvel.com",
