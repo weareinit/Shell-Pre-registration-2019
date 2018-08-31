@@ -97,16 +97,16 @@ sponsorJson =
     "logo": "autonation-logo.svg"
   },
   {
-    "name": "IronHack",
-    "tier": "cone",
-    "url": "https://ironhack.com/",
-    "logo": "ironhack-logo.svg"
-  },
-  {
     "name": "Akamai",
     "tier": "cone",
     "url": "http://akamai.com",
     "logo": "akamai-logo.svg"
+  },
+  {
+    "name": "IronHack",
+    "tier": "cone",
+    "url": "https://ironhack.com/",
+    "logo": "ironhack-logo.svg"
   },
   {
     "name": "Amadeus",
@@ -143,6 +143,12 @@ sponsorJson =
     "tier": "sand-dollar",
     "url": "http://deloitte.com",
     "logo": "deloitte-logo.svg"
+  },
+  {
+    "name": "Newport News Shipbuilding",
+    "tier": "sand-dollar",
+    "url": "https://nns.huntingtoningalls.com/",
+    "logo": "newport-news-logo.jpg"
   },
   {
     "name": "Farelogix",
@@ -199,12 +205,6 @@ sponsorJson =
     "logo": "clarifai-logo.svg"
   },
   {
-    "name": "JetBrains",
-    "tier": "sand-dollar",
-    "url": "http://jetbrains.com",
-    "logo": "jetbrains-logo.svg"
-  },
-  {
     "name": "Wolfram",
     "tier": "sand-dollar",
     "url": "http://wolfram.com",
@@ -235,12 +235,6 @@ sponsorJson =
     "logo": "heroku-logo.svg"
   },
   {
-    "name": "MixMax",
-    "tier": "sand-dollar",
-    "url": "http://mixmax.com",
-    "logo": "mixmax-logo.svg"
-  },
-  {
     "name": "Devpost",
     "tier": "sand-dollar",
     "url": "http://devpost.com",
@@ -253,10 +247,28 @@ sponsorJson =
     "logo": "crowdforge-logo.png"
   },
   {
+    "name": "JetBrains",
+    "tier": "sand-dollar",
+    "url": "http://jetbrains.com",
+    "logo": "jetbrains-logo.svg"
+  },
+  {
+    "name": "MixMax",
+    "tier": "sand-dollar",
+    "url": "http://mixmax.com",
+    "logo": "mixmax-logo.svg"
+  },
+  {
     "name": "Florida Panthers",
     "tier": "sand-dollar",
     "url": "http://floridapanthers.com",
     "logo": "florida-panthers-logo.svg"
+  },
+  {
+    "name": "Hasura",
+    "tier": "sand-dollar",
+    "url": "http://hasura.io",
+    "logo": "hasura-logo.svg"
   },
   {
     "name": "UltraPress",
@@ -289,33 +301,33 @@ sponsorJson =
     "logo": "chipotle-logo.svg"
   },
   {
-    "name": "Night Owl Cookies",
-    "tier": "sand-dollar",
-    "url": "http://nightowlcookieco.com",
-    "logo": "night-owl-cookies-logo.svg"
-  },
-  {
-    "name": "Newport News Shipbuilding",
-    "tier": "sand-dollar",
-    "url": "https://nns.huntingtoningalls.com/",
-    "logo": "newport-news-logo.jpg"
-  },
-  {
     "name": "Carvel",
     "tier": "sand-dollar",
     "url": "http://carvel.com",
     "logo": "carvel-logo.svg"
   },
   {
-    "name": "Insomnia Cookies",
+    "name": "P.F. Chang's",
     "tier": "sand-dollar",
-    "url": "http://insomniacookies.com",
-    "logo": "insomnia-cookies-logo.svg"
+    "url": "http://pfchangs.com",
+    "logo": "pfchangs-logo.svg"
   },
   {
     "name": "MLH",
     "tier": "sand-dollar",
     "url": "http://mlh.io",
     "logo": "mlh-logo.svg"
+  },
+  {
+    "name": "Night Owl Cookies",
+    "tier": "sand-dollar",
+    "url": "http://nightowlcookieco.com",
+    "logo": "night-owl-cookies-logo.svg"
+  },
+  {
+    "name": "Insomnia Cookies",
+    "tier": "sand-dollar",
+    "url": "http://insomniacookies.com",
+    "logo": "insomnia-cookies-logo.svg"
   }
 ]`;
