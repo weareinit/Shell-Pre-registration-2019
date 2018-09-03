@@ -331,6 +331,10 @@ body {
     padding-bottom: 10px;
 }
 
+.faq h2{
+    word-wrap: break-word;
+}
+
 .faq .entry {
     padding-bottom: 1em;
 }
