@@ -331,6 +331,31 @@ body {
     padding-bottom: 10px;
 }
 
+.faq label{
+    cursor: pointer
+}
+
+.faq .response{
+    display: none;
+}
+
+.faq .checkbox {
+    display: none
+}
+
+.faq .checkbox:not(:checked) ~ label h2:before{
+    content: "+ ";
+}
+
+.faq .checkbox:checked ~ label h2:before{
+    content: "\2013  ";
+}
+
+
+.faq .checkbox:checked ~ .response{
+    display: block
+}
+
 .footer{
     color: black;
 }
