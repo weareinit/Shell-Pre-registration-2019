@@ -19,6 +19,16 @@ h2{
     margin-bottom: .3em;
 }
 
+h3{
+    font-size: 2em;
+    margin-bottom: .275em;
+}
+
+h4{
+    font-size: 1.75em;
+    margin-bottom: .25em;
+}   
+
 p{
     margin-bottom: 1em;
     line-height: 1.25em;
@@ -262,17 +272,9 @@ body {
     min-width: 150px
 }
 
-.sponsors.current .conch{
-    
-}
-
 .sponsors.current .conch img{
     width: 520px;
     max-width: none;
-}
-
-.sponsors.current .cone{
-    
 }
 
 .sponsors.current .cone img{
@@ -280,26 +282,14 @@ body {
     max-width: none;
 }
 
-.sponsors.current .scallop{
-    
-}
-
 .sponsors.current .scallop img{
     width: 250px;
     max-width: none;
 }
 
-.sponsors.current .sand-dollar{
-    
-}
-
 .sponsors.current .sand-dollar img{
     width: 200px;
     max-width: none;
-}
-
-.sponsors.current .partner{
-    
 }
 
 /*Company Specific Fixes*/
