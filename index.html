@@ -52,6 +52,7 @@ oMMMMMMMMMMMMMMMMMNo  .yNMMMMMMMMMMMMMMMMNy. .sMMMMMMMMMMMMMMMMMMMMMMMMMMMM+
     <title>ShellHacks 2018 &mdash; Sept 14 &ndash; 16</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css?v=1.1.1">
+    <link rel="stylesheet" href="styles/scrollbar.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
@@ -90,8 +91,10 @@ oMMMMMMMMMMMMMMMMMNo  .yNMMMMMMMMMMMMMMMMNy. .sMMMMMMMMMMMMMMMMMMMMMMMMMMMM+
     <!--END Twitter Card-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
     <script src="js/sponsors.js"></script>
     <script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-scrollbar@0.4.0/simple-scrollbar.min.js"></script>
 </head>
 <body>    
     <section class="main">
@@ -136,6 +139,115 @@ oMMMMMMMMMMMMMMMMMNo  .yNMMMMMMMMMMMMMMMMNy. .sMMMMMMMMMMMMMMMMMMMMMMMMMMMM+
                 <p>ShellHacks is organized by <a href="http://upefiu.io">Upsilon Pi Epsilon (UPE)</a>, the largest student 
             organization for technology at FIU, with support from companies, academic programs, and student organizations.</p>
             </div>
+        </div>
+    </section>
+    <section class="page centered schedule">
+        <div class="contents">
+           <h1>Schedule</h1>
+            <div class="event-schedule">
+                   <div class="events" id="events-list" ss-container>
+                    <h3>Friday, Septemer 14</h3>
+                    <div class="event">
+                        <header>
+                            <div class="location">
+                                <span class="room">Everywhere</span>
+                                <span class="times">12PM - 1AM Sun</span>
+                            </div>
+                            <h4>Hacking Begins</h4>
+                            <div class="description">
+                                This is the event description
+                            </div>
+                        </header>
+                    </div>
+                    <div class="event">
+                        <header>
+                            <div class="location">
+                                <span class="room">Everywhere</span>
+                                <span class="times">12PM - 1AM Sun</span>
+                            </div>
+                            <h4>Hacking Begins</h4>
+                            <div class="description">
+                                This is the event description
+                            </div>
+                        </header>
+                    </div>
+                    <div class="event">
+                        <header>
+                            <div class="location">
+                                <span class="room">Everywhere</span>
+                                <span class="times">12PM - 1AM Sun</span>
+                            </div>
+                            <h4>Hacking Begins</h4>
+                            <div class="description">
+                                This is the event description
+                            </div>
+                        </header>
+                    </div>
+                    <div class="event">
+                        <header>
+                            <div class="location">
+                                <span class="room">Everywhere</span>
+                                <span class="times">12PM - 1AM Sun</span>
+                            </div>
+                            <h4>Hacking Begins</h4>
+                            <div class="description">
+                                This is the event description
+                            </div>
+                        </header>
+                    </div>
+                    <div class="event">
+                        <header>
+                            <div class="location">
+                                <span class="room">Everywhere</span>
+                                <span class="times">12PM - 1AM Sun</span>
+                            </div>
+                            <h4>Hacking Begins</h4>
+                            <div class="description">
+                                This is the event description
+                            </div>
+                        </header>
+                    </div>
+                    <div class="event">
+                        <header>
+                            <div class="location">
+                                <span class="room">Everywhere</span>
+                                <span class="times">12PM - 1AM Sun</span>
+                            </div>
+                            <h4>Hacking Begins</h4>
+                            <div class="description">
+                                This is the event description
+                            </div>
+                        </header>
+                    </div>
+                    <div class="event">
+                        <header>
+                            <div class="location">
+                                <span class="room">Everywhere</span>
+                                <span class="times">12PM - 1AM Sun</span>
+                            </div>
+                            <h4>Hacking Begins</h4>
+                            <div class="description">
+                                This is the event description
+                            </div>
+                        </header>
+                    </div>
+                    <div class="event">
+                        <header>
+                            <div class="location">
+                                <span class="room">Everywhere</span>
+                                <span class="times">12PM - 1AM Sun</span>
+                            </div>
+                            <h4>Hacking Begins</h4>
+                            <div class="description">
+                                This is the event description
+                            </div>
+                        </header>
+                    </div>
+                </div>
+                <div class="description panel" id="event-description">
+                    This panel houses a larger description
+                </div>
+            </div>        
         </div>
     </section>
     <section class="page centered faq">
@@ -285,6 +397,7 @@ oMMMMMMMMMMMMMMMMMNo  .yNMMMMMMMMMMMMMMMMNy. .sMMMMMMMMMMMMMMMMMMMMMMMMMMMM+
 
     <script type="text/javascript">
         addSponsors();
+        createSchedule();
     </script>    
 </body>
 </html>

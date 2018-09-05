@@ -19,6 +19,16 @@ h2{
     margin-bottom: .3em;
 }
 
+h3{
+    font-size: 2em;
+    margin-bottom: .275em;
+}
+
+h4{
+    font-size: 1.75em;
+    margin-bottom: .25em;
+}
+
 p{
     margin-bottom: 1em;
     line-height: 1.25em;
@@ -221,6 +231,41 @@ body {
     color: orange;
 }
 
+.event-schedule{
+    display: flex;
+    flex-direction: row;
+}
+
+.event-schedule > *{
+    height: 520px;
+/*    overflow-y: hidden*/
+}
+
+.event-schedule .events{
+    flex-basis: 100%;
+}
+
+.event-schedule .description.panel{
+    flex-basis: 100%;
+    padding: 15px;
+/*    margin-left: 15px;*/
+    background-color: white;
+    color: black;
+}
+
+.event-schedule .event{
+    background-color: var(--tertiary-color);
+    padding: 1em;
+    margin-bottom: .75em;
+    cursor: pointer
+}
+
+.event-schedule .event .location{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between
+}
+
 .sponsors.page {
     background: linear-gradient(to right bottom, #12c2e9, #c471ed, #f64f59);
     background-size: 115% 115%;
@@ -351,7 +396,7 @@ body {
     display: none
 }
 
-.faq .checkbox:not(:checked) ~ label h2:before{
+.faq .checkbox:not(:checked) ~   label h2:before{
     content: "+ ";
 }
 
