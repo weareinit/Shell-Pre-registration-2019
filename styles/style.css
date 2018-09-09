@@ -27,7 +27,7 @@ h3{
 h4{
     font-size: 1.75em;
     margin-bottom: .25em;
-}
+}   
 
 p{
     margin-bottom: 1em;
@@ -307,17 +307,9 @@ body {
     min-width: 150px
 }
 
-.sponsors.current .conch{
-    
-}
-
 .sponsors.current .conch img{
     width: 520px;
     max-width: none;
-}
-
-.sponsors.current .cone{
-    
 }
 
 .sponsors.current .cone img{
@@ -325,26 +317,14 @@ body {
     max-width: none;
 }
 
-.sponsors.current .scallop{
-    
-}
-
 .sponsors.current .scallop img{
     width: 250px;
     max-width: none;
 }
 
-.sponsors.current .sand-dollar{
-    
-}
-
 .sponsors.current .sand-dollar img{
     width: 200px;
     max-width: none;
-}
-
-.sponsors.current .partner{
-    
 }
 
 /*Company Specific Fixes*/
@@ -396,7 +376,11 @@ body {
     display: none
 }
 
+<<<<<<< HEAD
 .faq .checkbox:not(:checked) ~   label h2:before{
+=======
+.faq .checkbox:not(:checked) ~ label h2:before{
+>>>>>>> live
     content: "+ ";
 }
 
