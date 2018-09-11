@@ -28,7 +28,7 @@ let createSchedule = () => {
   let $panel = $('#event-description');
   let $eventList = $('#events-list');
 
-  let defaultPanelText = `## ShellHacks 2018 Event Schedule
+  let defaultPanelText = `### ShellHacks 2018 Event Schedule
 
   Click on events on the left to show an expanded description here
   `;
@@ -58,23 +58,26 @@ let createSchedule = () => {
     var startDate = new Date(event.start * 1000);
     var endDate = new Date(event.end * 1000);
 
-    const prettyTime = (time) => {
+    const prettyTime = (hours, minutes) => {
       let postfix = 'AM';
-      if(time > 12){
+      if(hours > 12){
         postfix = 'PM';
-        time -= 12;
+        hours -= 12;
       }
-      return time + ' ' + postfix;
+      if (hours == 0)
+        hours = 12;
+
+      return (minutes > 0) ? hours + ':' + minutes + ' ' + postfix : hours + ' ' + postfix;
     }
 
     $eventElement.find('.description').html(converter.makeHtml(event.description));
     $eventElement.find('.snippet').html($eventElement.find('.description')[0].innerText);
     $eventElement.find('.room').html(event.room);
-    let startTime = prettyTime(startDate.getHours());
+    let startTime = prettyTime(startDate.getHours(), startDate.getMinutes());
 
     let endTime = (startDate.getDay() != endDate.getDay()) ? 
-                  daysOfWeek[endDate.getDay()].substr(0,3) + ' ' + prettyTime(endDate.getHours()) : 
-                  prettyTime(endDate.getHours());
+                  daysOfWeek[endDate.getDay()].substr(0,3) + ' ' + prettyTime(endDate.getHours(), endDate.getMinutes()) : 
+                  prettyTime(endDate.getHours(), endDate.getMinutes());
     
     $eventElement.find('.times').html(startTime + ' - ' + endTime);
     $eventElement.find('> h4').html(event.title);
@@ -83,8 +86,10 @@ let createSchedule = () => {
       $('.event').removeClass('selected');
       $(e.currentTarget).addClass('selected');
 
+      let title = $(e.currentTarget).find('h4').clone();
       let descriptionHTML = $(e.currentTarget).find('.description').html();
       $panel.html(descriptionHTML);
+      $panel.prepend(title);
     })
 
     if(!currentDay || currentDay.getDay() != startDate.getDay()){

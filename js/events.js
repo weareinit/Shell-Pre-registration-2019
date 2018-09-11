@@ -1,10 +1,17 @@
 var eventsJson = `[
   {
-    "title": "Hacker Check-In",
+    "title": "Check-In",
     "start": 1536958800,
     "end": 1536966000,
-    "room": "SIPA 125",
-    "description": "Hackers begin checking in. Jackbox will be played!"
+    "room": "SIPA Lobby",
+    "description": "You've made here, but you've gotta check in first!"
+  },
+  {
+    "title": "Walk-In Check-In",
+    "start": 1536962400,
+    "end": 1536966000,
+    "room": "SIPA Lobby",
+    "description": "If you didn't manage to register on time, make sure you make it for walk-in check in."
   },
   {
     "title": "Opening Ceremony",
@@ -25,14 +32,14 @@ var eventsJson = `[
     "start": 1536975000,
     "end": 1536978600,
     "room": "PG6 116",
-    "description": "Start the night strong with a good meal. Good provech!"
+    "description": ""
   },
   {
-    "title": "Hacking Time!",
+    "title": "Hacking Begins",
     "start": 1536978600,
     "end": 1537104600,
     "room": "Hacking Spaces",
-    "description": "on your marks.. get set.. GO!"
+    "description": "And they're off! Get ready to spend the next 36 hours learning, creating, and experiencing a weekend like no other!"
   },
   {
     "title": "Team Building",
@@ -217,7 +224,7 @@ var eventsJson = `[
     "description": ""
   },
   {
-    "title": "T-Shirt Giveaway & Surprise",
+    "title": "T-Shirt Giveaway & Ice Cream",
     "start": 1537063200,
     "end": 1537065900,
     "room": "PG6 114",
@@ -232,65 +239,65 @@ var eventsJson = `[
   },
   {
     "title": "Code in the Dark",
-    "start": 1536984000,
-    "end": 1536985800,
+    "start": 1537070400,
+    "end": 1537072200,
     "room": "PG6 115",
     "description": "Experience the magic of Shellhacks 2018!"
   },
   {
     "title": "Ping Pong Tournament",
-    "start": 1536984000,
-    "end": 1536987600,
+    "start": 1537070400,
+    "end": 1537074000,
     "room": "PG6 114",
     "description": "Who is the cricket master?"
   },
   {
     "title": "Snack",
-    "start": 1536987600,
-    "end": 1536989400,
+    "start": 1537074000,
+    "end": 1537075800,
     "room": "PG6 116",
     "description": "Fuel up"
   },
   {
     "title": "Gaming Tournament",
-    "start": 1536989400,
-    "end": 1536994800,
+    "start": 1537075800,
+    "end": 1537081200,
     "room": "PG6 115",
     "description": "Have fun and compete!"
   },
   {
     "title": "Mechanical Keyboard Meetup",
-    "start": 1536993000,
-    "end": 1536994800,
+    "start": 1537079400,
+    "end": 1537081200,
     "room": "PG6 114",
     "description": "Gather up and talk all things mechanical keyboards"
   },
   {
     "title": "Breakfast",
-    "start": 1537012800,
-    "end": 1537016400,
+    "start": 1537099200,
+    "end": 1537102800,
     "room": "PG6 116",
     "description": "Enjoy the last breakfast of the weekend!"
   },
   {
     "title": "Hackathon Expo",
-    "start": 1537021800,
-    "end": 1537029000,
+    "start": 1537108200,
+    "end": 1537115400,
     "room": "PG6 105",
     "description": "Show off and see all the cool hacks"
   },
   {
     "title": "Closing Ceremony",
-    "start": 1537030800,
-    "end": 1537034400,
+    "start": 1537117200,
+    "end": 1537120800,
     "room": "SIPA 125",
-    "description": "# Closing Ceremony\n\nThe ShellHacks team says farewell"
+    "description": "The ShellHacks team says farewell"
   },
   {
     "title": "Snack",
-    "start": 1537034400,
-    "end": 1537036200,
+    "start": 1537120800,
+    "end": 1537122600,
     "room": "PG6 116",
-    "description": "# Leaving Snack\n\nShellHacks is over, but the food isn't!"
+    "description": "Closing time, one last call for snacks."
   }
 ]`;
