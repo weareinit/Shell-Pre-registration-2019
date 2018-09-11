@@ -18,3 +18,85 @@ let addSponsors = () => {
       $('#' + sponsor.tier +'-sponsors').append(link);
   });
 }
+
+let createSchedule = () => {
+  let converter = new showdown.Converter();
+
+  let events = JSON.parse(eventsJson);
+  events.sort((eventOne, eventTwo) => eventOne.start - eventTwo.start);
+
+  let $panel = $('#event-description');
+  let $eventList = $('#events-list');
+
+  let defaultPanelText = `## ShellHacks 2018 Event Schedule
+
+  Click on events on the left to show an expanded description here
+  `;
+
+  $panel.html(converter.makeHtml(defaultPanelText));
+
+  let currentDay = null;
+
+  events.forEach(event => {
+    let $eventElement = $(`
+      <div class="event">
+        <div class="location">
+            <span class="room"></span>
+            <span class="times"></span>
+        </div>
+        <h4></h4>
+        <div class="snippet"></div>
+        <div class="description"></div>
+      </div>
+    `);
+
+    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+                        "July", "August", "September", "October", "November", "December"
+    ];
+
+    var startDate = new Date(event.start * 1000);
+    var endDate = new Date(event.end * 1000);
+
+    const prettyTime = (time) => {
+      let postfix = 'AM';
+      if(time > 12){
+        postfix = 'PM';
+        time -= 12;
+      }
+      return time + ' ' + postfix;
+    }
+
+    $eventElement.find('.description').html(converter.makeHtml(event.description));
+    $eventElement.find('.snippet').html($eventElement.find('.description')[0].innerText);
+    $eventElement.find('.room').html(event.room);
+    let startTime = prettyTime(startDate.getHours());
+
+    let endTime = (startDate.getDay() != endDate.getDay()) ? 
+                  daysOfWeek[endDate.getDay()].substr(0,3) + ' ' + prettyTime(endDate.getHours()) : 
+                  prettyTime(endDate.getHours());
+    
+    $eventElement.find('.times').html(startTime + ' - ' + endTime);
+    $eventElement.find('> h4').html(event.title);
+
+    $eventElement.on('click', (e) => {
+      $('.event').removeClass('selected');
+      $(e.currentTarget).addClass('selected');
+
+      let descriptionHTML = $(e.currentTarget).find('.description').html();
+      $panel.html(descriptionHTML);
+    })
+
+    if(!currentDay || currentDay.getDay() != startDate.getDay()){
+      $eventList.append(`<h3>${daysOfWeek[startDate.getDay()]}, ${monthNames[startDate.getMonth()]} ${startDate.getDate()}</h3>`);
+      currentDay = new Date(startDate);
+    }
+
+    $eventList.append($eventElement);
+
+  });
+}
+
+// $(() => {
+  
+// });
