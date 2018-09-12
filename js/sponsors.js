@@ -123,7 +123,7 @@ sponsorJson =
   {
     "name": "FIU Online",
     "tier": "scallop",
-    "url": "http://online.fiu.edu",
+    "url": "http://fiuonline.fiu.edu",
     "logo": "fiu-online-logo.svg"
   },
   {
