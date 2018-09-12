@@ -231,11 +231,11 @@ body {
 }
 
 .organizers a{
-    color: yellow;
+    color: var(--tertiary-color);
 }
 
 .organizers a:visited{
-    color: orange;
+    color: var(--primary-color);
 }
 
 .event-schedule{
