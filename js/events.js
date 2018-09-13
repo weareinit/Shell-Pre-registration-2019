@@ -32,7 +32,7 @@ var eventsJson = `[
     "start": 1536975000,
     "end": 1536978600,
     "room": "PG6",
-    "description": ""
+    "description": "It's the event's first dinner, so we hope you came ready to enjoy an extra special meal 😏"
   },
   {
     "title": "Hacking Begins",
@@ -52,35 +52,42 @@ var eventsJson = `[
     "title": "GitHub and Tracks Workshop",
     "start": 1536980400,
     "end": 1536983100,
-    "room": "PG6 115",
+    "room": "PG6 112",
     "description": "Learn about git and GitHub, version control meant for teams and collaborative open source projects! \\n \\n Presented by GitHub engineers"
   },
   {
     "title": "HTML/CSS",
     "start": 1536984000,
-    "end": 1536985800,
-    "room": "PG6 115",
-    "description": "FIU's Professor Gomez will be teaching the basic on HTML and CSS so that you can build your own websites"
+    "end": 1536987600,
+    "room": "PG6 112",
+    "description": "FIU's Professor German Gomez will be teaching the basic on HTML and CSS so that you can build your own websites"
   },
   {
     "title": "Midnight++ Snack",
     "start": 1536987600,
     "end": 1536989400,
-    "room": "PG6 116",
-    "description": "Fuel up"
+    "room": "Drones",
+    "description": "Know what's better than a midnight snack? A midnight++ snack 😎"
+  },
+  {
+    "title": "UI/UX presented by GE Digital",
+    "start": 1536989400,
+    "end": 1536991200,
+    "room": "PG6 112",
+    "description": "So, you know how to make a backend.\\n\\nAlright, now you've got a working frontend.\\n\\nBut, how do you make it so other people can use it easily?\\n\\nJoin GE Digital in teaching some of the fundamendal basics in UI and UX design! If you're not really a front-end kind of person, this event will get you started in thinking about *who* is using your software "
   },
   {
     "title": "Machine Learning",
-    "start": 1536989400,
-    "end": 1536991200,
+    "start": 1536992100,
+    "end": 1536993900,
     "room": "PG6 115",
     "description": "Learn more about machine learning presented by FIU student and ShellHacks organizer Adrian Perez"
   },
   {
     "title": "Werewolf",
-    "start": 1536992100,
-    "end": 1536995700,
-    "room": "PG6 114",
+    "start": 1536994800,
+    "end": 1536998400,
+    "room": "PG6 112",
     "description": "See if you can survive the night with a fun game of Werewolf!"
   },
   {
@@ -94,7 +101,7 @@ var eventsJson = `[
     "title": "Breakfast",
     "start": 1537012800,
     "end": 1537016400,
-    "room": "PG6 116",
+    "room": "PG6",
     "description": "Enjoy a hearty, well-balanced breakfast"
   },
   {
@@ -107,20 +114,20 @@ var eventsJson = `[
   {
     "title": "Wix Code",
     "start": 1537020000,
-    "end": 1537021800,
+    "end": 1537023600,
     "room": "PG6 115",
-    "description": "Learn more about Wixs editor with developer tools that enables you to perform custom javascript functions and Database queries"
+    "description": "Learn more about Wix's editor with developer tools that enable you to perform custom javascript functions and database queries"
   },
   {
     "title": "Spotify Talk",
-    "start": 1537022700,
-    "end": 1537024500,
-    "room": "PG6 115",
+    "start": 1537023600,
+    "end": 1537025400,
+    "room": "PG6 144",
     "description": ""
   },
   {
     "title": "Microsoft Xbox lounge",
-    "start": "1537022700",
+    "start": "1537023600",
     "end": "1537034400",
     "room": "PG6 114",
     "description": "Hang out with some hackers to some laid back gaming at the activities room"
@@ -129,141 +136,141 @@ var eventsJson = `[
     "title": "Microsoft Azure",
     "start": 1537025400,
     "end": 1537027200,
-    "room": "PG6 115",
+    "room": "PG6 112",
     "description": "Learn about Microsoft's Azure to help build your applications on their cloud services. \\n \\n Presented by Microsoft"
   },
   {
     "title": "IT Careers talk by Assurant",
-    "start": 1537028100,
-    "end": 1537029900,
-    "room": "PG6 115",
+    "start": 1537027200,
+    "end": 1537029000,
+    "room": "PG6 144",
     "description": "Be assured that there will be talks of careers for those of you who are IT Majors! \\n \\n This talk is presented by Assurant, a global provider of risk management products and services"
   },
   {
     "title": "Ionic Workshop by Citrix",
-    "start": 1537030800,
-    "end": 1537032600,
-    "room": "PG6 115",
+    "start": 1537029000,
+    "end": 1537030800,
+    "room": "PG6 112",
     "description": "Learn how to make mobile apps with Ionic presented by Citrix"
   },
   {
     "title": "Testing with Spock and Groovy Workshop by Chase",
-    "start": 1537036200,
-    "end": 1537038000,
-    "room": "PG6 115",
+    "start": 1537031700,
+    "end": 1537033500,
+    "room": "PG6 144",
     "description": "Test your might and your Java Programs with testing frameworks Spock and Groovy presented by JP. Morgan Chase"
   },
   {
     "title": "Lunch",
     "start": 1537034400,
     "end": 1537036200,
-    "room": "PG6 116",
+    "room": "Drones",
     "description": "Enjoy a delicious meal"
   },
   {
     "title": "Keepin it clean: the art of clean code - a Google talk",
-    "start": 1537038900,
-    "end": 1537040700,
-    "room": "PG6 115",
+    "start": 1537036200,
+    "end": 1537038000,
+    "room": "PG6 112",
     "description": "In this talk, Google engineers will give different methods to insure clean and mantainable code"
   },
   {
     "title": "Robotic Process Automation by World Fuel Services",
-    "start": 1537041600,
-    "end": 1537043400,
-    "room": "PG6 115",
+    "start": 1537038000,
+    "end": 1537039800,
+    "room": "PG6 144",
     "description": "Learn more about software automation, presented by World Fuel Services"
   },
   {
-    "title": "Matrix Creator Workshop by Matrix",
-    "start": 1537044300,
-    "end": 1537046100,
-    "room": "PG6 115",
-    "description": "Learn how to use Matrix -- a tool specialized for creating IoT projects"
+    "title": "Matrix Creator Workshop by Matrix Labs",
+    "start": 1537040700,
+    "end": 1537042500,
+    "room": "PG6 112",
+    "description": "Learn how to use the Matrix Creator -- a tool specialized for creating IoT projects"
   },
   {
-    "title": "IoT challenges - A talk by Akamai",
-    "start": 1537048800,
-    "end": 1537050600,
-    "room": "PG6 115",
+    "title": "IoT Challenges - A talk by Akamai",
+    "start": 1537041600,
+    "end": 1537043400,
+    "room": "PG6 144",
     "description": "Akamai will tackle the different challenges and issues facing IoT today"
   },
   {
     "title": "Oath Workshop TBD",
-    "start": 1537051500,
-    "end": 1537053300,
-    "room": "PG6 115",
+    "start": 1537043400,
+    "end": 1537045200,
+    "room": "PG6 112",
     "description": ""
   },
   {
     "title": "Cup Stacking",
-    "start": 1537046100,
-    "end": 1537049700,
-    "room": "PG6 114",
-    "description": "Have fun with a hackathon classic!"
+    "start": 1537045200,
+    "end": 1537048800,
+    "room": "PG6 112",
+    "description": "How high can you stack?\\n\\nTry to stack solo cups with a friend as high as they can, but be careful not to let them fall! Compete against other teams of two to take home the crowning title as Cup Stacking Champion. "
   },
   {
     "title": "Arduino Workshop",
-    "start": 1537056000,
-    "end": 1537057800,
-    "room": "PG6 115",
+    "start": 1537048800,
+    "end": 1537051500,
+    "room": "PG6 144",
     "description": "Learn how to use Arduinos -- Microcontrollers made for hardware projects, presented by Manny Losada FIU Student and president of IEEE"
   },
   {
     "title": "ReactJS workshop by 4Geeks",
-    "start": 1537058700,
-    "end": 1537060500,
-    "room": "PG6 115",
+    "start": 1537049700,
+    "end": 1537051500,
+    "room": "PG6 112",
     "description": "Learn more about ReactJS and Javascript with this workshop presented by 4Geeks"
   },
   {
     "title": "Unity Workshop",
-    "start": 1537061400,
-    "end": 1537063200,
-    "room": "PG6 115",
+    "start": 1537052400,
+    "end": 1537056000,
+    "room": "PG6 112",
     "description": "FIU Alumni Jose Maldonado will be teaching the basics of Game Development with the Unity Engine"
   },
     {
     "title": "Java Tech Interview Prep Workshop",
-    "start": 1537065900,
-    "end": 1537067700,
-    "room": "PG6 115",
+    "start": 1537054200,
+    "end": 1537056900,
+    "room": "PG6 144",
     "description": "Crack the coding interview in Java with FIU Student Fernado Serrano"
   },
   {
     "title": "Dinner",
-    "start": 1537054200,
-    "end": 1537056000,
-    "room": "PG6 116",
-    "description": "Good provech!"
+    "start": 1537056900,
+    "end": 1537058700,
+    "room": "Drones",
+    "description": "Yes, you read that location right. No, that's not a typo. ✈"
   },
   {
     "title": "Swift Workshop",
-    "start": 1537056000,
-    "end": 1537067700,
-    "room": "PG6 115",
-    "description": "Learn about Native iOs Mobile app development with swift presented by FIU Student Davone"
+    "start": 1537058700,
+    "end": 1537061400,
+    "room": "PG6 112",
+    "description": "Learn about Native iOS Mobile app development with swift presented by FIU Student Davone"
   },
   {
     "title": "Security Workshop by Cisco",
-    "start": 1537056000,
-    "end": 1537067700,
-    "room": "PG6 115",
+    "start": 1537061400,
+    "end": 1537063200,
+    "room": "PG6 144",
     "description": "Security topics and lock picking hands on with Cisco"
   },
   {
-    "title": "T-Shirt Giveaway & Ice Cream",
+    "title": "T-Shirt Giveaway & Special Surprise",
     "start": 1537063200,
     "end": 1537065900,
     "room": "PG6 114",
-    "description": "Get the awesome ShellHacks T-shirt and some ice cream"
+    "description": "Get the awesome ShellHacks 2018 T-shirt and a little something extra!"
   },
   {
     "title": "Code in the Dark",
     "start": 1537070400,
     "end": 1537072200,
-    "room": "PG6 115",
-    "description": "Experience the magic of Shellhacks 2018!"
+    "room": "PG6 112",
+    "description": "Hey, who turned the lights out! \\n\\n Try to recreate a web site without previewing it in this crazy coding experience."
   },
   {
     "title": "Soylent Pong",
@@ -277,13 +284,13 @@ var eventsJson = `[
     "start": 1537074000,
     "end": 1537075800,
     "room": "PG6 116",
-    "description": "Fuel up"
+    "description": "It's an hour past midnight again, so it must be snack time!"
   },
   {
     "title": "Gaming Tournament",
     "start": 1537075800,
     "end": 1537081200,
-    "room": "PG6 115",
+    "room": "PG6 112",
     "description": "Have fun and compete!"
   },
   {
@@ -297,7 +304,7 @@ var eventsJson = `[
     "title": "Breakfast",
     "start": 1537099200,
     "end": 1537102800,
-    "room": "PG6 116",
+    "room": "PG6",
     "description": "Enjoy the last breakfast of the weekend!"
   },
   {
@@ -311,14 +318,14 @@ var eventsJson = `[
     "title": "Closing Ceremony",
     "start": 1537117200,
     "end": 1537120800,
-    "room": "SIPA 125",
+    "room": "PG6 116",
     "description": "The ShellHacks team says farewell"
   },
   {
     "title": "Snack",
     "start": 1537120800,
     "end": 1537122600,
-    "room": "PG6 116",
+    "room": "PG6",
     "description": "Closing time, one last call for snacks."
   }
 ]`;
