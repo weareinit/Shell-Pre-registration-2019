@@ -52,6 +52,7 @@ oMMMMMMMMMMMMMMMMMNo  .yNMMMMMMMMMMMMMMMMNy. .sMMMMMMMMMMMMMMMMMMMMMMMMMMMM+
     <title>ShellHacks 2018 &mdash; Sept 14 &ndash; 16</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css?v=1.1.1">
+    <link rel="stylesheet" href="styles/scrollbar.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
@@ -90,8 +91,11 @@ oMMMMMMMMMMMMMMMMMNo  .yNMMMMMMMMMMMMMMMMNy. .sMMMMMMMMMMMMMMMMMMMMMMMMMMMM+
     <!--END Twitter Card-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
     <script src="js/sponsors.js"></script>
+    <script src="js/events.js"></script>
     <script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-scrollbar@0.4.0/simple-scrollbar.min.js"></script>
 </head>
 <body>    
     <section class="main">
@@ -127,45 +131,16 @@ oMMMMMMMMMMMMMMMMMNo  .yNMMMMMMMMMMMMMMMMNy. .sMMMMMMMMMMMMMMMMMMMMMMMMMMMM+
             </div>
         </div>
     </section>
-    <section class="page centered organizers">
+    <section class="page centered schedule">
         <div class="contents">
-            <div class="logo">
-                <img class="upe-logo" src="imgs/logos/2018/upe-national-logo.png" alt="Upsilon Pi Epsilot Logo">
-            </div>
-            <div class="blurb">
-                <h2>About the Organizers</h2>
-                <p>ShellHacks is organized by <a href="http://upefiu.io">Upsilon Pi Epsilon (UPE)</a>, the largest student 
-            organization for technology at FIU, with support from companies, academic programs, and student organizations.</p>
-            </div>
-        </div>
-    </section>
-    <section class="page centered">
-        <div class="content">
-            <h1>Schedule</h1>
-            <p>Our full schedule will be released around the end of the week. For now, this outlines the general time of events.</p>
-            
-            <h2>Friday, September 14</h2>
-            <h3>Busses Arrive - 5PM</h3>
-            <h3>Check In - 5PM</h3>
-            <h3>Walk In Check In - 6PM</h3>
-            <h3>Opening Ceremony - 7PM</h3>
-            <h3>Sponsor Fair - 9PM</h3>
-            <h3>Dinner - 9PM</h3>
-            <h3>Hacking Begins - 10PM</h3>
-
-            <br>
-            <br>
-
-            <h2>Saturday, September 15</h2>
-            <h3>Workshops - Ongoing</h3>
-            <h3>Activities - Ongoing</h3>
-
-            <br>
-            <br>
-
-            <h2>Sunday, September 16</h2>
-            <h3>Closing Ceremony - 1PM</h3>
-            <h3>Busses Depart - 3PM</h3>
+           <h1>Schedule</h1>
+            <div class="event-schedule">
+                <div class="events" id="events-list" ss-container>
+                </div>
+                <div class="description panel" id="event-description">
+                    This panel houses a larger description
+                </div>
+            </div>        
         </div>
     </section>
     <section class="page centered faq">
@@ -288,6 +263,20 @@ oMMMMMMMMMMMMMMMMMNo  .yNMMMMMMMMMMMMMMMMNy. .sMMMMMMMMMMMMMMMMMMMMMMMMMMMM+
         </article>
         </div>
     </section>
+    
+    <section class="page centered organizers">
+        <h1>Organizers</h1>
+        <div class="contents">
+           
+            <div class="logo">
+                <img class="upe-logo" src="imgs/logos/2018/upe-national-logo.png" alt="Upsilon Pi Epsilot Logo">
+            </div>
+            <div class="blurb">
+                <p>ShellHacks is organized by <a href="http://upefiu.io">Upsilon Pi Epsilon (UPE)</a>, the largest student 
+            organization for technology at FIU, with support from companies, academic programs, and student organizations.</p>
+            </div>
+        </div>
+    </section>
     <section class="page sponsors current centered">
         <div class="contents" id="2018-logos">
             <h1>Our Sponsors</h1>
@@ -315,6 +304,7 @@ oMMMMMMMMMMMMMMMMMNo  .yNMMMMMMMMMMMMMMMMNy. .sMMMMMMMMMMMMMMMMMMMMMMMMMMMM+
 
     <script type="text/javascript">
         addSponsors();
+        createSchedule();
     </script>    
 </body>
 </html>

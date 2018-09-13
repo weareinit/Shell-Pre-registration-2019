@@ -200,11 +200,18 @@ body {
 }
 
 .organizers{
-    background: var(--tertiary-color);
+/*    background: var(--tertiary-color);*/
+    background: white;
+    color: black;
+}
+
+.organizers h1{
+    color: var(--tertiary-color)
 }
 
 .organizers .blurb{
-    flex-shrink: 2
+    flex-shrink: 2;
+    font-size: 120%
 }
 
 .organizers .contents{
@@ -224,11 +231,81 @@ body {
 }
 
 .organizers a{
-    color: yellow;
+    color: var(--tertiary-color);
 }
 
 .organizers a:visited{
-    color: orange;
+    color: var(--primary-color);
+}
+
+.event-schedule{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start
+}
+
+.event-schedule em{
+    font-style: italic;
+}
+
+.event-schedule > *{
+    max-height: 520px;
+    overflow-y: hidden
+}
+
+.event-schedule .events{
+    flex-basis: 100%;
+    width: 65%;
+    height: 520px;
+}
+
+.event-schedule .description.panel{
+    flex-basis: 80%;
+    padding: 15px;
+    margin-left: 35px;
+    background-color: white;
+    color: black;
+    height: auto;
+    overflow: auto
+}
+
+.event-schedule .event{
+
+    background: linear-gradient(135deg, #001e7f 0%,#ff1d8e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+    padding: 1em;
+    cursor: pointer
+}
+
+.event-schedule .event:not(:last-of-type){
+    margin-bottom: .75em;
+}
+
+.event-schedule .event .description{
+    padding-top: 1em;
+    overflow: hidden;
+    display: none;
+}
+
+.event-schedule .event .snippet{
+    height: 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.event-schedule .event .description *{
+    font-size: 1em;
+}
+
+.event-schedule .event .location{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .25em
+}
+
+.sponsors h1{
+    text-align: center;
 }
 
 .sponsors.page {
@@ -360,6 +437,66 @@ body {
 
 .footer div{
     padding: 15px;
+}
+
+@media(max-width: 800px){
+
+    /* .event-schedule{
+        display: flex;
+        flex-direction: row;
+    } */
+    
+    .event-schedule > .events{
+        height: auto;
+        max-height: none;
+    /*    overflow-y: hidden*/
+    }
+    
+    .event-schedule .ss-content{
+        width: auto;
+    }
+    
+    .event-schedule .description.panel{
+        display: none;
+    }
+    
+    .event-schedule .event.selected .snippet{
+        display: none;
+    }
+
+    .event-schedule .event.selected .description{
+        display: block;
+    }
+
+    
+    .event-schedule .event:not(:last-of-type){
+        margin-bottom: .75em;
+    }
+    
+    .event-schedule .event .description{
+        padding-top: 1em;
+        overflow: hidden;
+        display: none;
+    }
+    
+    .event-schedule .event .snippet{
+        height: 1em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .event-schedule .event .description *{
+        font-size: 1em;
+    }
+    
+    .event-schedule .event .location{
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .25em
+    }
+
 }
 
 @media (max-width: 600px) {
