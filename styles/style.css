@@ -133,6 +133,7 @@ body {
     font-size: 18pt;
     font-weight: 600;
     /*    margin: 4% auto*/
+    margin-top: 20px
 }
 
 .date.location {
