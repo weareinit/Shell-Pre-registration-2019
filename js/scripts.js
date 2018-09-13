@@ -86,7 +86,8 @@ let createSchedule = () => {
       $('.event').removeClass('selected');
       $(e.currentTarget).addClass('selected');
 
-      let title = $(e.currentTarget).find('h4').clone();
+      let title = $('<h3>');
+      title.html($(e.currentTarget).find('h4').html());
       let descriptionHTML = $(e.currentTarget).find('.description').html();
       $panel.html(descriptionHTML);
       $panel.prepend(title);

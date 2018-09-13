@@ -63,7 +63,7 @@ var eventsJson = `[
     "description": ""
   },
   {
-    "title": "Snack",
+    "title": "Midnight++ Snack",
     "start": 1536987600,
     "end": 1536989400,
     "room": "PG6 116",
@@ -252,7 +252,7 @@ var eventsJson = `[
     "description": "Who is the cricket master?"
   },
   {
-    "title": "Snack",
+    "title": "Midnight++ Snack",
     "start": 1537074000,
     "end": 1537075800,
     "room": "PG6 116",
