@@ -31,7 +31,7 @@ var eventsJson = `[
     "title": "Dinner",
     "start": 1536975000,
     "end": 1536978600,
-    "room": "PG6 116",
+    "room": "PG6",
     "description": ""
   },
   {
@@ -46,21 +46,21 @@ var eventsJson = `[
     "start": 1536978600,
     "end": 1536980400,
     "room": "PG6 114",
-    "description": "Meet hackers and form teams"
+    "description": "Meet hackers and form teams while coming up with fun and crazy new startup ideas based on simple every day projects"
   },
   {
     "title": "GitHub and Tracks Workshop",
     "start": 1536980400,
     "end": 1536983100,
     "room": "PG6 115",
-    "description": ""
+    "description": "Learn about git and GitHub, version control meant for teams and collaborative open source projects! \\n \\n Presented by GitHub engineers"
   },
   {
-    "title": "Workshop 2",
+    "title": "HTML/CSS",
     "start": 1536984000,
     "end": 1536985800,
     "room": "PG6 115",
-    "description": ""
+    "description": "FIU's Professor Gomez will be teaching the basic on HTML and CSS so that you can build your own websites"
   },
   {
     "title": "Snack",
@@ -70,11 +70,11 @@ var eventsJson = `[
     "description": "Fuel up"
   },
   {
-    "title": "Workshop 3",
+    "title": "Machine Learning",
     "start": 1536989400,
     "end": 1536991200,
     "room": "PG6 115",
-    "description": ""
+    "description": "Learn more about machine learning presented by FIU student and ShellHacks organizer Adrian Perez"
   },
   {
     "title": "Werewolf",
@@ -105,39 +105,53 @@ var eventsJson = `[
     "description": "Unleash your inner Maverick"
   },
   {
-    "title": "Workshop 4",
+    "title": "Wix Code",
     "start": 1537020000,
     "end": 1537021800,
     "room": "PG6 115",
-    "description": ""
+    "description": "Learn more about Wixs editor with developer tools that enables you to perform custom javascript functions and Database queries"
   },
   {
-    "title": "Workshop 5",
+    "title": "Spotify Talk",
     "start": 1537022700,
     "end": 1537024500,
     "room": "PG6 115",
     "description": ""
   },
   {
-    "title": "Workshop 6",
+    "title": "Microsoft Xbox lounge",
+    "start": "1537022700",
+    "end": "1537034400",
+    "room": "PG6 114",
+    "description": "Hang out with some hackers to some laid back gaming at the activities room"
+  },
+  {
+    "title": "Microsoft Azure",
     "start": 1537025400,
     "end": 1537027200,
     "room": "PG6 115",
-    "description": ""
+    "description": "Learn about Microsoft's Azure to help build your applications on their cloud services. \\n \\n Presented by Microsoft"
   },
   {
-    "title": "Workshop 7",
+    "title": "IT Careers talk by Assurant",
     "start": 1537028100,
     "end": 1537029900,
     "room": "PG6 115",
-    "description": ""
+    "description": "Be assured that there will be talks of careers for those of you who are IT Majors! \\n \\n This talk is presented by Assurant, a global provider of risk management products and services"
   },
   {
-    "title": "Workshop 8",
+    "title": "Ionic Workshop by Citrix",
     "start": 1537030800,
     "end": 1537032600,
     "room": "PG6 115",
-    "description": ""
+    "description": "Learn how to make mobile apps with Ionic presented by Citrix"
+  },
+  {
+    "title": "Testing with Spock and Groovy Workshop by Chase",
+    "start": 1537036200,
+    "end": 1537038000,
+    "room": "PG6 115",
+    "description": "Test your might and your Java Programs with testing frameworks Spock and Groovy presented by JP. Morgan Chase"
   },
   {
     "title": "Lunch",
@@ -147,30 +161,37 @@ var eventsJson = `[
     "description": "Enjoy a delicious meal"
   },
   {
-    "title": "Workshop 9",
-    "start": 1537036200,
-    "end": 1537038000,
-    "room": "PG6 115",
-    "description": ""
-  },
-  {
-    "title": "Workshop 10",
+    "title": "Keepin it clean: the art of clean code - a Google talk",
     "start": 1537038900,
     "end": 1537040700,
     "room": "PG6 115",
-    "description": ""
+    "description": "In this talk, Google engineers will give different methods to insure clean and mantainable code"
   },
   {
-    "title": "Workshop 11",
+    "title": "Robotic Process Automation by World Fuel Services",
     "start": 1537041600,
     "end": 1537043400,
     "room": "PG6 115",
-    "description": ""
+    "description": "Learn more about software automation, presented by World Fuel Services"
   },
   {
-    "title": "Workshop 12",
+    "title": "Matrix Creator Workshop by Matrix",
     "start": 1537044300,
     "end": 1537046100,
+    "room": "PG6 115",
+    "description": "Learn how to use Matrix -- a tool specialized for creating IoT projects"
+  },
+  {
+    "title": "IoT challenges - A talk by Akamai",
+    "start": 1537048800,
+    "end": 1537050600,
+    "room": "PG6 115",
+    "description": "Akamai will tackle the different challenges and issues facing IoT today"
+  },
+  {
+    "title": "Oath Workshop TBD",
+    "start": 1537051500,
+    "end": 1537053300,
     "room": "PG6 115",
     "description": ""
   },
@@ -182,18 +203,32 @@ var eventsJson = `[
     "description": "Have fun with a hackathon classic!"
   },
   {
-    "title": "Workshop 13",
-    "start": 1537048800,
-    "end": 1537050600,
+    "title": "Arduino Workshop",
+    "start": 1537056000,
+    "end": 1537057800,
     "room": "PG6 115",
-    "description": ""
+    "description": "Learn how to use Arduinos -- Microcontrollers made for hardware projects, presented by Manny Losada FIU Student and president of IEEE"
   },
   {
-    "title": "Workshop 14",
-    "start": 1537051500,
-    "end": 1537053300,
+    "title": "ReactJS workshop by 4Geeks",
+    "start": 1537058700,
+    "end": 1537060500,
     "room": "PG6 115",
-    "description": ""
+    "description": "Learn more about ReactJS and Javascript with this workshop presented by 4Geeks"
+  },
+  {
+    "title": "Unity Workshop",
+    "start": 1537061400,
+    "end": 1537063200,
+    "room": "PG6 115",
+    "description": "FIU Alumni Jose Maldonado will be teaching the basics of Game Development with the Unity Engine"
+  },
+    {
+    "title": "Java Tech Interview Prep Workshop",
+    "start": 1537065900,
+    "end": 1537067700,
+    "room": "PG6 115",
+    "description": "Crack the coding interview in Java with FIU Student Fernado Serrano"
   },
   {
     "title": "Dinner",
@@ -203,25 +238,18 @@ var eventsJson = `[
     "description": "Good provech!"
   },
   {
-    "title": "Workshop 15",
+    "title": "Swift Workshop",
     "start": 1537056000,
-    "end": 1537057800,
+    "end": 1537067700,
     "room": "PG6 115",
-    "description": ""
+    "description": "Learn about Native iOs Mobile app development with swift presented by FIU Student Davone"
   },
   {
-    "title": "Workshop 16",
-    "start": 1537058700,
-    "end": 1537060500,
+    "title": "Security Workshop by Cisco",
+    "start": 1537056000,
+    "end": 1537067700,
     "room": "PG6 115",
-    "description": ""
-  },
-  {
-    "title": "Workshop 17",
-    "start": 1537061400,
-    "end": 1537063200,
-    "room": "PG6 115",
-    "description": ""
+    "description": "Security topics and lock picking hands on with Cisco"
   },
   {
     "title": "T-Shirt Giveaway & Ice Cream",
@@ -231,13 +259,6 @@ var eventsJson = `[
     "description": "Get the awesome ShellHacks T-shirt and some ice cream"
   },
   {
-    "title": "Workshop 18",
-    "start": 1537065900,
-    "end": 1537067700,
-    "room": "PG6 115",
-    "description": ""
-  },
-  {
     "title": "Code in the Dark",
     "start": 1537070400,
     "end": 1537072200,
@@ -245,11 +266,11 @@ var eventsJson = `[
     "description": "Experience the magic of Shellhacks 2018!"
   },
   {
-    "title": "Ping Pong Tournament",
+    "title": "Soylent Pong",
     "start": 1537070400,
     "end": 1537074000,
     "room": "PG6 114",
-    "description": "Who is the cricket master?"
+    "description": "Who can pong the soylent the best!"
   },
   {
     "title": "Snack",
