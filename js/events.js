@@ -80,13 +80,20 @@ var eventsJson = `[
     "title": "Machine Learning",
     "start": 1536992100,
     "end": 1536993900,
-    "room": "PG6 115",
+    "room": "PG6 112",
     "description": "Learn more about machine learning presented by FIU student and ShellHacks organizer Adrian Perez"
   },
   {
+    "title": "Ladies Storm Hackathons",
+    "start": 1536992100,
+    "end": 1536995700,
+    "room": "PG6 114",
+    "description": "Play fun activities while empowering women in tech"
+  },
+  {
     "title": "Werewolf",
-    "start": 1536994800,
-    "end": 1536998400,
+    "start": 1536995700,
+    "end": 1536999300,
     "room": "PG6 112",
     "description": "See if you can survive the night with a fun game of Werewolf!"
   },
@@ -115,8 +122,15 @@ var eventsJson = `[
     "title": "Wix Code",
     "start": 1537020000,
     "end": 1537023600,
-    "room": "PG6 115",
+    "room": "PG6 112",
     "description": "Learn more about Wix's editor with developer tools that enable you to perform custom javascript functions and database queries"
+  },
+  {
+    "title": "Testing with Spock and Groovy presented by Chase",
+    "start": 1537020000,
+    "end": 1537021800,
+    "room": "PG6 144",
+    "description": "Test your might and learn how to test in java with Spock and Groovy"
   },
   {
     "title": "Spotify Talk",
@@ -182,6 +196,13 @@ var eventsJson = `[
     "description": "Learn more about software automation, presented by World Fuel Services"
   },
   {
+    "title": "Karaoke",
+    "start": 1537038000,
+    "end": 1537042500,
+    "room": "PG6 114",
+    "description": "Sing your heart out with friends with this classic song filled event"
+  },
+  {
     "title": "Matrix Creator Workshop by Matrix Labs",
     "start": 1537040700,
     "end": 1537042500,
@@ -196,11 +217,11 @@ var eventsJson = `[
     "description": "Akamai will tackle the different challenges and issues facing IoT today"
   },
   {
-    "title": "Oath Workshop TBD",
+    "title": "Snack Time",
     "start": 1537043400,
     "end": 1537045200,
     "room": "PG6 112",
-    "description": ""
+    "description": "Snack to your hearts desire"
   },
   {
     "title": "Cup Stacking",
@@ -232,8 +253,8 @@ var eventsJson = `[
   },
     {
     "title": "Java Tech Interview Prep Workshop",
-    "start": 1537054200,
-    "end": 1537056900,
+    "start": 1537030800,
+    "end": 1537033500,
     "room": "PG6 144",
     "description": "Crack the coding interview in Java with FIU Student Fernado Serrano"
   },
@@ -252,6 +273,13 @@ var eventsJson = `[
     "description": "Learn about Native iOS Mobile app development with swift presented by FIU Student Davone"
   },
   {
+    "title": "4square",
+    "start": 1537059600,
+    "end": 1537062300,
+    "room": "PG6 114",
+    "description": "If you call it boxball don't @ me"
+  },
+  {
     "title": "Security Workshop by Cisco",
     "start": 1537061400,
     "end": 1537063200,
@@ -266,18 +294,11 @@ var eventsJson = `[
     "description": "Get the awesome ShellHacks 2018 T-shirt and a little something extra!"
   },
   {
-    "title": "Code in the Dark",
-    "start": 1537070400,
-    "end": 1537072200,
-    "room": "PG6 112",
-    "description": "Hey, who turned the lights out! \\n\\n Try to recreate a web site without previewing it in this crazy coding experience."
-  },
-  {
     "title": "Soylent Pong",
-    "start": 1537070400,
-    "end": 1537074000,
+    "start": 1537066800,
+    "end": 1536984000,
     "room": "PG6 114",
-    "description": "Who can pong the soylent the best!"
+    "description": "It's like that other pong but you'll be able to walk properly afterwards"
   },
   {
     "title": "Midnight++ Snack",
@@ -295,8 +316,8 @@ var eventsJson = `[
   },
   {
     "title": "Mechanical Keyboard Meetup",
-    "start": 1537079400,
-    "end": 1537081200,
+    "start": 1536984000,
+    "end": 1536986700,
     "room": "PG6 114",
     "description": "Gather up and talk all things mechanical keyboards"
   },
