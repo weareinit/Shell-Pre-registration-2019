@@ -370,6 +370,10 @@ body {
     max-width: none;
 }
 
+.partner.asi, .partner.ieee img{
+    filter: invert(1)
+}
+
 /*Company Specific Fixes*/
 
 
