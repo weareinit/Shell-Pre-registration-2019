@@ -168,13 +168,6 @@ var eventsJson = `[
     "description": "Learn how to make mobile apps with Ionic presented by Citrix"
   },
   {
-    "title": "Testing with Spock and Groovy Workshop by Chase",
-    "start": 1537031700,
-    "end": 1537033500,
-    "room": "PG6 144",
-    "description": "Test your might and your Java Programs with testing frameworks Spock and Groovy presented by JP. Morgan Chase"
-  },
-  {
     "title": "Lunch",
     "start": 1537034400,
     "end": 1537036200,
@@ -316,8 +309,8 @@ var eventsJson = `[
   },
   {
     "title": "Mechanical Keyboard Meetup",
-    "start": 1536984000,
-    "end": 1536986700,
+    "start": 1537070400,
+    "end": 1537073100,
     "room": "PG6 114",
     "description": "Gather up and talk all things mechanical keyboards"
   },
