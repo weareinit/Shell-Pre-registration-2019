@@ -1,3 +1,9 @@
+:root{
+    --primary-color: #ff1d8e;
+    --secondary-color: #0fd3cd;
+    --tertiary-color: #001e7f;
+}
+
 body{
     font-size: 16px
 }
@@ -12,6 +18,16 @@ h2{
     font-size: 2.5em;
     margin-bottom: .3em;
 }
+
+h3{
+    font-size: 2em;
+    margin-bottom: .275em;
+}
+
+h4{
+    font-size: 1.75em;
+    margin-bottom: .25em;
+}   
 
 p{
     margin-bottom: 1em;
@@ -87,6 +103,12 @@ p{
     /*     background: hsla(327, 80%, 44%, 1); */
 }
 
+.signup.open{
+    color: var(--tertiary-color);
+    background: var(--secondary-color);
+    font-weight: bold
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -100,6 +122,12 @@ body {
     padding: 2%
 }
 
+
+.shellhacks.logo{
+    width: 100%;
+}
+
+
 .date {
     text-align: center;
     font-size: 18pt;
@@ -110,7 +138,7 @@ body {
 .date.location {
     margin: 2% auto 5%;
     font-size: 14pt;
-    font-weight: 200;
+    font-weight: bold;
 }
 
 .links {
@@ -155,6 +183,13 @@ body {
     padding: 50px;
 }
 
+.page.centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .page.full {
     min-height: 100vh;
 }
@@ -164,14 +199,118 @@ body {
     max-width: 960px;
 }
 
+.organizers{
+/*    background: var(--tertiary-color);*/
+    background: white;
+    color: black;
+}
+
+.organizers h1{
+    color: var(--tertiary-color)
+}
+
+.organizers .blurb{
+    flex-shrink: 2;
+    font-size: 120%
+}
+
+.organizers .contents{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.organizers .upe-logo{
+    width: 100%;
+    height: auto;
+    transform: scale(.8)
+}
+
+.organizers .logo{
+    flex-shrink: 1
+}
+
+.organizers a{
+    color: var(--tertiary-color);
+}
+
+.organizers a:visited{
+    color: var(--primary-color);
+}
+
+.event-schedule{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start
+}
+
+.event-schedule em{
+    font-style: italic;
+}
+
+.event-schedule > *{
+    max-height: 520px;
+    overflow-y: hidden
+}
+
+.event-schedule .events{
+    flex-basis: 100%;
+    width: 65%;
+    height: 520px;
+}
+
+.event-schedule .description.panel{
+    flex-basis: 80%;
+    padding: 15px;
+    margin-left: 35px;
+    background-color: white;
+    color: black;
+    height: auto;
+    overflow: auto
+}
+
+.event-schedule .event{
+
+    background: linear-gradient(135deg, #001e7f 0%,#ff1d8e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+    padding: 1em;
+    cursor: pointer
+}
+
+.event-schedule .event:not(:last-of-type){
+    margin-bottom: .75em;
+}
+
+.event-schedule .event .description{
+    padding-top: 1em;
+    overflow: hidden;
+    display: none;
+}
+
+.event-schedule .event .snippet{
+    height: 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.event-schedule .event .description *{
+    font-size: 1em;
+}
+
+.event-schedule .event .location{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .25em
+}
+
+.sponsors h1{
+    text-align: center;
+}
 
 .sponsors.page {
     background: linear-gradient(to right bottom, #12c2e9, #c471ed, #f64f59);
     background-size: 115% 115%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .sponsors img {
@@ -187,15 +326,55 @@ body {
     align-items: center;
 }
 
-.faq {
-    background: linear-gradient(to bottom left, #8e2de2, #4a00e0);
-    display: flex;
-    flex-direction: column;
-    align-items: center
+
+.sponsors.current{
+    background: white;
 }
 
-.faq p{
-    font-size: 18px;
+.sponsors.current h1{
+    color: var(--tertiary-color)
+}
+
+.sponsors.current .contents > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.sponsors.current img{
+    min-width: 150px
+}
+
+.sponsors.current .conch img{
+    width: 520px;
+    max-width: none;
+}
+
+.sponsors.current .cone img{
+    width: 300px;
+    max-width: none;
+}
+
+.sponsors.current .scallop img{
+    width: 250px;
+    max-width: none;
+}
+
+.sponsors.current .sand-dollar img{
+    width: 200px;
+    max-width: none;
+}
+
+/*Company Specific Fixes*/
+
+
+.faq {
+    background: linear-gradient(to bottom left, #8e2de2, #4a00e0);
+    font-size: 18px
 }
 
 .faq a{
@@ -206,7 +385,130 @@ body {
     color: orange;
 }
 
-@media (max-width: 500px) {
+.faq strong{
+    font-weight: bold
+}
+
+.faq ol{
+    list-style: decimal;
+    list-style-position: inside
+}
+
+.faq li{
+    padding-bottom: 10px;
+}
+
+.faq h2{
+    word-wrap: break-word;
+}
+
+.faq .entry {
+    padding-bottom: 1em;
+}
+
+.faq label{
+    cursor: pointer
+}
+
+.faq .response{
+    display: none;
+}
+
+.faq .checkbox {
+    display: none
+}
+
+.faq .checkbox:not(:checked) ~ label h2:before{
+    content: "+ ";
+}
+
+.faq .checkbox:checked ~ label h2:before{
+    content: "\2013  ";
+}
+
+
+.faq .checkbox:checked ~ .response{
+    display: block
+}
+
+.footer{
+    color: black;
+}
+
+.footer div{
+    padding: 15px;
+}
+
+@media(max-width: 800px){
+
+    /* .event-schedule{
+        display: flex;
+        flex-direction: row;
+    } */
+    
+    .event-schedule > .events{
+        height: auto;
+        max-height: none;
+    /*    overflow-y: hidden*/
+    }
+    
+    .event-schedule .ss-content{
+        width: auto;
+    }
+    
+    .event-schedule .description.panel{
+        display: none;
+    }
+    
+    .event-schedule .event.selected .snippet{
+        display: none;
+    }
+
+    .event-schedule .event.selected .description{
+        display: block;
+    }
+
+    
+    .event-schedule .event:not(:last-of-type){
+        margin-bottom: .75em;
+    }
+    
+    .event-schedule .event .description{
+        padding-top: 1em;
+        overflow: hidden;
+        display: none;
+    }
+    
+    .event-schedule .event .snippet{
+        height: 1em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .event-schedule .event .description *{
+        font-size: 1em;
+    }
+    
+    .event-schedule .event .location{
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .25em
+    }
+
+}
+
+@media (max-width: 600px) {
+    
+    h1{
+        font-size: 2.25em;
+    }
+    
+    h2{
+        font-size: 1.7em;
+    }
+    
     .sponsors .logos {
         flex-direction: column
     }
@@ -218,5 +520,19 @@ body {
     .sponsors a {
         margin-bottom: 55px;
     }
+    
+    .sponsors.current > div img{
+        width: 100% !important;
+    }
+    
+    .organizers .contents{
+        flex-direction: column
+    }
+    
+    .organizers .upe-logo{
+        transform: none;
+    }
+    
+    
 
 }
