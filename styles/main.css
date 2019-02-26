@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+:root {
+	--primary-color: #ff1d8e;
+	--secondary-color: #0fd3cd;
+	--tertiary-color: #001e7f;
+}
+
+html,
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	background: var(--secondary-color);
+}
+
+* {
+	transition: 0.2s ease all;
+}
+
+#registerPopup {
+	transition: 0.3s ease all;
+	position: absolute;
+	top: 0;
+
+	height: 100vh;
+	width: 100vw;
+	opacity: 0;
+	pointer-events: none;
+	background: var(--primary-color);
+	color: white;
+	font-size: 16px;
+
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+#registerForm {
+	margin: 0 auto;
+	background: var(--primary-color);
+	padding: 15px 0px;
+
+	overflow-y: scroll;
+	height: 100vh;
+	width: 100vw;
+}
+
+#registerForm label {
+	text-align: left;
+	margin: 0 10px 0 20px;
+}
+
+#registerForm>div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15px;
+}
+
+#registerForm>div>label {
+	align-self: baseline;
+	margin: 7px 0;
+	margin-left: calc(50vw - 200px);
+}
+
+input,
+select {
+	margin: 10px 0;
+	height: 30px !important;
+	-webkit-border-radius: 30px;
+	border-radius: 20px;
+	font-size: 16px;
+	background-color: white;
+	color: black;
+	border: solid 1px transparent;
+	outline: none;
+	padding: 0 10px;
+	max-width: 420px;
+	width: 100%;
+	margin: 0 !important;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/* add custom arrow */
+	background: white url("../imgs/chevron.svg") no-repeat;
+	background-position: calc(100% - 10px) 5px;
+	background-size: 20px;
+	padding-right: 35px;
+	cursor: pointer;
+}
+
+select::-ms-expand {
+	display: none;
+	/* hide the default arrow in ie10 and ie11 */
+}
+
+@media only screen and (max-width: 420px) {
+
+	label {
+		margin: 7px 0 !important;
+	}
+}
+
+.container {
+	font-family: "Montserrat", sans-serif;
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	font-size: 300%;
+	color: #1d1e22;
+}
+
+.featuring {
+	font-weight: 700;
+	font-size: 20px;
+	padding-right: 10px;
+	color: #252628;
+}
+
+.spotify {
+	height: 30px;
+	width: auto;
+}
+
+.cohost {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.details {
+	margin-bottom: 5%;
+	font-size: 15px;
+	text-align: center;
+}
+
+.buttonsContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 10%;
+}
+
+.buttons {
+	margin: 10px;
+	height: 45px !important;
+	width: 200px !important;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	font-size: 15px;
+	font-weight: 700;
+	background-color: black;
+	color: white;
+	border: solid 1px transparent;
+	outline: none;
+	cursor: pointer;
+}
+
+.buttons:hover {
+	background-color: pink;
+}
