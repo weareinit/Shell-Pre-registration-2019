@@ -432,7 +432,7 @@ body {
 	background: rgba(0, 0, 0, 0.5);
 	padding: 10px 5px 5px;
 	border-radius: 0px 10px 0 0;
-	display: hidden;
+	display: none;
 	/* JEHF! CESAR SAYS THIS ISN'T IMPORTANT! */
 }
 
