@@ -177,6 +177,7 @@ body {
 	bottom: 0;
 	left: 0;
 	width: 1920px;
+	min-width: 100%;
 	z-index: 0;
 }
 
@@ -190,6 +191,7 @@ body {
 	position: absolute;
 	bottom: -57px;
 	left: 0;
+	min-width: 100%;
 }
 
 
@@ -292,19 +294,6 @@ body {
 	z-index: 2;
 }
 
-@keyframes shell {
-	0% {
-		bottom: 0px;
-	}
-
-	50% {
-		bottom: -250px;
-	}
-
-	100% {
-		bottom: 0px;
-	}
-}
 
 @keyframes starfish {
 
@@ -334,9 +323,10 @@ body {
 }
 
 #starfish {
-	left: 15%;
+	left: 15vw;
 	margin-bottom: 13%;
 	width: 130px;
+	min-width: inherit;
 	z-index: 1;
 	animation: starfish 6s ease infinite;
 }
@@ -355,6 +345,7 @@ body {
 #shell {
 	left: 35%;
 	width: 80px;
+	min-width: inherit;
 	margin-bottom: 3.3%;
 	bottom: -250px;
 	z-index: 1;
@@ -380,8 +371,8 @@ body {
 }
 
 #surfboard {
-	background: transparent url('../imgs/frontpage/surfboard.svg') center no-repeat;
-	background-size: 260px 370px;
+	background: transparent url('../imgs/frontpage/surfboard-full.svg') center no-repeat;
+	background-size: 100% 100%;
 	width: 260px;
 	height: 370px;
 	right: -10px;
@@ -392,10 +383,11 @@ body {
 }
 
 #surfboard > * {
-	width: 32px;
+	width: 30px;
 	pointer-events: auto;
 	cursor: pointer;
 	position: absolute;
+	opacity: 0;
 }
 
 #surfboard > *:hover {
@@ -403,29 +395,29 @@ body {
 }
 
 #upe {
-	left: 21%;
-	bottom: 90px;
-	width: 125px !important;
+	left:71px;
+	bottom: 76px;
+	width: 115px !important;
 }
 
 #discord {
-	left: 72px;
-	bottom: 37px;
+	left: 83px;
+	bottom: 30px;
 }
 
 #facebook {
-	left: 110px;
-	bottom: 58px;
+	left: 120px;
+	bottom: 47px;
 }
 
 #twitter {
-	left: 149px;
-	bottom: 77px;
+	left: 154px;
+	bottom: 65px;
 }
 
 #instagram {
-	left: 187px;
-	bottom: 97px;
+	left: 190px;
+	bottom: 82px;
 }
 
 /*End background objects*/
@@ -530,9 +522,50 @@ body {
 }
 
 
+@media only screen and (max-width: 1800px) {
+	#seat1{
+		width: 290px;
+	}
+	#seat2{
+		width: 220px;
+	}
+	#beachball{
+		left: 40%;
+		top: 60px;
+		width: 90px;
+	}
+	#sandals{
+		right: 7%;
+		top: 480px;
+		width: 115px;
+	}
+	#starfish{
+		left: 5%;
+		width: 100px;
+		margin-bottom: 265px;
+	}
+	#surfboard{
+		width: 230px;
+		height: 325px;
+	}
+	#shell{
+		left:15%;
+		width: 60px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	
+	.buttonsContainer{
+		flex-direction: column;
+	}
+}
 
-@media only screen and (max-width: 800px) {
-
+@media only screen and (max-width: 769px) {
+	
+	#seat2,#beachball{
+		display: none;
+	}
+	
 	#brand {
 		margin-bottom: -7px;
 	}
@@ -546,21 +579,39 @@ body {
 		padding-right: 10px;
 		width: 25vw;
 	}
-
+	
+	#seat1{
+		width: 300px;
+	}
+	
+	#sandals{
+		top: 170px;
+		right: 60px;
+		width: 110px;
+	}
+	#shell{
+		left:420px;
+	}
+	
+	#surfboard{
+		width: 200px;
+		height: 260px;
+	}
 	.buttonsContainer > .buttons {
 		height: 40px;
-		width: 240px;
+		width: 190px;
+		padding: 0px;
 	}
 	#shore{
 		margin-bottom: -30px;
 		left: -50%;
 	}
 	#details{
-		font-size: 18px;
+		font-size: 15px;
 		margin-bottom: 15px;
 	}
 	#starfish{
-		left: 250px;
+		left: 350px;
 		width: 100px;
 		margin-bottom: 265px;
 	}
