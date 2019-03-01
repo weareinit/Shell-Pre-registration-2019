@@ -100,7 +100,107 @@ oMMMMMMMMMMMMMMMMMNo  .yNMMMMMMMMMMMMMMMMNy. .sMMMMMMMMMMMMMMMMMMMMMMMMMMMM+
 </head>
 
 <body>
-    <h1>Hello, World!</h1>
+    <div class="container" id="container">
+        <h1 class="logo"> ShellHacks</h1>
+
+        <div class="cohost">
+            <p class="featuring">featuring</p>
+            <img class="spotify" src="imgs/logos/2019/Spotifylogo.png" />
+        </div>
+
+        <p class="details">September 20-22, 2019<br />Florida International University<br />Ocean Bank Arena</p>
+
+        <div class="buttonsContainer">
+            <button class="buttons" id="register" type="buttom">Pre-Register</button>
+            <button class="buttons" type="button" id="sponsor">Sponsor</button>
+        </div>
+
+        <div id="registerPopup">
+            <form id="registerForm" action="">
+                <div>
+                    <label style="font-size: 33px;font-weight: bold;margin: auto auto;">Pre-Registration</label>
+                </div>
+                <div>
+                    <label>First Name</label>
+                    <input type="text" id="firstname">
+                </div>
+
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" id="lastname">
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div>
+                    <label>University</label>
+                    <select>
+                <option value="Florida International University">Florida International University</option>
+                <option value="Hell">Hell</option>
+                <option value="Heaven">Heaven</option>
+              </select>
+                </div>
+
+                <div>
+                    <label>Workshops you'd like to attend</label>
+                    <input type="text" id="field1">
+                </div>
+
+                <div>
+                    <label>Free swag you'd like to get</label>
+                    <input type="text" id="field2">
+                </div>
+
+                <div>
+                    <label>Equipment you'd like to use</label>
+                    <input type="text" id="field3">
+                </div>
+
+                <div>
+                    <label>Activities you'd like to participate&nbsp;in</label>
+                    <input type="text" id="field3">
+                </div>
+
+                <button id="submit" class="buttons">Submit</button>
+                <button id="cancel" class="buttons" type="button">Cancel</button>
+
+            </form>
+        </div>
+
+        <div id="footer">
+            <span>Organized by <a href="http://upefiu.io">Upsilon Pi Epsilon</a>, at Florida International University</span>
+            <span>Copyright © Upsilon Pi Epsilon 2019</span>
+        </div>
+    </div>
+
+    <script>
+        document.body.onload = function() {
+            register = document.getElementById("register")
+            popup = document.getElementById("registerPopup")
+            cancelBtn = document.getElementById("cancel")
+            submitBtn = document.getElementById("submit")
+
+            function showPopup() {
+                popup.style.opacity = '1'
+                popup.style.pointerEvents = 'auto'
+            }
+
+            function hidePopup() {
+                popup.style.opacity = '0'
+                popup.style.pointerEvents = 'none'
+            }
+
+            function googleAPI() {
+                alert("Implement this")
+            }
+            register.addEventListener("click", showPopup)
+            cancelBtn.addEventListener("click", hidePopup)
+            submitBtn.addEventListener("click", googleAPI)
+        }
+    </script>
 </body>
 
 </html>
