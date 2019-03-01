@@ -329,5 +329,54 @@ sponsorJson =
     "tier": "sand-dollar",
     "url": "http://insomniacookies.com",
     "logo": "insomnia-cookies-logo.svg"
+  },
+  {
+    "name": "Refresh Miami",
+    "tier": "partner",
+    "url": "https://refreshmiami.com",
+    "logo": "refresh-miami-logo.svg"
+  },
+  {
+    "name": "The Lab Miami",
+    "tier": "partner",
+    "url": "http://thelabmiami.com",
+    "logo": "the-lab-miami-logo.svg"
+  },
+  {
+    "name": "FIU College of Engineering",
+    "tier": "partner",
+    "url": "http://coe.fiu.edu",
+    "logo": "fiu-engineering-logo.svg"
+  },
+  {
+    "name": "FIU Honors Engineering",
+    "tier": "partner",
+    "url": "http://honors.fiu.edu",
+    "logo": "honors-college-logo.svg"
+  },
+  {
+    "name": "FIU School of Engagement",
+    "tier": "partner",
+    "url": "http://engagement.fiu.edu",
+    "logo": "fiu-engagement-logo.svg"
+  },
+  {
+    "name": "WiCS",
+    "tier": "partner",
+    "url": "http://wicsatfiu.weebly.com/",
+    "logo": "wics-logo.svg"
+  },
+  {
+    "name": "SWE",
+    "tier": "partner",
+    "url": "https://swe.fiu.edu/",
+    "logo": "swe-logo.svg"
+  },
+  {
+    "name": "IEEE",
+    "tier": "partner",
+    "url": "https://ieee.org/",
+    "logo": "ieee-logo.png"
   }
+
 ]`;
