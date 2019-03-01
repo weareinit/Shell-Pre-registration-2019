@@ -91,17 +91,17 @@
             <img class="spotify" src="imgs/frontpage/spotify.svg" />
         </div>
 
-        <p id="details" class="fade-in three">September 20-22, 2019<br />Florida International University<br />Ocean Bank Arena</p>
+        <p id="details" class="fade-in three">
+            September 20-22, 2019<br />Florida International University<br />Ocean Bank Arena</p>
+        <p id="countDown" class="fade-in three"></p>
 
         <div class="buttonsContainer fade-in three">
             <button class="buttons" id="register" type="button">
-<!--				<span>Pre-Register</span>-->
 				<img src="imgs/frontpage/preregister.svg">
 			</button>
-            <button class="buttons" id="sponsor" type="button">
-<!--				<span>Sponsor</span>-->
+            <!-- <button class="buttons" id="sponsor" type="button">
 				<img src="imgs/frontpage/sponsor.svg">
-			</button>
+			</button> -->
         </div>
 
         <div id="registerPopup">
@@ -162,35 +162,62 @@
 
 
     <div id="footer">
-        <span>Copyright © <a href="https://upe.cs.fiu.edu/" style="color:#F7981D; text-align: center;" >Upsilon Pi Epsilon at FIU</a> 2019</span>
+        <div id="copyright">©
+            <a href="https://upe.cs.fiu.edu/">Upsilon Pi Epsilon at FIU</a>
+        </div>
     </div>
 
 
     <script>
+        var countDownDate = new Date("Mar 4, 2019 14:00:00").getTime();
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("countDown").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countDown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
         /* document.body.onload = function() {
-                                                            register = document.getElementById("register")
-                                                            popup = document.getElementById("registerPopup")
-                                                            cancelBtn = document.getElementById("cancel")
-                                                            submitBtn = document.getElementById("submit")
+                                                                    register = document.getElementById("register")
+                                                                    popup = document.getElementById("registerPopup")
+                                                                    cancelBtn = document.getElementById("cancel")
+                                                                    submitBtn = document.getElementById("submit")
 
-                                                            function showPopup() {
-                                                                popup.style.opacity = '1'
-                                                                popup.style.pointerEvents = 'auto'
-                                                            }
+                                                                    function showPopup() {
+                                                                        popup.style.opacity = '1'
+                                                                        popup.style.pointerEvents = 'auto'
+                                                                    }
 
-                                                            function hidePopup() {
-                                                                popup.style.opacity = '0'
-                                                                popup.style.pointerEvents = 'none'
-                                                            }
+                                                                    function hidePopup() {
+                                                                        popup.style.opacity = '0'
+                                                                        popup.style.pointerEvents = 'none'
+                                                                    }
 
-                                                            function googleAPI() {
-                                                                alert("Implement this")
-                                                            }
+                                                                    function googleAPI() {
+                                                                        alert("Implement this")
+                                                                    }
 
-                                                            register.addEventListener("click", showPopup)
-                                                            cancelBtn.addEventListener("click", hidePopup)
-                                                            submitBtn.addEventListener("click", googleAPI)
-                                                	   */
+                                                                    register.addEventListener("click", showPopup)
+                                                                    cancelBtn.addEventListener("click", hidePopup)
+                                                                    submitBtn.addEventListener("click", googleAPI)
+                                                        	   */
     </script>
 
 </body>
