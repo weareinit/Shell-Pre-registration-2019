@@ -14,7 +14,7 @@ sponsorJson =
   },
   {
     "name": "Microsoft",
-    "tier": "cone",
+    "tier": "conch",
     "url": "http://microsoft.com",
     "logo": "microsoft-logo.svg"
   },
