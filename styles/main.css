@@ -525,6 +525,9 @@ body {
 }
 
 @media only screen and (max-width: 769px) {
+    #footer {
+        margin: 10px;
+    }
     #seat2,
     #beachball {
         display: none;
