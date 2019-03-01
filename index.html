@@ -1,206 +1,167 @@
-<!--
-                                                    .mNy:`
-                                                   :NMMMMNd/`
-                                                  +MMMMMMMMMNh/
-                                                 sMMMMMMMMMMMMMNs`
-                                                yMMMMMMMMMMMMMMMMNy-
-                                              `hMMMMMMMMMMMMMMMMMMMMy`
-                                             .dMMMMMMMMMMMMMMMMMMMMMMNo
-                                            -NMMMMMMMMMMMMMMMMMMMMMMMMMm-
-                                           :NMMMMMMMMMMMMMMMMMMMMMMMMMMMM+
-                                          +MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy
-                                         sMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy
-                                        hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy
-                                      `mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM+
-                        `....        .NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM-
-                `:oydmMMMMMMMMMmdy+:` -+hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMy
-            `/ymMMMMMMMMMMMMMMMMMMMMMNs: `+dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM-
-         `/hMMMMMMMMMMMMMMMMMMMMMMMMMMMMNy- -yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs
-       `+NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh- :NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm
-      /NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs `hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-    `hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd` hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-   -mMMMMMMMMMMMMMMMMMNy+:-````-/ohNMMMMMMMMMMMh `mMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-  .NMMMMMMMMMMMMMMMMy-  `-/ooo+:.  `/mMMMMMMMMMM+ :MMMMMMMMMMMMMMMMMMMMMMMMMMMMM
- `NMMMMMMMMMMMMMMMd.  /hMMMMMMMMMNs` `sMMMMMMMMMm  mMMMMMMMMMMMMMMMMMMMMMMMMMMMM
- hMMMMMMMMMMMMMMMy  -mMMMd+:shmMMMMN-  sMMMMMMMMM- oMMMMMMMMMMMMMMMMMMMMMMMMMMMh
-:MMMMMMMMMMMMMMMN` -NMMM+ +MMMMMMMMMm  `MMMMMMMMM- oMMMMMMMMMMMMMMMMMMMMMMMMMMMo
-hMMMMMMMMMMMMMMMo  dMMMh `MMMMMMMMMMM`  MMMMMMMMM. sMMMMMMMMMMMMMMMMMMMMMMMMMMM.
-MMMMMMMMMMMMMMMM.  MMMMy `mMMMMMMMMMs  :MMMMMMMMh `mMMMMMMMMMMMMMMMMMMMMMMMMMMh
-MMMMMMMMMMMMMMMM:  MMMMm` .yMMMMMMm+  .NMMMMMMMN- +MMMMMMMMMMMMMMMMMMMMMMMMMMM.
-MMMMMMMMMMMMMMMMs  yMMMMm:  `-///.  `+NMMMMMMMM+ .NMMMMMMMMMMMMMMMMMMMMMMMMMMs
-MMMMMMMMMMMMMMMMM- `dMMMMMms/-...:+hNMMMMMMMMN/ .mMMMMMMMMMMMMMMMMMMMMMMMMMMm
-mMMMMMMMMMMMMMMMMN: `yMMMMMMMMMMMMMMMMMMMMMMy. :mMMMMMMMMMMMMMMMMMMMMMMMMMMN-
-oMMMMMMMMMMMMMMMMMNo  .yNMMMMMMMMMMMMMMMMNy. .sMMMMMMMMMMMMMMMMMMMMMMMMMMMM+
-`MMMMMMMMMMMMMMMMMMMm+` `:ohNMMMMMMMNmyo-` :yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo
- oMMMMMMMMMMMMMMMMMMMMMdo:`  ``.::.`` `-+yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo
-  hMMMMMMMMMMMMMMMMMMMMMMMMNdhsssssydmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo
-   hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN/
-    yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd.
-     +NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN+
-      .hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs.
-        /mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs.
-          /hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm+`
-            .odMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMms-
-               .odNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd+-
-                   :+ymMMMMMMMMMMMMMMMMMMMMMMMMMMMmy+-`
-                        -/osydmMMMMMMMMMMNmmyso/-`
--->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>ShellHacks 2018 &mdash; Sept 14 &ndash; 16</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css?v=1.1.1">
-    <link rel="stylesheet" href="styles/scrollbar.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
-
-    <!--  Gotta make sure this is set so things look good on mobile  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-    <link rel="icon" href="imgs/sh-square.png">
-    <link rel="apple-touch-icon" href="imgs/sh-square.png">
-
-    <meta name="msapplication-TileColor" content="#ff1f8c">
-    <meta name="theme-color" content="#ff1f8c">
-
-    <!--BEGIN Schema tags-->
-    <meta itemprop="name" content="ShellHacks">
-    <meta itemprop="description" content="A Miami-based hackathon run by FIU's UPE Chapter and open to all hackers, both local and abroad!">
-    <meta itemprop="image" content="https://shellhacks.net/imgs/sh-square.png">
-    <!--END Schema tags-->
-
-    <!--BEGIN Opengraph-->
-    <meta property="og:site_name" content="ShellHacks">
-    <meta property="og:url" content="https://shellhacks.net">
-    <meta property="og:description" content="ShellHacks, Florida International University's Fall Hackathon!">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://shellhacks.net/imgs/opengraph.png">
-    <meta property="og:image:width" content="734">
-    <meta property="og:image:height" content="367">
-    <!--END Opengraph-->
-
-    <!--BEGIN Twitter Card-->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@ShellHacks2017">
-    <meta name="twitter:title" content="ShellHacks">
-    <meta name="twitter:description" content="ShellHacks, Florida International University's Fall Hackathon!">
-    <meta name="twitter:image" content="https://shellhacks.net/imgs/opengraph.png">
-    <!--END Twitter Card-->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
-    <script src="js/sponsors.js"></script>
-    <script src="js/events.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-scrollbar@0.4.0/simple-scrollbar.min.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ShellHacks</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
+	<script src="js/main.js"></script>
 </head>
 
 <body>
-    <div class="container" id="container">
-        <h1 class="logo"> ShellHacks</h1>
 
-        <div class="cohost">
-            <p class="featuring">featuring</p>
-            <img class="spotify" src="imgs/logos/2019/Spotifylogo.png" />
-        </div>
+	<!--Background & decoration objects-->
+	<div class="container" id="backgroundObjects">
 
-        <p class="details">September 20-22, 2019<br />Florida International University<br />Ocean Bank Arena</p>
+		<img id="seat1" class="decor" src="imgs/frontpage/seat1.svg">
+		<img id="seat2" class="decor" src="imgs/frontpage/seat2.svg">
 
-        <div class="buttonsContainer">
-            <button class="buttons" id="register" type="buttom">Pre-Register</button>
-            <button class="buttons" type="button" id="sponsor">Sponsor</button>
-        </div>
+		<img id="beachball" class="decor" src="imgs/frontpage/beachball.svg">
+		<img id="sandals" class="decor" src="imgs/frontpage/sandals.svg">
 
-        <div id="registerPopup">
-            <form id="registerForm" action="">
-                <div>
-                    <label style="font-size: 33px;font-weight: bold;margin: auto auto;">Pre-Registration</label>
-                </div>
-                <div>
-                    <label>First Name</label>
-                    <input type="text" id="firstname">
-                </div>
+		<div id="surfboard" class="decor">
+			<img id="upe" onclick="window.open('http://upefiu.io','_blank');" src="imgs/frontpage/upe.svg" alt="">
+			<img id="discord" onclick="window.open('https://discord.gg/upefiu','_blank');" src="imgs/frontpage/discord.svg" alt="">
+			<img id="facebook" onclick="window.open('https://www.facebook.com/upefiu/','_blank');" src="imgs/frontpage/facebook.svg" alt="">
+			<img id="twitter" onclick="window.open('https://twitter.com/upefiu','_blank');" src="imgs/frontpage/twitter.svg" alt="">
+			<img id="instagram" onclick="window.open('https://www.instagram.com/upefiu/','_blank');" src="imgs/frontpage/instagram.svg" alt="">
+		</div>
+		
+		<div id="shore">
+			<div id="wetsand">
+				<img id="wetsand3" class="decor" src="imgs/frontpage/wetsand3.svg">
+				<img id="wetsand2" class="decor" src="imgs/frontpage/wetsand2.svg">
+				<img id="starfish" class="decor" src="imgs/frontpage/starfish.svg">
+				<img id="wetsand1" class="decor" src="imgs/frontpage/wetsand1.svg">
+			</div>
+			<div id="surf">
+				<img id="surf3" class="decor" src="imgs/frontpage/surf3.svg">
+				<img id="surf2" class="decor" src="imgs/frontpage/surf2.svg">
+				<img id="shell" class="decor" src="imgs/frontpage/shell.svg">
+				<img id="surf1" class="decor" src="imgs/frontpage/surf1.svg">
+			</div>
+		</div>
+		
 
-                <div>
-                    <label>Last Name</label>
-                    <input type="text" id="lastname">
-                </div>
+	</div>
 
-                <div>
-                    <label>Email</label>
-                    <input type="email" id="email">
-                </div>
 
-                <div>
-                    <label>University</label>
-                    <select>
-                <option value="Florida International University">Florida International University</option>
-                <option value="Hell">Hell</option>
-                <option value="Heaven">Heaven</option>
-              </select>
-                </div>
+	<!-- Main content -->
+	<div class="container" id="main">
 
-                <div>
-                    <label>Workshops you'd like to attend</label>
-                    <input type="text" id="field1">
-                </div>
+		<img id="brand" class="fade-in one" src="imgs/frontpage/shellhacks.svg" alt="">
 
-                <div>
-                    <label>Free swag you'd like to get</label>
-                    <input type="text" id="field2">
-                </div>
+		<div class="cohost fade-in two">
+			<img class="featuring" src="imgs/frontpage/featuring.svg" />
+			<img class="spotify" src="imgs/frontpage/spotify.svg" />
+		</div>
 
-                <div>
-                    <label>Equipment you'd like to use</label>
-                    <input type="text" id="field3">
-                </div>
+		<p id="details" class="fade-in three">September 20-22, 2019<br />Florida International University<br />Ocean Bank Arena</p>
 
-                <div>
-                    <label>Activities you'd like to participate&nbsp;in</label>
-                    <input type="text" id="field3">
-                </div>
+		<div class="buttonsContainer fade-in three">
+			<button class="buttons" id="register" type="button">
+<!--				<span>Pre-Register</span>-->
+				<img src="imgs/frontpage/preregister.svg">
+			</button>
+			<button class="buttons" id="sponsor" type="button">
+<!--				<span>Sponsor</span>-->
+				<img src="imgs/frontpage/sponsor.svg">
+			</button>
+		</div>
 
-                <button id="submit" class="buttons">Submit</button>
-                <button id="cancel" class="buttons" type="button">Cancel</button>
+		<div id="registerPopup">
+			<form id="registerForm" action="">
+				<div>
+					<label style="font-size: 33px;font-weight: bold;margin: auto auto;">Pre-Registration</label>
+				</div>
+				<div>
+					<label>First Name</label>
+					<input type="text" id="firstname">
+				</div>
 
-            </form>
-        </div>
+				<div>
+					<label>Last Name</label>
+					<input type="text" id="lastname">
+				</div>
 
-        <div id="footer">
-            <span>Organized by <a href="http://upefiu.io">Upsilon Pi Epsilon</a>, at Florida International University</span>
-            <span>Copyright © Upsilon Pi Epsilon 2019</span>
-        </div>
-    </div>
+				<div>
+					<label>Email</label>
+					<input type="email" id="email">
+				</div>
 
-    <script>
-        document.body.onload = function() {
-            register = document.getElementById("register")
-            popup = document.getElementById("registerPopup")
-            cancelBtn = document.getElementById("cancel")
-            submitBtn = document.getElementById("submit")
+				<div>
+					<label>University</label>
+					<select>
+						<option value="Florida International University">Florida International University</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
 
-            function showPopup() {
-                popup.style.opacity = '1'
-                popup.style.pointerEvents = 'auto'
-            }
+				<div>
+					<label>Workshops you'd like to attend</label>
+					<input type="text" id="field1">
+				</div>
 
-            function hidePopup() {
-                popup.style.opacity = '0'
-                popup.style.pointerEvents = 'none'
-            }
+				<div>
+					<label>Free swag you'd like to get</label>
+					<input type="text" id="field2">
+				</div>
 
-            function googleAPI() {
-                alert("Implement this")
-            }
-            register.addEventListener("click", showPopup)
-            cancelBtn.addEventListener("click", hidePopup)
-            submitBtn.addEventListener("click", googleAPI)
-        }
-    </script>
+				<div>
+					<label>Equipment you'd like to use</label>
+					<input type="text" id="field3">
+				</div>
+
+				<div>
+					<label>Activities you'd like to participate&nbsp;in</label>
+					<input type="text" id="field3">
+				</div>
+
+				<button id="submit" class="buttons">Submit</button>
+				<button id="cancel" class="buttons" type="button">Cancel</button>
+
+			</form>
+		</div>
+	</div>
+
+
+	<!--
+	<div id="footer">
+		<span>Organized by <a href="http://upefiu.io">Upsilon Pi Epsilon</a>, at Florida International University</span>
+		<span>Copyright © Upsilon Pi Epsilon 2019</span>
+	</div>
+-->
+
+	<script>
+		document.body.onload = function() {
+			register = document.getElementById("register")
+			popup = document.getElementById("registerPopup")
+			cancelBtn = document.getElementById("cancel")
+			submitBtn = document.getElementById("submit")
+
+			function showPopup() {
+				popup.style.opacity = '1'
+				popup.style.pointerEvents = 'auto'
+			}
+
+			function hidePopup() {
+				popup.style.opacity = '0'
+				popup.style.pointerEvents = 'none'
+			}
+
+			function googleAPI() {
+				alert("Implement this")
+			}
+
+			register.addEventListener("click", showPopup)
+			cancelBtn.addEventListener("click", hidePopup)
+			submitBtn.addEventListener("click", googleAPI)
+		}
+
+	</script>
+
 </body>
 
 </html>
