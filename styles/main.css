@@ -451,13 +451,13 @@ body {
 .featuring {
 	padding-right: 25px;
 	color: #252628;
-	height: auto;
+	height: 60px;
 	max-width: 160px;
 }
 
 .spotify {
-	height: auto;
-	width: 210px;
+	height: 60px;
+	width: auto;
 }
 
 .cohost {
