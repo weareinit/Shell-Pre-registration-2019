@@ -194,7 +194,7 @@ body {
 
 #wetsand3 {
 	animation: wetsand3 var(--waves-speed) ease 1.6s infinite alternate;
-	bottom: -55px;
+	bottom: -65px;
 }
 
 @keyframes wetsand2 {
@@ -430,8 +430,10 @@ body {
 	text-align: center;
 	color: white!important;
 	background: rgba(0, 0, 0, 0.5);
-	padding: 10px;
-	border-radius: 10px 10px 0 0;
+	padding: 10px 5px 5px;
+	border-radius: 0px 10px 0 0;
+	display: hidden;
+	/* JEHF! CESAR SAYS THIS ISN'T IMPORTANT! */
 }
 
 #copyright a {
@@ -519,7 +521,7 @@ body {
 	}
 	#beachball {
 		left: 40%;
-		top: 60px;
+		top: 20px;
 		width: 90px;
 	}
 	#sandals {
