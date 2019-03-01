@@ -1,0 +1,12 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "name": "Launch index.html",
+            "type": "chrome",
+            "request": "launch",
+			"file": "${workspaceFolder}/index.html",
+			// "runtimeExecutable": "C:/Program Files (x86)/BraveSoftware/Brave-Browser/Application/brave.exe"
+        },
+    ]
+}
