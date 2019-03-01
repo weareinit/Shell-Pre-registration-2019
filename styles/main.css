@@ -437,7 +437,9 @@ body {
 }
 
 #footer {
-    margin: 6px 38%;
+    margin-left: 38%;
+    margin-top: 6px;
+    margin-bottom: 6px;
     position: absolute;
     bottom: 0;
     color: #9E8D7D;
