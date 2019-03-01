@@ -98,7 +98,6 @@ body {
 }
 
 #registerForm label {
-    text-align: left;
     margin: 0 10px 0 20px;
 }
 
@@ -379,7 +378,7 @@ body {
 
 #instagram {
     left: 190px;
-    bottom: 82p
+    bottom: 82px;
 }
 
 
@@ -402,7 +401,7 @@ body {
 }
 
 #brand {
-    width: 800px;
+    width: 550px;
     max-width: 80%;
     margin-bottom: -10px;
     z-index: 3;
@@ -411,13 +410,13 @@ body {
 .featuring {
     padding-right: 25px;
     color: #252628;
-    height: auto;
+    height: 60px;
     max-width: 160px;
 }
 
 .spotify {
-    height: auto;
-    width: 210px;
+    height: 60px;
+    width: auto;
 }
 
 .cohost {
@@ -426,9 +425,23 @@ body {
     align-items: center;
 }
 
+#copyright {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: white!important;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+#copyright a {
+    text-decoration: none!important;
+    color: white!important;
+}
+
 #details {
-    margin-top: 100px !important;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: 500px;
     color: var(--tertiary-color);
     font-size: 23px;
@@ -436,9 +449,20 @@ body {
     font-weight: bold;
 }
 
+#countDown {
+    z-index: 4;
+    color: var(--tertiary-color);
+    font-size: 38px;
+    display: block;
+    margin: 25px 0;
+    /* font-weight: bold; */
+}
+
 #footer {
     position: absolute;
     bottom: 0;
+    color: #9E8D7D;
+    width: auto;
 }
 
 .buttonsContainer {
@@ -474,6 +498,10 @@ body {
     font-weight: 800;
 }
 
+#register {
+    cursor: not-allowed;
+}
+
 #register>* {
     width: 79%;
 }
@@ -495,8 +523,8 @@ body {
         width: 90px;
     }
     #sandals {
-        right: 7%;
-        top: 480px;
+        right: 10%;
+        top: 370px;
         width: 115px;
     }
     #starfish {
@@ -568,6 +596,28 @@ body {
         left: 350px;
         width: 100px;
         margin-bottom: 265px;
+    }
+    #countDown {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    #sandals {
+        right: 30px;
+        top: 80px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #starfish {
+        left: 200px;
+    }
+    #surfboard {
+        width: 150px;
+        height: 213px;
+    }
+    #sandals {
+        right: 2px;
+        top: 180px;
     }
 }
 
