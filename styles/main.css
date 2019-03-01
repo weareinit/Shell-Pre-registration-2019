@@ -176,7 +176,7 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	width: 100vw;
+	width: 1920px;
 	z-index: 0;
 }
 
@@ -311,13 +311,20 @@ body {
 	0% {
 		bottom: -40px;
 	}
-	20%{
+
+	45% {
 		bottom: -40px;
 	}
-	30%{
+
+	58% {
 		bottom: -30px;
 	}
-	40%{
+
+	60% {
+		bottom: -30px;
+	}
+
+	90% {
 		bottom: -40px;
 	}
 
@@ -325,9 +332,10 @@ body {
 		bottom: -40px;
 	}
 }
+
 #starfish {
 	left: 15%;
-	margin-bottom: 15%;
+	margin-bottom: 13%;
 	width: 130px;
 	z-index: 1;
 	animation: starfish 6s ease infinite;
@@ -338,6 +346,7 @@ body {
 	from {
 		bottom: -250px;
 	}
+
 	to {
 		bottom: 0px;
 	}
@@ -379,7 +388,7 @@ body {
 	bottom: -1px;
 	z-index: 2;
 	pointer-events: auto;
-	animation: surfboard 3s ease 0s infinite alternate;
+	animation: surfboard var(--waves-speed) ease 0s infinite alternate;
 }
 
 #surfboard > * {
@@ -438,8 +447,11 @@ body {
 	z-index: 7;
 }
 
+
+
 #brand {
 	width: 800px;
+	max-width: 80%;
 	margin-bottom: -10px;
 	z-index: 3;
 }
@@ -448,7 +460,7 @@ body {
 	padding-right: 25px;
 	color: #252628;
 	height: auto;
-	width: 160px;
+	max-width: 160px;
 }
 
 .spotify {
@@ -460,7 +472,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
 
 #details {
@@ -516,6 +527,43 @@ body {
 
 #sponsor > * {
 	width: 54%;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+	#brand {
+		margin-bottom: -7px;
+	}
+
+	.featuring {
+		padding-right: 15px;
+		width: 20vw;
+	}
+
+	.spotify {
+		padding-right: 10px;
+		width: 25vw;
+	}
+
+	.buttonsContainer > .buttons {
+		height: 40px;
+		width: 240px;
+	}
+	#shore{
+		margin-bottom: -30px;
+		left: -50%;
+	}
+	#details{
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	#starfish{
+		left: 250px;
+		width: 100px;
+		margin-bottom: 265px;
+	}
 }
 
 .buttonsContainer > .buttons:hover > * {
