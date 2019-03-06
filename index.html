@@ -116,16 +116,18 @@
                 </div>
                 <div>
                     <label>First Name</label>
-                    <input class="regForm" type="text" id="firstname">
+
+                    <input class="regForm" type="text" id="firstname" required>
                 </div>
                 <div>
                     <label>Last Name</label>
-                    <input class="regForm" type="text" id="lastname">
+                    <input class="regForm" type="text" id="lastname" required>
                 </div>
 
                 <div>
-                    <label>School Email</label>
-                    <input class="regForm" type="email" id="email">
+                    <label>School Email Address</label>
+                    <input class="regForm" type="email" id="email" required>
+
                 </div>
                 <!-- <div>
                     <label>School</label>
@@ -168,7 +170,8 @@
                                         <option value="AL">Arduinos</option>
                                         <option value="WY">Raspberry Pi (Model 3 B+ and Zero)</option>
                                         <option value="AL">3-D printer</option>                            
-                                    </select>
+                 </select>
+
                 </div>
                 <div>
                     <label>activities?</label>
@@ -223,7 +226,8 @@
                         </select>
                 </div>
                 <div>
-                    <label>Anything else?</label>
+
+                    <label>Anything else you'd like to see?</label>
                     <textarea id="message" name="message" id="message" rows="40" cols="30">
                         </textarea>
                 </div>
@@ -323,15 +327,17 @@
             var hardware = $('#hardware').select2('data');
             var activities = $('#activity').select2('data');
             var swag = $('#swag').select2('data');
+            var message = getInputVal('message');
+          
             submitBtn.disabled = true;
-            saveToFirebase(fname, lname, email, workshops, hardware, activities, swag);
+            saveToFirebase(fname, lname, email, workshops, hardware, activities, swag, message);
             submitBtn.innerHTML = "submitted";
             submitBtn.disabled = true;
 
         }
 
         //saves the data to fire base
-        function saveToFirebase(fname, lname, email, workshop, hardware, activities, swag) {
+        function saveToFirebase(fname, lname, email, workshop, hardware, activities, swag, message) {
             var newFormRef = formRef.push();
             newFormRef.set({
                 fname: fname,
@@ -341,8 +347,10 @@
                 hardware: hardware,
                 activities: activities,
                 swag: swag,
-            })
+                message: message,
+            });
         }
+
         submitBtn.addEventListener("click", submit)
         register.addEventListener("click", showPopup)
         cancelBtn.addEventListener("click", hidePopup)
