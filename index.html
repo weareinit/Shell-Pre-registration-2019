@@ -116,6 +116,7 @@
                 </div>
                 <div>
                     <label>First Name</label>
+
                     <input class="regForm" type="text" id="firstname" required>
                 </div>
                 <div>
@@ -126,6 +127,7 @@
                 <div>
                     <label>School Email Address</label>
                     <input class="regForm" type="email" id="email" required>
+
                 </div>
                 <!-- <div>
                     <label>School</label>
@@ -169,6 +171,7 @@
                                         <option value="WY">Raspberry Pi (Model 3 B+ and Zero)</option>
                                         <option value="AL">3-D printer</option>                            
                  </select>
+
                 </div>
                 <div>
                     <label>activities?</label>
@@ -223,6 +226,7 @@
                         </select>
                 </div>
                 <div>
+
                     <label>Anything else you'd like to see?</label>
                     <textarea id="message" name="message" id="message" rows="40" cols="30">
                         </textarea>
@@ -285,7 +289,7 @@
         var submitBtn = document.getElementById("submit")
 
         // Initialize Firebase
-        const config = {
+        var config = {
             apiKey: "AIzaSyBx01mLugiaWjyNLml5NSVs-XX_LgmdP-M",
             authDomain: "shellpre-53931.firebaseapp.com",
             databaseURL: "https://shellpre-53931.firebaseio.com",
@@ -324,6 +328,7 @@
             var activities = $('#activity').select2('data');
             var swag = $('#swag').select2('data');
             var message = getInputVal('message');
+          
             submitBtn.disabled = true;
             saveToFirebase(fname, lname, email, workshops, hardware, activities, swag, message);
             submitBtn.innerHTML = "submitted";
