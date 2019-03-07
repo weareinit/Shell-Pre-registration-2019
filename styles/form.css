@@ -12,8 +12,8 @@
         }
         
         body {
-            height: 100vh;
-            width: 100vw;
+            height: 100%;
+            width: 100%;
             margin: 0;
             padding: 0;
             border: 0;
@@ -71,19 +71,21 @@
         
          ::placeholder {
             /* Chrome, Firefox, Opera, Safari 10.1+ */
-            color: rgb(15, 167, 157);
-            opacity: 1;
+            color: white;
+            opacity: .2;
             /* Firefox */
         }
         
          :-ms-input-placeholder {
             /* Internet Explorer 10-11 */
-            color: rgb(15, 167, 157);
+            color: white;
+            opacity: .2;
         }
         
          ::-ms-input-placeholder {
             /* Microsoft Edge */
-            color: rgb(15, 167, 157);
+            color: white;
+            opacity: .2;
         }
         /* label {
     padding: 20px;
@@ -113,12 +115,13 @@
         }
         
         select {
-            width: 95vw;
+            width: 100vw;
             font-family: "Montserrat", sans-serif;
             max-width: 500px;
         }
         
         .select2-selection--multiple {
+            width: 100%;
             margin-top: 5px;
             margin-bottom: 20px;
             background-color: rgba(0, 0, 0, 0.5)!important;
