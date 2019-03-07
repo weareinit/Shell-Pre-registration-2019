@@ -72,21 +72,20 @@
          ::placeholder {
             /* Chrome, Firefox, Opera, Safari 10.1+ */
             color: white;
-
-            opacity: 1;
+            opacity: .2;
             /* Firefox */
         }
         
          :-ms-input-placeholder {
             /* Internet Explorer 10-11 */
             color: white;
-
+            opacity: .2;
         }
         
          ::-ms-input-placeholder {
             /* Microsoft Edge */
             color: white;
-
+            opacity: .2;
         }
         /* label {
     padding: 20px;
@@ -117,7 +116,6 @@
         
         select {
             width: 100vw;
-
             font-family: "Montserrat", sans-serif;
             max-width: 500px;
         }
