@@ -2,247 +2,329 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="./styles/form.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="icon" href="imgs/sh-square.png">
-    <link rel="apple-touch-icon" href="imgs/sh-square.png">
-    <meta name="msapplication-TileColor" content="#ff1f8c">
-    <meta name="theme-color" content="#ff1f8c">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="icon" href="imgs/sh-square.png">
+	<link rel="apple-touch-icon" href="imgs/sh-square.png">
+	<meta name="msapplication-TileColor" content="#ff1f8c">
+	<meta name="theme-color" content="#ff1f8c">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+	<!-- Select2 -->
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script> -->
+
+	<!-- Boostrap JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Bootstrap-select CSS -->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+
+	<!-- Bootstrap-select JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="./styles/main.css">
+	<link rel="stylesheet" href="./styles/form.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="brand">Pre-registration<br/></h1>
-        <h3 class="details">Hi there! You are one of the chosen ones who gets to pre-register for Shellhacks.<br/>To get started, please fill out the form bellow.<br/></h3>
-        <h3 id="errorMessage"></h3>
-        <form>
-            <p>
-                <label>First Name<br/></label>
-                <input id="fname" placeholder="Johnny" required>
-            </p>
-            <p>
-                <label>Last Name<br/></label>
-                <input id="lname" placeholder="Doe" required>
-            </p>
-            <p>
-                <label>School Email Address<br/></label>
-                <input id="email" type="email" placeholder="shell009@fiu.edu" required>
-            </p>
-            <p class="selectBox">
-                <label class="selectBoxLabel">Any workshops you would like to see?<br/></label>
-                <select class="js-example-basic-multiple" id="workshop" name="states[]" multiple="multiple">
-                        <option value="AL">Intro to Git</option>
-                        <option value="WY">Unity</option>
-                        <option value="AL">Machine Learning</option>
-                        <option value="WY">ReactJS</option>
-                        <option value="AL">UI/UX</option>
-                        <option value="WY">HTML/CSS</option>
-                        <option value="AL">Swift</option>
-                        <option value="WY">JavaScript</option>
-                        <option value="AL">Arduino</option>
-                        <option value="WY">Unreal</option>
-                        <option value="AL">Unreal</option>
-                        <option value="WY">NodeJS</option>
-                        <option value="AL">Android Dev</option>
-                        <option value="WY">GraphQL</option>
-                        <option value="AL">ReactNative</option>
-                        <option value="WY">Python</option>
-                        <option value="AL">Flask</option>
-                        <option value="WY">Raspberry Pi</option>
-                        <option value="AL">AWS/Azure/GCP</option>
-                        <option value="WY">Cybersecurity</option>
-                        <option value="WY">Linux/Unix</option>                                   
-                </select>
-            </p>
-            <p class="selectBox">
-                <label class="selectBoxLabel">What about hardwares?<br/></label>
-                <select class="js-example-basic-multiple" id="hardware" name="states[]" multiple="multiple">
-                                    <option value="AL">Matrix Creators</option>
-                                    <option value="WY">Matrix Voices</option>
-                                    <option value="AL">Arduinos</option>
-                                    <option value="WY">Raspberry Pi (Model 3 B+ and Zero)</option>
-                                    <option value="AL">3-D printer</option>                            
-             </select>
-            </p>
-            <p class="selectBox">
-                <label class="selectBoxLabel">Activities?<br/></label>
-                <select class="js-example-basic-multiple" id="activity" name="states[]" multiple="multiple">
-                        <option value="AL">Werewolf</option>
-                        <option value="WY">Yoga</option>
-                        <option value="AL">Socks</option>
-                        <option value="WY">Paper Plane</option>
-                        <option value="AL">Competition</option>
-                        <option value="WY">Scavenger Hunt</option>
-                        <option value="AL">Carnival Fishing Game</option>
-                        <option value="WY">Gaming Lounge</option>
-                        <option value="AL">Smash Tournament</option>
-                        <option value="WY">Karaoke</option>
-                        <option value="AL">Cup Stacking</option>
-                        <option value="WY">4square / box ball</option>
-                        <option value="AL">Soylent Pong</option>
-                        <option value="WY">Meetup</option>
-                        <option value="AL">Dominos</option>
-                        <option value="WY">Volleyball</option>
-                        <option value="AL">Building Contest</option>
-                        <option value="WY">Team-based Jeopardy</option>
-                        <option value="AL">Pokemon-Go/Midnight</option>
-                        <option value="WY">Campus Hike</option>
-                    </select>
-            </p>
-            <p class="selectBox">
-                <label class="selectBoxLabel">And ofcourse, the free goodies.<br/></label>
-                <select class="js-example-basic-multiple" id="swag" name="states[]" multiple="multiple">
-                                <option value="AL">Hats</option>
-                                <option value="WY">Beanie</option>
-                                <option value="AL">Socks</option>
-                                <option value="WY">Water Bottles</option>
-                                <option value="AL">Tote/Bag</option>
-                                <option value="WY">PopSocket</option>
-                                <option value="AL">Sunglasses</option>
-                                <option value="WY">Mugs</option>
-                                <option value="AL">Keychain</option>
-                                <option value="WY">Phone Wallets</option>
-                                <option value="AL">USB</option>
-                                <option value="WY">Webcam Cover</option>
-                                <option value="AL">Lanyard</option>
-                                <option value="WY">Sleeping Masks</option>
-                                <option value="AL">Earphones</option>
-                                <option value="WY">Cards</option>
-                                <option value="AL">Drink Cozy</option>
-                                <option value="WY">Coaster</option>
-                                <option value="AL">Shell Plushie</option>
-                                <option value="WY">Power bank</option>
-                                <option value="WY">Pens</option>                                   
-                                <option value="WY">Blanket</option>
-                    </select>
-            </p>
-            <p>
-                <label>Any other ideas/feedbacks?<br/></label>
-                <textarea id="message" placeholder="Drop those sweet ideas here"></textarea>
-            </p>
-            <p class="bottomButtons">
-                <input class="submit" id="submit" type="submit" value="Submit">
-                <input onclick="location.href = 'index.html';" class="submit" id="cancel" type="submit" value="Back">
-            </p>
-        </form>
-    </div>
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
-    <script>
-        //----------------select2 multi selection-----
-        $(document).ready(function() {
-            $('.js-example-basic-multiple').select2();
-        });
 
-        //-----------------listeners dec--------------- 
-        const cancelBtn = document.getElementById("cancel");
-        const submitBtn = document.getElementById("submit");
+	<!--Background & decoration objects-->
+	<div id="backgroundObjects">
 
-        //Initialize Firebase
-        const config = {
-            apiKey: "AIzaSyBx01mLugiaWjyNLml5NSVs-XX_LgmdP-M",
-            authDomain: "shellpre-53931.firebaseapp.com",
-            databaseURL: "https://shellpre-53931.firebaseio.com",
-            projectId: "shellpre-53931",
-            storageBucket: "shellpre-53931.appspot.com",
-            messagingSenderId: "413474432056"
-        };
-        firebase.initializeApp(config);
-        var formRef = firebase.database().ref('preRegistration');
+		<img id="seat1" class="decor" src="imgs/frontpage/seat1.svg">
+		<img id="seat2" class="decor" src="imgs/frontpage/seat2.svg">
 
-        function goHome() {
-            window.location.href = "index.html";
-        }
+		<img id="beachball" class="decor" src="imgs/frontpage/beachball.svg">
+		<img id="sandals" class="decor" src="imgs/frontpage/sandals.svg">
 
-        // //gets an element by id 
-        function getInputVal(id) {
-            var input = document.getElementById(id);
-            if (input.value.trim() == null || input.value.trim() == "") {
-                document.getElementById("errorMessage").innerHTML = "*Something's wrong! Make sure you filled all the fields.";
-                window.scrollTo(0, 0);
+		<div id="surfboard" class="decor">
+			<img id="upe" onclick="window.open('http://upefiu.io','_blank');" src="imgs/frontpage/upe.svg" alt="">
+			<img id="discord" onclick="window.open('https://discord.gg/upefiu','_blank');"
+				src="imgs/frontpage/discord.svg" alt="">
+			<img id="facebook" onclick="window.open('https://www.facebook.com/upefiu/','_blank');"
+				src="imgs/frontpage/facebook.svg" alt="">
+			<img id="twitter" onclick="window.open('https://twitter.com/upefiu','_blank');"
+				src="imgs/frontpage/twitter.svg" alt="">
+			<img id="instagram" onclick="window.open('https://www.instagram.com/upefiu/','_blank');"
+				src="imgs/frontpage/instagram.svg" alt="">
+		</div>
 
-            } else {
-                document.getElementById("errorMessage").innerHTML = ""
-                return input;
-            }
-        }
+		<div id="shore">
+			<div id="wetsand">
+				<img id="wetsand3" class="decor" src="imgs/frontpage/wetsand3.svg">
+				<img id="wetsand2" class="decor" src="imgs/frontpage/wetsand2.svg">
+				<img id="starfish" class="decor" src="imgs/frontpage/starfish.svg">
+				<img id="wetsand1" class="decor" src="imgs/frontpage/wetsand1.svg">
+			</div>
+			<div id="surf">
+				<img id="surf3" class="decor" src="imgs/frontpage/surf3.svg">
+				<img id="surf2" class="decor" src="imgs/frontpage/surf2.svg">
+				<img id="shell" class="decor" src="imgs/frontpage/shell.svg">
+				<img id="surf1" class="decor" src="imgs/frontpage/surf1.svg">
+			</div>
+		</div>
+	</div>
+	<!--Background End-->
 
-        //form validaton
-        function validateForm(fname, lname, email) {
-            if (fname === "" || fname === null || lname === "" || lname === null || (email === "" || email === null)) {
-                return false;
-            } else return true;
-        }
+	<div class="container fade-in" id="main">
+		<h1 class="brand">Pre-Registration<br /></h1>
+		<h3 class="details">Hi there! You are one of the chosen ones who gets to pre-register for Shellhacks.<br />To
+			get started, please fill out the form bellow.<br /></h3>
+		<h3 id="errorMessage" style="display:none">*Something's wrong! Make sure you filled all the fields.</h3>
+		<form class="fade-in one">
+			<div>
+				<label>First Name<br /></label>
+				<input id="fname" placeholder="John" required>
+			</div>
+			<div>
+				<label>Last Name<br /></label>
+				<input id="lname" placeholder="Doe" required>
+			</div>
+			<div>
+				<label>School Email Address<br /></label>
+				<input id="email" type="email" placeholder="roary001@fiu.edu" required>
+			</div>
+			<div class="selectBox">
+				<label class="selectBoxLabel">Any workshops you would like to see?<br /></label>
+				<select class="selectpicker" id="workshop" name="states[]" multiple="multiple">
+					<option value="AL">Git</option>
+					<option value="WY">Unity</option>
+					<option value="AL">Machine Learning</option>
+					<option value="WY">ReactJS</option>
+					<option value="AL">UI/UX</option>
+					<option value="WY">HTML/CSS</option>
+					<option value="AL">Swift</option>
+					<option value="WY">JavaScript</option>
+					<option value="AL">Arduino</option>
+					<option value="WY">Unreal Engine</option>
+					<option value="AL">TypeScript</option>
+					<option value="WY">NodeJS</option>
+					<option value="AL">Android Development</option>
+					<option value="WY">GraphQL</option>
+					<option value="AL">React Native</option>
+					<option value="WY">Python</option>
+					<option value="AL">Flask</option>
+					<option value="WY">Raspberry Pi</option>
+					<option value="AL">Amazon Web Services</option>
+					<option value="WY">Microsoft Azure</option>
+					<option value="AL">Google Cloud Platform</option>
+					<option value="WY">Cybersecurity</option>
+					<option value="WY">Linux/Unix</option>
+				</select>
+			</div>
+			<div class="selectBox">
+				<label class="selectBoxLabel">What about hardwares?<br /></label>
+				<select class="selectpicker" id="hardware" name="states[]" multiple="multiple">
+					<option value="AL">Matrix Creators</option>
+					<option value="WY">Matrix Voices</option>
+					<option value="AL">Arduinos</option>
+					<option value="WY">Raspberry Pi (Model 3 B+ and Zero)</option>
+					<option value="AL">3-D printer</option>
+				</select>
+			</div>
+			<div class="selectBox">
+				<label class="selectBoxLabel">Activities?<br /></label>
+				<select class="selectpicker" id="activity" name="states[]" multiple="multiple">
+					<option value="AL">Werewolf</option>
+					<option value="WY">Yoga</option>
+					<option value="WY">Paper Plane Competition</option>
+					<option value="WY">Scavenger Hunt</option>
+					<option value="AL">Fishing Game</option>
+					<option value="WY">Gaming Lounge</option>
+					<option value="AL">Super Smash Bros Tournament</option>
+					<option value="WY">Karaoke</option>
+					<option value="AL">Cup Stacking</option>
+					<option value="WY">4square / Box Ball</option>
+					<option value="AL">Soylent Pong</option>
+					<option value="WY">Mechanical Keyboard Meetup</option>
+					<option value="AL">Dominoes</option>
+					<option value="WY">Volleyball</option>
+					<option value="AL">Sand Castle Building Contest</option>
+					<option value="WY">Team Jeopardy</option>
+					<option value="WY">Midnight Campus Hike</option>
+				</select>
+			</div>
+			<div class="selectBox">
+				<label class="selectBoxLabel">And swag?<br /></label>
+				<select class="selectpicker" id="swag" name="states[]" multiple="multiple">
+					<option value="AL">Hats</option>
+					<option value="WY">Beanies</option>
+					<option value="AL">Socks</option>
+					<option value="WY">Water Bottles</option>
+					<option value="AL">Totebags</option>
+					<option value="WY">PopSockets</option>
+					<option value="AL">Sunglasses</option>
+					<option value="WY">Mugs</option>
+					<option value="AL">Keychains</option>
+					<option value="WY">Phone Wallets</option>
+					<option value="AL">USBs</option>
+					<option value="WY">Webcam Covers</option>
+					<option value="AL">Lanyards</option>
+					<option value="WY">Sleeping Masks</option>
+					<option value="AL">Earphones</option>
+					<option value="WY">Cards</option>
+					<option value="AL">Drink Cozies</option>
+					<option value="WY">Coasters</option>
+					<option value="AL">Shell Plushies</option>
+					<option value="WY">Power Banks</option>
+					<option value="WY">Pens</option>
+					<option value="WY">Blankets</option>
+				</select>
+			</div>
+			<div>
+				<label>Anything else you'd like to see?<br /></label>
+				<textarea id="message" placeholder="Drop those sweet ideas/suggestions here"></textarea>
+			</div>
+			<div class="bottomButtons">
+				<input class="submit" id="submit" type="button" value="Submit">
+				<input onclick="location.href = 'index.html';" class="submit" id="cancel" type="button" value="Back">
+			</div>
+		</form>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+	<script>
+		//----------------select2 multi selection-----
+		// $(document).ready(function () {
+		// 	$('.selectpicker').select2();
+		// });
 
-        //submit form
-        function submit(e) {
-            e.preventDefault();
+		//----------------bootstrap-select-------------
+		$('.selectBox').selectpicker();
 
-            //form fields 
-            var fname = getInputVal('fname');
-            var lname = getInputVal('lname');
-            var email = getInputVal('email');
-            var message = getInputVal('message');
-            var workshops = [];
-            var hardware = [];
-            var activities = [];
-            var swag = [];
-            //copying needed values only
-            $('#workshop').select2('data').forEach(function(element) {
-                workshops.push(element.text)
-            });
+		//-----------------listeners dec--------------- 
+		const cancelBtn = document.getElementById("cancel");
+		const submitBtn = document.getElementById("submit");
 
-            $('#hardware').select2('data').forEach(function(element) {
-                hardware.push(element.text)
-            });
+		//Initialize Firebase
+		const config = {
+			apiKey: "AIzaSyBx01mLugiaWjyNLml5NSVs-XX_LgmdP-M",
+			authDomain: "shellpre-53931.firebaseapp.com",
+			databaseURL: "https://shellpre-53931.firebaseio.com",
+			projectId: "shellpre-53931",
+			storageBucket: "shellpre-53931.appspot.com",
+			messagingSenderId: "413474432056"
+		};
+		firebase.initializeApp(config);
+		var formRef = firebase.database().ref('preRegistration');
 
-            $('#activity').select2('data').forEach(function(element) {
-                activities.push(element.text)
-            });
-            $('#swag').select2('data').forEach(function(element) {
-                swag.push(element.text)
-            });
+		function goHome() {
+			window.location.href = "index.html";
+		}
 
-            if (validateForm(fname, lname, email)) {
-                saveToFirebase(lname, fname, email, workshops, hardware, activities, swag, message);
-                submitBtn.innerHTML = "submitted";
-            }
-        }
+		// //gets an element by id 
+		function getInputVal(id) {
+			var input = document.getElementById(id);
+			if (input.value.trim() == null || input.value.trim() == "") {
+				$("#errorMessage").show()
+				$('#main').animate({ scrollTop: $("#main").offset().top }, 1000)
 
-        function Profile(fname, lname, email, workshop, hardware, activities, swag, message) {
-            return {
-                fname: fname,
-                lname: lname,
-                email: email,
-                workshop: workshop,
-                hardware: hardware,
-                activities: activities,
-                swag: swag,
-                message: message,
-            }
-        }
+			} else {
+				$("#errorMessage").hide()
+				document.getElementById("errorMessage").innerHTML = ""
+				return input;
+			}
+		}
 
-        //saves the data to fire base
-        function saveToFirebase(fname, lname, email, workshop, hardware, activities, swag, message) {
-            var newFormRef = formRef.push();
-            newFormRef.set(
-                Profile(fname, lname, email, workshop, hardware, activities, swag, message));
-            submitBtn.disabled = true;
+		//form validaton
+		function validateForm(fname, lname, email) {
+			if (fname === "" || fname === null || lname === "" || lname === null || (email === "" || email === null)) {
+				return false;
+			} else return true;
+		}
 
-        }
+		//submit form
+		function submit(e) {
+			// e.preventDefault();
+			console.log("Submitting data...");
 
-        submitBtn.addEventListener("click", submit)
-        cancelBtn.addEventListener("click", goHome)
-    </script>
+
+			//form fields 
+			var fname = getInputVal('fname');
+			var lname = getInputVal('lname');
+			var email = getInputVal('email');
+			var message = getInputVal('message');
+			var workshops = [];
+			var hardware = [];
+			var activities = [];
+			var swag = [];
+			//copying needed values only
+			for (const element of $('#workshop')[0].selectedOptions) {
+				workshops.push(element.text);
+			}
+
+			for (const element of $('#hardware')[0].selectedOptions) {
+				hardware.push(element.text)
+			}
+
+			for (const element of $('#activity')[0].selectedOptions) {
+				activities.push(element.text)
+			}
+
+			for (const element of $('#swag')[0].selectedOptions) {
+				swag.push(element.text)
+			}
+
+			if (validateForm(fname, lname, email)) {
+				console.log("Submitting responses...", lname, fname, email, workshops, hardware, activities, swag, message);
+				try {
+					saveToFirebase(lname, fname, email, workshops, hardware, activities, swag, message);
+					submitBtn.value = "Submitted!";
+					submitBtn.disabled = "disabled";
+					console.log("Form submitted!");
+					$("body").addClass("nicejob")
+					$(submitBtn).addClass("nicejob")
+					setTimeout(() => {
+						goHome();
+					}, 2000);
+				} catch (error) {
+					$('html, body').animate({ scrollTop: $("#main").offset().top }, 1000)
+					console.error("Error, could not submit:\n", error);
+				}
+			}
+		}
+
+		function Profile(fname, lname, email, workshop, hardware, activities, swag, message) {
+			return {
+				fname: fname,
+				lname: lname,
+				email: email,
+				workshop: workshop,
+				hardware: hardware,
+				activities: activities,
+				swag: swag,
+				message: message,
+			}
+		}
+
+		//saves the data to fire base
+		function saveToFirebase(fname, lname, email, workshop, hardware, activities, swag, message) {
+			var newFormRef = formRef.push();
+			newFormRef.set(
+				Profile(fname, lname, email, workshop, hardware, activities, swag, message));
+			submitBtn.disabled = true;
+
+		}
+
+		submitBtn.addEventListener("click", submit)
+		cancelBtn.addEventListener("click", goHome)
+	</script>
 </body>
 
 </html>
