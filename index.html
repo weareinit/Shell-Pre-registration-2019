@@ -2,124 +2,136 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ShellHacks 2019 &mdash; Sept 20 &ndash; 22</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
-    <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/reset.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ShellHacks 2019 &mdash; Sept 20 &ndash; 22</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
+	<script src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/reset.css">
 
-    <!--  Gotta make sure this is set so things look good on mobile  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="icon" href="imgs/sh-square.png">
-    <link rel="apple-touch-icon" href="imgs/sh-square.png">
-    <meta name="msapplication-TileColor" content="#ff1f8c">
-    <meta name="theme-color" content="#ff1f8c">
+	<!--  Gotta make sure this is set so things look good on mobile  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="icon" href="imgs/sh-square.png">
+	<link rel="apple-touch-icon" href="imgs/sh-square.png">
+	<meta name="msapplication-TileColor" content="#ff1f8c">
+	<meta name="theme-color" content="#ff1f8c">
 
-    <!--BEGIN Schema tags-->
-    <meta itemprop="name" content="ShellHacks">
-    <meta itemprop="description" content="A Miami-based hackathon run by FIU's UPE Chapter and open to all hackers, both local and abroad!">
-    <meta itemprop="image" content="https://cdn.discordapp.com/attachments/399554513767235587/551122355536003082/fullsizeoutput_19a3.jpeg">
-    <!--END Schema tags-->
+	<!--BEGIN Schema tags-->
+	<meta itemprop="name" content="ShellHacks">
+	<meta itemprop="description"
+		content="A Miami-based hackathon run by FIU's UPE Chapter and open to all hackers, both local and abroad!">
+	<meta itemprop="image"
+		content="https://cdn.discordapp.com/attachments/399554513767235587/551122355536003082/fullsizeoutput_19a3.jpeg">
+	<!--END Schema tags-->
 
-    <!--BEGIN Opengraph-->
-    <meta property="og:site_name" content="ShellHacks">
-    <meta property="og:url" content="https://shellhacks.net">
-    <meta property="og:description" content="ShellHacks, Florida International University's Fall Hackathon!">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/399554513767235587/551122355536003082/fullsizeoutput_19a3.jpeg">
-    <meta property="og:image:width" content="auto">
-    <meta property="og:image:height" content="367">
-    <!--END Opengraph-->
+	<!--BEGIN Opengraph-->
+	<meta property="og:site_name" content="ShellHacks">
+	<meta property="og:url" content="https://shellhacks.net">
+	<meta property="og:description" content="ShellHacks, Florida International University's Fall Hackathon!">
+	<meta property="og:type" content="website">
+	<meta property="og:image"
+		content="https://cdn.discordapp.com/attachments/399554513767235587/551122355536003082/fullsizeoutput_19a3.jpeg">
+	<meta property="og:image:width" content="auto">
+	<meta property="og:image:height" content="367">
+	<!--END Opengraph-->
 
-    <!--BEGIN Twitter Card-->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@upefiu">
-    <meta name="twitter:title" content="ShellHacks">
-    <meta name="twitter:description" content="ShellHacks, Florida International University's Fall Hackathon!">
-    <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/399554513767235587/551122355536003082/fullsizeoutput_19a3.jpeg">
-    <!--END Twitter Card-->
+	<!--BEGIN Twitter Card-->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@upefiu">
+	<meta name="twitter:title" content="ShellHacks">
+	<meta name="twitter:description" content="ShellHacks, Florida International University's Fall Hackathon!">
+	<meta name="twitter:image"
+		content="https://cdn.discordapp.com/attachments/399554513767235587/551122355536003082/fullsizeoutput_19a3.jpeg">
+	<!--END Twitter Card-->
 </head>
 
 <body>
 
-    <!--Background & decoration objects-->
-    <div class="container" id="backgroundObjects">
+	<!--Background & decoration objects-->
+	<div class="container" id="backgroundObjects">
 
-        <img id="seat1" class="decor" src="imgs/frontpage/seat1.svg">
-        <img id="seat2" class="decor" src="imgs/frontpage/seat2.svg">
+		<img id="seat1" class="decor" src="imgs/frontpage/seat1.svg">
+		<img id="seat2" class="decor" src="imgs/frontpage/seat2.svg">
 
-        <img id="beachball" class="decor" src="imgs/frontpage/beachball.svg">
-        <img id="sandals" class="decor" src="imgs/frontpage/sandals.svg">
+		<img id="beachball" class="decor" src="imgs/frontpage/beachball.svg">
+		<img id="sandals" class="decor" src="imgs/frontpage/sandals.svg">
 
-        <div id="surfboard" class="decor">
-            <img id="upe" onclick="window.open('http://upefiu.io','_blank');" src="imgs/frontpage/upe.svg" alt="">
-            <img id="discord" onclick="window.open('https://discord.gg/upefiu','_blank');" src="imgs/frontpage/discord.svg" alt="">
-            <img id="facebook" onclick="window.open('https://www.facebook.com/upefiu/','_blank');" src="imgs/frontpage/facebook.svg" alt="">
-            <img id="twitter" onclick="window.open('https://twitter.com/upefiu','_blank');" src="imgs/frontpage/twitter.svg" alt="">
-            <img id="instagram" onclick="window.open('https://www.instagram.com/upefiu/','_blank');" src="imgs/frontpage/instagram.svg" alt="">
-        </div>
+		<div id="surfboard" class="decor">
+			<img id="upe" onclick="window.open('http://upefiu.io','_blank');" src="imgs/frontpage/upe.svg" alt="">
+			<img id="discord" onclick="window.open('https://discord.gg/upefiu','_blank');"
+				src="imgs/frontpage/discord.svg" alt="">
+			<img id="facebook" onclick="window.open('https://www.facebook.com/upefiu/','_blank');"
+				src="imgs/frontpage/facebook.svg" alt="">
+			<img id="twitter" onclick="window.open('https://twitter.com/upefiu','_blank');"
+				src="imgs/frontpage/twitter.svg" alt="">
+			<img id="instagram" onclick="window.open('https://www.instagram.com/upefiu/','_blank');"
+				src="imgs/frontpage/instagram.svg" alt="">
+		</div>
 
-        <div id="shore">
-            <div id="wetsand">
-                <img id="wetsand3" class="decor" src="imgs/frontpage/wetsand3.svg">
-                <img id="wetsand2" class="decor" src="imgs/frontpage/wetsand2.svg">
-                <img id="starfish" class="decor" src="imgs/frontpage/starfish.svg">
-                <img id="wetsand1" class="decor" src="imgs/frontpage/wetsand1.svg">
-            </div>
-            <div id="surf">
-                <img id="surf3" class="decor" src="imgs/frontpage/surf3.svg">
-                <img id="surf2" class="decor" src="imgs/frontpage/surf2.svg">
-                <img id="shell" class="decor" src="imgs/frontpage/shell.svg">
-                <img id="surf1" class="decor" src="imgs/frontpage/surf1.svg">
-            </div>
-        </div>
-    </div>
-    <!--Background End-->
-
-
-    <!-- Main content -->
-    <div class="container" id="main">
-
-        <img id="brand" class="fade-in one" src="imgs/frontpage/shellhacks.svg" alt="ShellHacks">
-
-        <div class="cohost fade-in two">
-            <img class="featuring" src="imgs/frontpage/featuring.svg" />
-            <img class="spotify" src="imgs/frontpage/spotify.svg" />
-        </div>
+		<div id="shore">
+			<div id="wetsand">
+				<img id="wetsand3" class="decor" src="imgs/frontpage/wetsand3.svg">
+				<img id="wetsand2" class="decor" src="imgs/frontpage/wetsand2.svg">
+				<img id="starfish" class="decor" src="imgs/frontpage/starfish.svg">
+				<img id="wetsand1" class="decor" src="imgs/frontpage/wetsand1.svg">
+			</div>
+			<div id="surf">
+				<img id="surf3" class="decor" src="imgs/frontpage/surf3.svg">
+				<img id="surf2" class="decor" src="imgs/frontpage/surf2.svg">
+				<img id="shell" class="decor" src="imgs/frontpage/shell.svg">
+				<img id="surf1" class="decor" src="imgs/frontpage/surf1.svg">
+			</div>
+		</div>
+	</div>
+	<!--Background End-->
 
 
-        <p id="details" class="fade-in three">
-            September 20-22, 2019<br />Florida International University<br />Ocean Bank Arena</p>
-        <!-- <p id="countDown" class="fade-in three">&nbsp;</p> -->
-        <!-- A unicode space is in this ^ element so that the logo doesnt shift upon the javascript loading -->
+	<!-- Main content -->
+	<div class="container" id="main">
 
-        <div class="buttonsContainer fade-in three">
-            <button onclick="location.href = 'form.html';" class="buttons" id="register" type="button">
+		<img id="brand" class="fade-in one" src="imgs/frontpage/shellhacks.svg" alt="ShellHacks">
+
+		<div class="cohost fade-in two">
+			<img class="featuring" src="imgs/frontpage/featuring.svg" />
+			<img class="spotify" src="imgs/frontpage/spotify.svg" />
+		</div>
+
+
+		<p id="details" class="fade-in three">
+			September 20-22, 2019<br />Florida International University<br />Ocean Bank Arena</p>
+		<!-- <p id="countDown" class="fade-in three">&nbsp;</p> -->
+		<!-- A unicode space is in this ^ element so that the logo doesnt shift upon the javascript loading -->
+
+		<div class="buttonsContainer fade-in three">
+			<button onclick="location.href = 'form.html';" title="Not yet open" class="buttons" id="register"
+				style="cursor:not-allowed;background:gray;opacity: 0.3;" disabled>
 				<img src="imgs/frontpage/preregister.svg">
 			</button>
-            <!-- <button class="buttons" id="sponsor" type="button">
+			<!-- <button class="buttons" id="sponsor" type="button">
 				<img src="imgs/frontpage/sponsor.svg">
 			</button> -->
-        </div>
-    </div>
-    <!-- Main End -->
+		</div>
+	</div>
+	<!-- Main End -->
 
-<<<<<<< HEAD
+	<!-- Footer-->
+	<div id="footer">
+		<div id="copyright">©
+			<a href="https://upe.cs.fiu.edu/">Upsilon Pi Epsilon at FIU</a>
+		</div>
+	</div>
 
-    <!-- Footer-->
-    <div id="footer">
-        <div id="copyright">©
-            <a href="https://upe.cs.fiu.edu/">Upsilon Pi Epsilon at FIU</a>
-        </div>
-    </div>
-=======
->>>>>>> origin/live
+	<!-- Footer-->
+	<div id="footer">
+		<div id="copyright">©
+			<a href="https://upe.cs.fiu.edu/">Upsilon Pi Epsilon at FIU</a>
+		</div>
+	</div>
 
     <!-- Footer-->
     <div id="footer">

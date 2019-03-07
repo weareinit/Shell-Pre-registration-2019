@@ -1,193 +1,180 @@
-        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
-        @keyframes GradientBackground {
-            0% {
-                background-position: 0% 50%
-            }
-            50% {
-                background-position: 100% 50%
-            }
-            100% {
-                background-position: 0% 100%
-            }
-        }
-        
-        body {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            border: 0;
-            overflow-x: hidden;
-            background-image: url(../imgs/frontpage/Background_Sand.svg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            background-attachment: fixed;
-            font-family: "Montserrat", sans-serif;
-            margin: 0 auto;
-        }
-        
-        h1 {
-            font-size: 200%;
-            font-family: "Montserrat", sans-serif;
-            font-weight: 900;
-            opacity: .7;
-        }
-        
-        .details {
-            margin-top: 2%;
-            margin-bottom: 5%;
-            opacity: .5;
-            max-width: 90%;
-        }
-        
-        .container {
-            text-align: center;
-            padding: 5% 0px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        form {
-            background-color: transparent;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            max-width: 700px;
-        }
-        
-        p {
-            text-align: left;
-        }
-        
-        p>label {
-            margin-left: 20px;
-        }
-        
-         ::placeholder {
-            /* Chrome, Firefox, Opera, Safari 10.1+ */
-            color: white;
-            opacity: .2;
-            /* Firefox */
-        }
-        
-         :-ms-input-placeholder {
-            /* Internet Explorer 10-11 */
-            color: white;
-            opacity: .2;
-        }
-        
-         ::-ms-input-placeholder {
-            /* Microsoft Edge */
-            color: white;
-            opacity: .2;
-        }
-        /* label {
-    padding: 20px;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+@keyframes GradientBackground {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 100%
+	}
+}
+
+body {
+	height: 100%;
+	width: 100vw!important;
+	overflow-x: hidden;
+	overflow-y: visible;
+	/* background-image: url(../imgs/frontpage/Background_Sand.svg); */
+}
+#backgroundObjects {
+	overflow: visible;
+	position: fixed;
+	padding: 0;
+	width: 100vw!important;
+	height: 100vh!important;
+}
+#main{
+	padding: 250px 0px 0 0;
+	width: 100vw!important;	
+}
+h1 {
+	font-size: 200%;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 900;
+	opacity: .7;
+}
+
+.details {
+	margin-top: 2%;
+	margin-bottom: 5%;
+	opacity: .5;
+	max-width: 90%;
+	font-weight: bold;
+}
+
+.container {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw!important;
+}
+
+form {
+	background-color: transparent;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 700px;
+	z-index: 100;
+}
+
+label {
+	margin-left: 20px!important;
+	font-weight: bold;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: .2;
+	/* Firefox */
+}
+
+/* label {
+	padding: 20px;
 } */
-        
-        input {
-            width: 90vw;
-            height: 42px;
-            border: none;
-            background-color: rgba(0, 0, 0, 0.5);
-            /* padding-left: 5px; */
-            /* margin: 0px; */
-            border-radius: 20px;
-            margin-bottom: 20px;
-            margin-top: 5px;
-            padding-left: 10px;
-            color: white;
-            font-family: "Montserrat", sans-serif;
-            font-size: 20px;
-            max-width: 500px;
-            outline: 0;
-        }
-        
-        input:hover {
-            background-color: #2681AB;
-            outline: none;
-        }
-        
-        select {
-            width: 100vw;
-            font-family: "Montserrat", sans-serif;
-            max-width: 500px;
-        }
-        
-        .select2-selection--multiple {
-            width: 100%;
-            margin-top: 5px;
-            margin-bottom: 20px;
-            background-color: rgba(0, 0, 0, 0.5)!important;
-            border: none!important;
-            border-radius: 20px!important;
-            padding: 8px !important;
-            /* border-radius: 20px; */
-        }
-        
-        .select2-selection:hover,
-        .select2-selection--multiple:hover {
-            background-color: #2681AB!important;
-        }
-        
-        textarea {
-            width: 90vw;
-            height: 130px;
-            border: none;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            border-radius: 20px;
-            margin-top: 5px;
-            margin-bottom: 20px;
-            color: white;
-            font-family: "Montserrat", sans-serif;
-            font-size: 20px;
-            max-width: 500px;
-            outline: 0;
-        }
-        
-        textarea:hover {
-            background-color: #2681AB!important;
-            outline: 0;
-        }
-        
-        .submit {
-            font-size: 25px;
-            font-weight: 900;
-            border-radius: 50px;
-            width: 230px!important;
-        }
-        
-        .submit:hover {
-            animation: GradientBackground 15s infinite;
-            background: linear-gradient(270deg, #58d8e6, #f3b3b3, #b4c4f9, #86db91, #b4c4f9, #f3b3b3, #58d8e6);
-            background-size: 900% 900%;
-            ;
-        }
-        
-        @media only screen and (max-width: 459px) {
-            .bottomButtons {
-                justify-content: center!important
-            }
-        }
-        
-        .bottomButtons {
-            width: 100%;
-            max-width: 500px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        #errorMessage {
-            color: red;
-            margin: 8px;
-        }
+
+input:hover {
+	background-color: #2681AB;
+	outline: none;
+}
+
+select {
+	width: 100vw;
+	font-family: "Montserrat", sans-serif;
+	max-width: 500px;
+}
+
+.selectBox{
+	width: 92%!important;
+	max-width: 510px!important;
+}
+label,select,input,textarea,bootstrap-select{
+	display: block!important;
+	clear: both!important;
+	float: left!important;
+}
+.dropdown.bootstrap-select {
+	float: left!important;
+	clear: both;
+    width: 100%!important;
+}
+textarea,input,.bootstrap-select .dropdown-toggle {
+	width: 90vw;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 15px;
+	/* margin: 0px; */
+	border-radius: 20px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	padding-left: 10px;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	max-width: 500px;
+	outline: 0;
+}
+textarea{
+	height: 130px;
+}
+
+textarea:hover {
+	background-color: #2681AB!important;
+	outline: 0;
+}
+
+.submit {
+	font-size: 25px;
+	font-weight: 900;
+	border-radius: 50px;
+	width: 230px!important;
+	cursor: pointer;
+}
+
+.submit:hover {
+	animation: GradientBackground 15s infinite;
+	background: linear-gradient(270deg, #58d8e6, #f3b3b3, #b4c4f9, #86db91, #b4c4f9, #f3b3b3, #58d8e6);
+	background-size: 900% 900%;
+	;
+}
+
+@media only screen and (max-width: 600px) {
+	.bottomButtons {
+		justify-content: center!important
+	}
+	.bottomButtons > input {
+		width: 92%!important;
+	}
+}
+
+.bottomButtons {
+	width: 100%;
+	max-width: 500px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#errorMessage {
+	color: #ff4545;
+	margin: 8px;
+	padding: 20px;
+	margin-bottom: 40px;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.nicejob{
+	cursor: var(--thumbs-up);
+}
