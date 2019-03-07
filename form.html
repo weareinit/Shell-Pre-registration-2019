@@ -7,11 +7,44 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title></title>
 
+	<!--  Gotta make sure this is set so things look good on mobile  -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<link rel="icon" href="imgs/sh-square.png">
 	<link rel="apple-touch-icon" href="imgs/sh-square.png">
 	<meta name="msapplication-TileColor" content="#ff1f8c">
 	<meta name="theme-color" content="#ff1f8c">
+
+	<!--BEGIN Schema tags-->
+	<meta itemprop="name" content="ShellHacks">
+	<meta itemprop="description"
+		content="A Miami-based hackathon run by FIU's UPE Chapter and open to all hackers, both local and abroad!">
+	<meta itemprop="image"
+		content="https://cdn.discordapp.com/attachments/399554513767235587/551122355536003082/fullsizeoutput_19a3.jpeg">
+	<!--END Schema tags-->
+
+	<!--BEGIN Opengraph-->
+	<meta property="og:site_name" content="ShellHacks">
+	<meta property="og:url" content="https://shellhacks.net">
+	<meta property="og:description" content="ShellHacks, Florida International University's Fall Hackathon!">
+	<meta property="og:type" content="website">
+	<meta property="og:image"
+		content="https://cdn.discordapp.com/attachments/399554513767235587/551122355536003082/fullsizeoutput_19a3.jpeg">
+	<meta property="og:image:width" content="auto">
+	<meta property="og:image:height" content="367">
+	<!--END Opengraph-->
+
+	<!--BEGIN Twitter Card-->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@upefiu">
+	<meta name="twitter:title" content="ShellHacks">
+	<meta name="twitter:description" content="ShellHacks, Florida International University's Fall Hackathon!">
+	<meta name="twitter:image"
+		content="https://cdn.discordapp.com/attachments/399554513767235587/551122355536003082/fullsizeoutput_19a3.jpeg">
+	<!--END Twitter Card-->
+
+	<!-- ---  ADDITIONAL RESOURCES BELOW --- -->
+
+	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- Select2 -->
@@ -19,9 +52,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script> -->
 
 	<!-- Boostrap JavaScript -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 		crossorigin="anonymous"></script>
@@ -87,7 +117,7 @@
 		<h1 class="brand">Pre-Registration<br /></h1>
 		<h3 class="details">Hi there! You are one of the chosen ones who gets to pre-register for Shellhacks.<br />To
 			get started, please fill out the form bellow.<br /></h3>
-		<h3 id="errorMessage" style="display:none">*Something's wrong! Make sure you filled all the fields.</h3>
+		<h3 id="errorMessage" style="display:none">* Something's wrong! Make sure you filled all the fields.</h3>
 		<form class="fade-in one">
 			<div>
 				<label>First Name<br /></label>
@@ -233,11 +263,10 @@
 			var input = document.getElementById(id);
 			if (input.value.trim() == null || input.value.trim() == "") {
 				$("#errorMessage").show()
-				$('#main').animate({ scrollTop: $("#main").offset().top }, 1000)
+				$('html, body').animate({ scrollTop: $("#main").offset().top }, 1000)
 
 			} else {
 				$("#errorMessage").hide()
-				document.getElementById("errorMessage").innerHTML = ""
 				return input;
 			}
 		}
