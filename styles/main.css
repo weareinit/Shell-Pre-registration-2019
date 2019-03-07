@@ -89,7 +89,6 @@ body {
 /*Registration form*/
 
 #registerForm {
-    box-sizing: border-box;
     margin: 0 auto;
     padding: 15px 0px;
     overflow-y: scroll;
