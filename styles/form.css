@@ -248,6 +248,16 @@ textarea:hover {
     font-size: 16px;
 }
 
+#submition {
+    color: green;
+    margin: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
 .nicejob {
     cursor: var(--thumbs-up);
 }

@@ -82,11 +82,11 @@
         <form class="fade-in one" autocomplete="on" id="form">
             <div>
                 <label>First Name<br /></label>
-                <input id="lname" placeholder="John" required>
+                <input id="fname" placeholder="John" required>
             </div>
             <div>
                 <label>Last Name<br /></label>
-                <input id="fname" placeholder="Doe" required>
+                <input id="lname" placeholder="Doe" required>
             </div>
             <div>
                 <label>School Email Address<br /></label>
@@ -188,6 +188,7 @@
                 <label>Anything else you'd like to see?<br /></label>
                 <textarea id="message" placeholder="Drop those sweet ideas/suggestions here"></textarea>
             </div>
+            <h3 id="submition" style="display:none">🎉You've been pre-registed. Redirecting in 10 seconds...</h3>
             <div class="bottomButtons">
                 <input class="submit" id="submit" type="button" value="Submit">
                 <input onclick="location.href = 'index.html';" class="submit" id="cancel" type="button" value="Back">
@@ -230,11 +231,12 @@
             if (input.value.trim() == null || input.value.trim() == "") {
                 $('html, body,div').animate({
                     scrollTop: $("#container").offset().top
-                }, 1000);
+                }, 2000);
                 $("#errorMessage").show()
 
             } else {
                 $("#errorMessage").hide()
+                $("#submition").show()
                 return input.value;
             }
         }
@@ -282,14 +284,13 @@
                 console.log("Submitting responses...", lname, fname, email, workshops, hardware, activities, swag, message);
                 try {
                     saveToFirebase(lname, fname, email, workshops, hardware, activities, swag, message);
-                    submitBtn.value = "Submitted!";
                     submitBtn.disabled = "disabled";
                     console.log("Form submitted!");
                     $("body").addClass("nicejob")
                     $(submitBtn).addClass("nicejob")
                     setTimeout(() => {
                         goHome();
-                    }, 3000);
+                    }, 10000);
                 } catch (error) {
                     $('html, body,div').animate({
                         scrollTop: $("#container").offset().top - 20
