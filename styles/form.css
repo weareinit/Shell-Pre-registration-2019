@@ -85,12 +85,12 @@ form {
     /* width: 90 !important; */
     width: 100vw!important;
     border: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px;
+    background-color: rgba(82, 82, 82, 0.5);
+    padding: 30px;
     /* margin: 0px; */
-    border-radius: 20px!important;
+    border-radius: 50px!important;
     margin-bottom: 20px;
-    margin-top: 5px;
+    margin-top: 20px;
     padding-left: 10px;
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -102,15 +102,16 @@ form {
 .select2-selection__choice {
     list-style: none!important;
     /* background-color: #615F55; */
-    color: white!important;
+    color: #675c51!important;
     border-radius: 10px!important;
     border: none!important;
-    background-color: #2681AB!important;
+    background-color: #FBEDCA !important;
 }
 
 label {
     margin-left: 20px!important;
     font-weight: bold;
+    color: #675c51;
 }
 
 ::placeholder {
@@ -127,7 +128,6 @@ label {
 
 input:hover,
 input:active {
-    background-color: #2681AB;
     outline: none;
 }
 
@@ -139,7 +139,6 @@ select {
 
 .select2-selection--multiple:active,
 .select2-selection--multiple:hover {
-    background-color: #2681AB;
     outline: none;
 }
 
@@ -162,10 +161,10 @@ textarea,
 input {
     width: 90vw;
     border: none;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(100, 99, 99, 0.5);
     padding: 15px;
     /* margin: 0px; */
-    border-radius: 20px!important;
+    border-radius: 40px!important;
     margin-bottom: 20px;
     margin-top: 5px;
     padding-left: 10px;
@@ -182,7 +181,6 @@ textarea {
 
 textarea:active,
 textarea:hover {
-    background-color: #2681AB!important;
     outline: 0;
 }
 
