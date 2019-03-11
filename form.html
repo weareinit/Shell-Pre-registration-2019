@@ -94,8 +94,9 @@
             </div>
             <div class="selectBox">
                 <label class="selectBoxLabel">Any workshops you would like to see?<br /></label>
-                <select class="selectpicker" id="workshop" name="states[]" multiple="multiple" placeholder="working!">
-					<option value="AL">Git</option>
+                <select class="selectpicker" id="workshop" name="states[]" multiple="multiple" data-placeholder="working!">
+                    <option disabled>Select at least one</option>
+                    <option value="AL">Git</option>
 					<option value="WY">Unity</option>
 					<option value="AL">Machine Learning</option>
 					<option value="WY">ReactJS</option>
@@ -123,6 +124,7 @@
             <div class="selectBox">
                 <label class="selectBoxLabel">What about hardware?<br /></label>
                 <select class="selectpicker" id="hardware" name="states[]" multiple="multiple">
+                    <option disabled>Select at least one</option>
 					<option value="AL">Matrix Creators</option>
 					<option value="WY">Matrix Voices</option>
 					<option value="AL">Arduinos</option>
@@ -134,6 +136,7 @@
             <div class="selectBox">
                 <label class="selectBoxLabel">Activities?<br /></label>
                 <select class="selectpicker" id="activity" name="states[]" multiple="multiple">
+                    <option disabled>Select at least one</option>
 					<option value="AL">Werewolf</option>
 					<option value="WY">Yoga</option>
 					<option value="WY">Paper Plane Competition</option>
@@ -156,6 +159,7 @@
             <div class="selectBox">
                 <label class="selectBoxLabel">And swag?<br /></label>
                 <select class="selectpicker" id="swag" name="states[]" multiple="multiple">
+                    <option disabled>Select at least one</option>
 					<option value="AL">Hats</option>
 					<option value="WY">Beanies</option>
 					<option value="AL">Socks</option>
@@ -196,7 +200,6 @@
     <script>
         //----------------select2 multi selection-----
         $(document).ready(function() {
-            placeholder: "Select at least one",
             $('.selectpicker').select2();
         });
 
@@ -226,8 +229,8 @@
 
             if (input.value.trim() == null || input.value.trim() == "") {
                 $('html, body,div').animate({
-                    scrollTop: $("#container").offset().top - 20
-                }, 1500);
+                    scrollTop: $("#container").offset().top
+                }, 1000);
                 $("#errorMessage").show()
 
             } else {

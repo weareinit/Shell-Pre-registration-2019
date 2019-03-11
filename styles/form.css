@@ -95,7 +95,7 @@ form {
     color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
-    max-width: 515px;
+    max-width: 517px;
     outline: 0;
 }
 
@@ -136,9 +136,14 @@ select {
     max-width: 500px;
 }
 
+.select2-selection--multiple:hover {
+    background-color: #2681AB;
+    outline: none;
+}
+
 .selectBox {
-    width: 100vw!important;
-    max-width: 510px!important;
+    width: 90vw!important;
+    max-width: 525px!important;
     box-sizing: border-box!important;
 }
 
@@ -198,14 +203,23 @@ textarea:hover {
         justify-content: center!important;
     }
     .bottomButtons>input {
-        width: 92%!important;
+        width: 90%!important;
     }
     .select2-container .select2-selection--multiple {
-        width: 95vw!important;
+        width: 97vw!important;
         margin: auto;
     }
     .selectBoxLabel {
         margin-left: 7px !important;
+    }
+    .selectBox {
+        width: 100vw!important;
+        max-width: 525px!important;
+        box-sizing: border-box!important;
+    }
+    .select2-results>.select2-results__options {
+        max-width: 95%;
+        margin: auto;
     }
 }
 
