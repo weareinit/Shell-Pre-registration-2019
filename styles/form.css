@@ -125,8 +125,8 @@ label {
 	padding: 20px;
 } */
 
-.inputField:hover,
-.inputField:active {
+input:hover,
+input:active {
     background-color: #2681AB;
     outline: none;
 }
@@ -151,7 +151,7 @@ select {
 
 label,
 select,
-.inputField,
+input,
 textarea {
     display: block!important;
     clear: both!important;
@@ -159,7 +159,7 @@ textarea {
 }
 
 textarea,
-.inputField {
+input {
     width: 90vw;
     border: none;
     background-color: rgba(0, 0, 0, 0.5);
