@@ -125,7 +125,7 @@ label {
 	padding: 20px;
 } */
 
-input:hover {
+input:active {
     background-color: #2681AB;
     outline: none;
 }
@@ -136,7 +136,7 @@ select {
     max-width: 500px;
 }
 
-.select2-selection--multiple:hover {
+.select2-selection--multiple:active {
     background-color: #2681AB;
     outline: none;
 }
@@ -178,7 +178,7 @@ textarea {
     height: 130px;
 }
 
-textarea:hover {
+textarea:active {
     background-color: #2681AB!important;
     outline: 0;
 }
