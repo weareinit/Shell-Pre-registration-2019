@@ -125,7 +125,8 @@ label {
 	padding: 20px;
 } */
 
-input:hover,input:active {
+input:hover,
+input:active {
     background-color: #2681AB;
     outline: none;
 }
@@ -136,7 +137,8 @@ select {
     max-width: 500px;
 }
 
-.select2-selection--multiple:active, .select2-selection--multiple:hover {
+.select2-selection--multiple:active,
+.select2-selection--multiple:hover {
     background-color: #2681AB;
     outline: none;
 }
@@ -178,7 +180,8 @@ textarea {
     height: 130px;
 }
 
-textarea:active {
+textarea:active,
+textarea:hover {
     background-color: #2681AB!important;
     outline: 0;
 }
@@ -191,7 +194,8 @@ textarea:active {
     cursor: pointer;
 }
 
-.submit:hover, .submit:active{
+.submit:hover,
+.submit:active {
     animation: GradientBackground 15s infinite;
     background: linear-gradient(270deg, #58d8e6, #f3b3b3, #b4c4f9, #86db91, #b4c4f9, #f3b3b3, #58d8e6);
     background-size: 900% 900%;
