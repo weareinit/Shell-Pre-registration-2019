@@ -194,7 +194,8 @@ textarea:hover {
     cursor: pointer;
 }
 
-.submit:hover {
+.submit:hover,
+.submit:active {
     animation: GradientBackground 15s infinite;
     background: linear-gradient(270deg, #58d8e6, #f3b3b3, #b4c4f9, #86db91, #b4c4f9, #f3b3b3, #58d8e6);
     background-size: 900% 900%;
