@@ -1,180 +1,235 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
 @keyframes GradientBackground {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 100%
-	}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 100%
+    }
 }
 
 body {
-	height: 100%;
-	width: 100vw!important;
-	overflow-x: hidden;
-	overflow-y: visible;
-	/* background-image: url(../imgs/frontpage/Background_Sand.svg); */
+    height: 100%;
+    width: 100vw!important;
+    overflow-x: hidden;
+    overflow-y: visible;
+    /* background-image: url(../imgs/frontpage/Background_Sand.svg); */
 }
+
 #backgroundObjects {
-	overflow: visible;
-	position: fixed;
-	padding: 0;
-	width: 100vw!important;
-	height: 100vh!important;
+    overflow: visible;
+    position: fixed;
+    padding: 0;
+    width: 100vw!important;
+    height: 100vh!important;
+    z-index: 1;
 }
-#main{
-	padding: 250px 0px 0 0;
-	width: 100vw!important;	
-}
+
 h1 {
-	font-size: 200%;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 900;
-	opacity: .7;
+    font-size: 200%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    opacity: .7;
 }
 
 .details {
-	margin-top: 2%;
-	margin-bottom: 5%;
-	opacity: .5;
-	max-width: 90%;
-	font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    opacity: .5;
+    max-width: 90%;
+    font-weight: bold;
 }
 
 .container {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100vw!important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw!important;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-top: 3vh;
+    position: absolute;
+    z-index: 2;
 }
 
 form {
-	background-color: transparent;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	max-width: 700px;
-	z-index: 100;
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    z-index: 100;
+}
+
+.select2-container {
+    padding: 0px!important;
+}
+
+.select2 {
+    width: 100%!important;
+    padding: 0px!important;
+    margin: 0px!important;
+}
+
+.select2-container .select2-selection--multiple {
+    border: none!important;
+    padding: 2px!important;
+    /* width: 90 !important; */
+    width: 100vw!important;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    /* margin: 0px; */
+    border-radius: 20px!important;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding-left: 10px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    max-width: 515px;
+    outline: 0;
+}
+
+.select2-selection__choice {
+    list-style: none!important;
+    /* background-color: #615F55; */
+    color: white!important;
+    border-radius: 10px!important;
+    border: none!important;
+    background-color: #2681AB!important;
 }
 
 label {
-	margin-left: 20px!important;
-	font-weight: bold;
+    margin-left: 20px!important;
+    font-weight: bold;
 }
 
 ::placeholder {
-	/* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: white;
-	opacity: .2;
-	/* Firefox */
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: .2;
+    /* Firefox */
 }
+
 
 /* label {
 	padding: 20px;
 } */
 
 input:hover {
-	background-color: #2681AB;
-	outline: none;
+    background-color: #2681AB;
+    outline: none;
 }
 
 select {
-	width: 100vw;
-	font-family: "Montserrat", sans-serif;
-	max-width: 500px;
+    width: 100vw;
+    font-family: "Montserrat", sans-serif;
+    max-width: 500px;
 }
 
-.selectBox{
-	width: 92%!important;
-	max-width: 510px!important;
+.selectBox {
+    width: 100vw!important;
+    max-width: 510px!important;
+    box-sizing: border-box!important;
 }
-label,select,input,textarea,bootstrap-select{
-	display: block!important;
-	clear: both!important;
-	float: left!important;
+
+label,
+select,
+input,
+textarea {
+    display: block!important;
+    clear: both!important;
+    float: left!important;
 }
-.dropdown.bootstrap-select {
-	float: left!important;
-	clear: both;
-    width: 100%!important;
+
+textarea,
+input {
+    width: 90vw;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    /* margin: 0px; */
+    border-radius: 20px!important;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding-left: 10px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    max-width: 500px;
+    outline: 0;
 }
-textarea,input,.bootstrap-select .dropdown-toggle {
-	width: 90vw;
-	border: none;
-	background-color: rgba(0, 0, 0, 0.5);
-	padding: 15px;
-	/* margin: 0px; */
-	border-radius: 20px;
-	margin-bottom: 20px;
-	margin-top: 5px;
-	padding-left: 10px;
-	color: white;
-	font-family: "Montserrat", sans-serif;
-	font-size: 20px;
-	max-width: 500px;
-	outline: 0;
-}
-textarea{
-	height: 130px;
+
+textarea {
+    height: 130px;
 }
 
 textarea:hover {
-	background-color: #2681AB!important;
-	outline: 0;
+    background-color: #2681AB!important;
+    outline: 0;
 }
 
 .submit {
-	font-size: 25px;
-	font-weight: 900;
-	border-radius: 50px;
-	width: 230px!important;
-	cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 50px;
+    width: 230px!important;
+    cursor: pointer;
 }
 
 .submit:hover {
-	animation: GradientBackground 15s infinite;
-	background: linear-gradient(270deg, #58d8e6, #f3b3b3, #b4c4f9, #86db91, #b4c4f9, #f3b3b3, #58d8e6);
-	background-size: 900% 900%;
-	;
+    animation: GradientBackground 15s infinite;
+    background: linear-gradient(270deg, #58d8e6, #f3b3b3, #b4c4f9, #86db91, #b4c4f9, #f3b3b3, #58d8e6);
+    background-size: 900% 900%;
+    ;
 }
 
 @media only screen and (max-width: 600px) {
-	.bottomButtons {
-		justify-content: center!important
-	}
-	.bottomButtons > input {
-		width: 92%!important;
-	}
+    .bottomButtons {
+        justify-content: center!important;
+    }
+    .bottomButtons>input {
+        width: 92%!important;
+    }
+    .select2-container .select2-selection--multiple {
+        width: 95vw!important;
+        margin: auto;
+    }
+    .selectBoxLabel {
+        margin-left: 7px !important;
+    }
 }
 
 .bottomButtons {
-	width: 100%;
-	max-width: 500px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10%!important;
 }
 
 #errorMessage {
-	color: #ff4545;
-	margin: 8px;
-	padding: 20px;
-	margin-bottom: 40px;
-	background: rgba(0, 0, 0, 0.8);
-	border-radius: 5px;
-	font-size: 16px;
+    color: #ff4545;
+    margin: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.nicejob{
-	cursor: var(--thumbs-up);
+.nicejob {
+    cursor: var(--thumbs-up);
 }
