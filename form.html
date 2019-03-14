@@ -47,6 +47,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
+    <!-- EMOJI CSS -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
     <!-- CSS Styles -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="./styles/form.css">
@@ -77,18 +80,26 @@
     <!-- Main content -->
     <div class="container" id="container">
         <h1 class="brand">Pre-Registration<br /></h1>
-        <h3 class="details">Hi there! You are one of the chosen ones who gets to pre-register for Shellhacks.<br />To get started, please fill out the form below.<br /></h3>
-        <h3 id="errorMessage" style="display:none">* Something's wrong! Make sure you filled all the fields.</h3>
+        <h3 class="details">Can't wait for ShellHacks? Pre-register to keep up with the wave.<br/><br/>
+            <span class="emojies">
+                    <i class="em em-alarm_clock"></i>
+                    <i class="em em-shell"></i>
+                    <i class="em-svg em-beach_with_umbrella"></i>      
+                    <i class="em em-surfer"></i>
+
+            </span>
+        </h3>
+        <h3 id="errorMessage" style="display:none"><i class="em em-warning"></i> Something's wrong! Make sure you filled all the fields.</h3>
         <form class="fade-in one" autocomplete="on" id="form">
-            <div>
+            <div class="txtInput">
                 <label>First Name<br /></label>
                 <input id="fname" placeholder="John" required>
             </div>
-            <div>
+            <div class="txtInput">
                 <label>Last Name<br /></label>
                 <input id="lname" placeholder="Doe" required>
             </div>
-            <div>
+            <div class="txtInput">
                 <label>School Email Address<br /></label>
                 <input id="email" type="email" placeholder="roary001@fiu.edu" required>
             </div>
@@ -184,11 +195,14 @@
 					<option value="WY">Blankets</option>
 				</select>
             </div>
-            <div>
+            <div class="txtInput">
                 <label>Anything else you'd like to see?<br /></label>
                 <textarea id="message" placeholder="Drop those sweet ideas here"></textarea>
             </div>
-            <h3 id="submition" style="display:none">🎉You've been pre-registed. Redirecting in 10 seconds...</h3>
+            <h3 id="submition" style="display:none">
+                <i class="em em-smiley"></i>
+                <i class="em em-clap"></i>
+                <br/><br/>You've been pre-registed. Redirecting in 10 seconds...</h3>
             <div class="bottomButtons">
                 <input class="submit" id="submit" type="button" value="Submit">
                 <input onclick="location.href = 'index.html';" class="submit" id="cancel" type="button" value="Back">
@@ -221,7 +235,9 @@
         var formRef = firebase.database().ref('preRegistration');
 
         function goHome() {
-            window.location.href = "index.html";
+            // window.location.href = "index.html";
+            var element = document.getElementById('container');
+            element.parentNode.removeChild(element);
         }
 
         // //gets an element by id 
@@ -290,7 +306,7 @@
                     $(submitBtn).addClass("nicejob")
                     setTimeout(() => {
                         goHome();
-                    }, 10000);
+                    }, 2000);
                 } catch (error) {
                     $('html, body,div').animate({
                         scrollTop: $("#container").offset().top - 20
