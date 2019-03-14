@@ -79,16 +79,8 @@
 
     <!-- Main content -->
     <div class="container" id="container">
-        <h1 class="brand">Pre-Registration<br /></h1>
-        <h3 class="details">Can't wait for ShellHacks? Pre-register to keep up with the wave.<br/><br/>
-            <span class="emojies">
-                    <i class="em em-alarm_clock"></i>
-                    <i class="em em-shell"></i>
-                    <i class="em-svg em-beach_with_umbrella"></i>      
-                    <i class="em em-surfer"></i>
-
-            </span>
-        </h3>
+        <h1 class="brand"> <i class="em-svg em-beach_with_umbrella"></i> Pre-Registration<br /></h1>
+        <h3 class="details">Can't wait for ShellHacks? Pre-register to keep up with the wave! </h3>
         <h3 id="errorMessage" style="display:none"><i class="em em-warning"></i> Something's wrong! Make sure you filled all the fields.</h3>
         <form class="fade-in one" autocomplete="on" id="form">
             <div class="txtInput">
@@ -199,15 +191,27 @@
                 <label>Anything else you'd like to see?<br /></label>
                 <textarea id="message" placeholder="Drop those sweet ideas here"></textarea>
             </div>
-            <h3 id="submition" style="display:none">
+            <!-- <h3 id="submition" style="display:none">
                 <i class="em em-smiley"></i>
                 <i class="em em-clap"></i>
-                <br/><br/>You've been pre-registed. Redirecting in 10 seconds...</h3>
+                <br/><br/>You've been pre-registed. Redirecting in 10 seconds...</h3> -->
             <div class="bottomButtons">
                 <input class="submit" id="submit" type="button" value="Submit">
                 <input onclick="location.href = 'index.html';" class="submit" id="cancel" type="button" value="Back">
             </div>
+
         </form>
+    </div>
+    <div id="success" style="display:none">
+        <h1 class="brand"><i class="em em-tada"></i> Success!<br /></h1>
+        <h3 class="details">The wave is coming, keep an eye out for our upcoming emails<br/><br/>
+            <span class="emojies">
+                <div class="successButton"><input onclick="location.href = 'index.html';" class="submit" id="cancel" type="button" value="Home"></div>
+        </span>
+        </h3>
+        <div class="socialMedia">
+            <img src="./imgs/frontpage/discord.svg" />
+        </div>
     </div>
     <!-- Main Content End -->
 
@@ -237,7 +241,16 @@
         function goHome() {
             // window.location.href = "index.html";
             var element = document.getElementById('container');
+            var element2 = document.getElementById('success');
+
+            if (element2.style.display === "none") {
+                setTimeout(element2.style.display = "flex", 2000);
+            } else {
+                element2.style.display = "none";
+            }
             element.parentNode.removeChild(element);
+
+
         }
 
         // //gets an element by id 
@@ -258,8 +271,8 @@
         }
 
         //form validaton
-        function validateForm(fname, lname, email) {
-            if (fname === "" || fname === null || lname === "" || lname === null || (email === "" || email === null)) {
+        function isValid(fname, lname, email, workshops, hardware, activities, swag) {
+            if (fname === "" || fname === null || lname === "" || lname === null || (email === "" || email === null) || (message === "" || message === null) || (workshops === undefined || workshops.lenght == 0) || (hardware === undefined || hardware.lenght == 0) || (swag === undefined || swag.lenght == 0) || (activities === undefined || activities.lenght == 0)) {
                 return false;
             } else return true;
         }
@@ -296,17 +309,12 @@
                 swag.push(element.text)
             }
 
-            if (validateForm(fname, lname, email)) {
-                console.log("Submitting responses...", lname, fname, email, workshops, hardware, activities, swag, message);
+            if (isValid(fname, lname, email, message, workshops, hardware, activities, swag)) {
                 try {
                     saveToFirebase(lname, fname, email, workshops, hardware, activities, swag, message);
                     submitBtn.disabled = "disabled";
                     console.log("Form submitted!");
-                    $("body").addClass("nicejob")
-                    $(submitBtn).addClass("nicejob")
-                    setTimeout(() => {
-                        goHome();
-                    }, 2000);
+                    goHome();
                 } catch (error) {
                     $('html, body,div').animate({
                         scrollTop: $("#container").offset().top - 20

@@ -40,11 +40,12 @@ h1 {
 }
 
 .details {
-    margin-top: 2%;
-    margin-bottom: 5%;
+    margin-top: 1%;
+    margin-bottom: 2%;
     opacity: 1;
     max-width: 90%;
     font-weight: bold;
+    z-index: 2;
 }
 
 .container {
@@ -57,7 +58,7 @@ h1 {
     overflow-x: hidden;
     padding-top: 3vh;
     position: absolute;
-    z-index: 2;
+    z-index: 10;
 }
 
 form {
@@ -89,10 +90,10 @@ form {
     border: none;
     background-color: rgba(82, 82, 82, 0.5);
     /* margin: 0px; */
-    border-radius: 50px!important;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    padding-left: 10px;
+    border-radius: 20px!important;
+    margin-bottom: 40px;
+    margin-top: 2px;
+    padding-left: 2px;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
@@ -100,10 +101,11 @@ form {
 }
 
 .select2-selection__choice {
+    padding: 3px!important;
     list-style: none!important;
     /* background-color: #615F55; */
     color: #675c51!important;
-    border-radius: 10px!important;
+    border-radius: 5px!important;
     border: none!important;
     background-color: #FBEDCA !important;
 }
@@ -168,7 +170,7 @@ input {
     background-color: rgba(100, 99, 99, 0.5);
     padding: 15px;
     /* margin: 0px; */
-    border-radius: 40px!important;
+    border-radius: 20px!important;
     margin-bottom: 40px;
     margin-top: 5px;
     padding: 20px;
@@ -191,7 +193,7 @@ textarea:hover {
 .submit {
     font-size: 25px;
     font-weight: 900;
-    border-radius: 50px;
+    border-radius: 50px!important;
     width: 230px!important;
     cursor: pointer;
 }
@@ -252,8 +254,20 @@ textarea:hover {
     font-size: 16px;
 }
 
-.emojies {}
+#success {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
-.nicejob {
-    cursor: var(--thumbs-up);
+.successButton {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
