@@ -41,7 +41,7 @@ h1 {
 
 .details {
     margin-top: 1%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     opacity: 1;
     max-width: 90%;
     font-weight: bold;
@@ -208,7 +208,7 @@ textarea:hover {
 @media only screen and (max-width: 600px) {
     .details {
         margin-top: 2%;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
     }
     textarea,
     input {
