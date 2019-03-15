@@ -206,6 +206,10 @@ textarea:hover {
 }
 
 @media only screen and (max-width: 600px) {
+    .details {
+        margin-top: 2%;
+        margin-bottom: 10%;
+    }
     textarea,
     input {
         width: 90%;
