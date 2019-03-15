@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,900');
 :root {
     --primary-color: #ff1d8e;
     --secondary-color: #fbedca;
@@ -441,7 +441,7 @@ body {
     color: var(--tertiary-color);
     font-size: 23px;
     display: block;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 #countDown {
@@ -642,6 +642,17 @@ body {
     background-color: var(--primary-color);
     /*	box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.5);*/
     border: solid 3px pink;
+}
+
+#creed {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 500px;
+    color: var(--tertiary-color);
+    font-size: 30px;
+    display: block;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif!important;
 }
 
 
