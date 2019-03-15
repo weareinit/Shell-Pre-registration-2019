@@ -88,7 +88,7 @@ body {
 }
 
 
-/*Registration form*/
+/* Registration form
 
 #registerForm {
     margin: 0 auto;
@@ -119,7 +119,7 @@ body {
     label {
         margin: 7px 0 !important;
     }
-}
+} */
 
 
 /*End registration form*/
@@ -647,7 +647,6 @@ body {
 #creed {
     margin-top: 20px;
     margin-bottom: 15px;
-    width: 500px;
     color: var(--tertiary-color);
     font-size: 30px;
     display: block;
