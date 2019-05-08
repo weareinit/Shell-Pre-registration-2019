@@ -33,7 +33,7 @@ h3 {
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 1.7em;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     opacity: .7;
@@ -48,7 +48,7 @@ h1 {
     z-index: 2;
 }
 
-.container {
+.form-container {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,8 @@ h1 {
     overflow-x: hidden;
     padding-top: 3vh;
     position: absolute;
-    z-index: 10;
+    z-index: 100;
+    height: 100vh;
 }
 
 form {
@@ -72,6 +73,7 @@ form {
     flex-wrap: wrap;
     max-width: 700px;
     z-index: 2;
+    padding-bottom: 30px;
 }
 
 .select2-container {
