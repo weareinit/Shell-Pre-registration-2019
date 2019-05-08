@@ -724,10 +724,12 @@ select::-ms-expand {
 }
 
 .link-group {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     z-index: 1000;
-    text-align: center;
-    margin: 20px 0 0 0;
-    text-align: center;
+    /* text-align: center; */
+    margin: 10px;
 }
 
 .link-group a {
