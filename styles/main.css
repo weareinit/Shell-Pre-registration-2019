@@ -701,5 +701,6 @@ select::-ms-expand {
 }
 
 .link-group a {
-    color: #9E8D7D;
+    color: #265A8F;
+    opacity: .5;
 }
