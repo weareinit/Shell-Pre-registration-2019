@@ -1,128 +1,124 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-
 :root {
-	--primary-color: #ff1d8e;
-	--secondary-color: #fbedca;
-	--tertiary-color: #9e8d7d;
-	--waves-speed: 3s;
-	--gradient-bg: linear-gradient(270deg, #58d8e6, #f3b3b3, #b4c4f9, #86db91, #b4c4f9, #f3b3b3, #58d8e6);
+    --primary-color: #ff1d8e;
+    --secondary-color: #fbedca;
+    --tertiary-color: #9e8d7d;
+    --waves-speed: 3s;
+    --gradient-bg: linear-gradient(270deg, #58d8e6, #f3b3b3, #b4c4f9, #86db91, #b4c4f9, #f3b3b3, #58d8e6);
 }
 
 @keyframes GradientBackground {
-	0% {
-		background-position: 0% 50%
-	}
-
-	50% {
-		background-position: 100% 50%
-	}
-
-	100% {
-		background-position: 0% 100%
-	}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 100%
+    }
 }
 
 html,
 body {
-	height: 100vh;
-	width: 100vw;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
-	background: var(--secondary-color);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    background: var(--secondary-color);
 }
 
 * {
-	transition: 0.2s ease all;
+    transition: 0.2s ease all;
 }
 
 
 /* Fade in animation */
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .fade-in {
-	/* make things invisible upon start */
-	opacity: 0;
-	animation: fadeIn ease-in 1;
-	animation-fill-mode: forwards;
-	animation-duration: 1s;
+    /* make things invisible upon start */
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
 }
 
 .fade-in.one {
-	animation-delay: 0.7s;
+    animation-delay: 0.7s;
 }
 
 .fade-in.two {
-	animation-delay: 1.2s;
+    animation-delay: 1.2s;
 }
 
 .fade-in.three {
-	animation-delay: 2.5s;
+    animation-delay: 2.5s;
 }
 
 #registerPopup {
-	z-index: 10;
-	transition: 0.3s ease all;
-	position: absolute;
-	top: 0;
-	height: 100vh;
-	width: 100vw;
-	opacity: 0;
-	pointer-events: none;
-	background: var(--primary-color);
-	color: white;
-	font-size: 16px;
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
+    z-index: 10;
+    transition: 0.3s ease all;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    pointer-events: none;
+    background: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 
 /*Registration form*/
 
 #registerForm {
-	margin: 0 auto;
-	background: var(--primary-color);
-	padding: 15px 0px;
-	overflow-y: scroll;
-	height: 100vh;
-	width: 100vw;
+    margin: 0 auto;
+    background: var(--primary-color);
+    padding: 15px 0px;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100vw;
 }
 
 #registerForm label {
-	text-align: left;
-	margin: 0 10px 0 20px;
+    text-align: left;
+    margin: 0 10px 0 20px;
 }
 
 #registerForm>div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
 }
 
 #registerForm>div>label {
-	align-self: baseline;
-	margin: 7px 0;
-	margin-left: calc(50vw - 200px);
+    align-self: baseline;
+    margin: 7px 0;
+    margin-left: calc(50vw - 200px);
 }
 
 @media only screen and (max-width: 420px) {
-	label {
-		margin: 7px 0 !important;
-	}
+    label {
+        margin: 7px 0 !important;
+    }
 }
 
 
@@ -132,538 +128,506 @@ body {
 /*Background objects*/
 
 #backgroundObjects {
-	display: block;
-	position: absolute;
-	z-index: 0;
-	pointer-events: none;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .decor {
-	position: absolute;
-	pointer-events: none;
-	z-index: 1;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
 }
 
 #seat1 {
-	left: 0;
-	width: 400px;
+    left: 0;
+    width: 400px;
 }
 
 #seat2 {
-	right: 0;
-	width: 320px;
+    right: 0;
+    width: 320px;
 }
 
 #beachball {
-	left: 410px;
-	top: 220px;
-	width: 120px;
+    left: 410px;
+    top: 220px;
+    width: 120px;
 }
 
 #sandals {
-	right: 360px;
-	top: 430px;
-	width: 150px;
+    right: 360px;
+    top: 190px;
+    width: 150px;
 }
 
 #shore {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 1920px;
-	min-width: 100%;
-	z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1920px;
+    min-width: 100%;
+    z-index: 0;
 }
 
 #wetsand,
 #surf {
-	position: relative;
+    position: relative;
 }
 
 #wetsand>*,
 #surf>* {
-	position: absolute;
-	bottom: -57px;
-	left: 0;
-	min-width: 100%;
+    position: absolute;
+    bottom: -57px;
+    left: 0;
+    min-width: 100%;
 }
 
 @keyframes wetsand3 {
-	from {
-		bottom: -65px;
-	}
-
-	to {
-		bottom: -55px;
-	}
+    from {
+        bottom: -65px;
+    }
+    to {
+        bottom: -55px;
+    }
 }
 
 #wetsand3 {
-	animation: wetsand3 var(--waves-speed) ease 1.6s infinite alternate;
-	bottom: -55px;
+    animation: wetsand3 var(--waves-speed) ease 1.6s infinite alternate;
+    bottom: -55px;
 }
 
 @keyframes wetsand2 {
-	from {
-		bottom: -290px;
-	}
-
-	to {
-		bottom: -70px;
-	}
+    from {
+        bottom: -290px;
+    }
+    to {
+        bottom: -70px;
+    }
 }
 
 #wetsand2 {
-	animation: wetsand2 var(--waves-speed) ease 1.5s infinite alternate;
-	bottom: -290px;
+    animation: wetsand2 var(--waves-speed) ease 1.5s infinite alternate;
+    bottom: -290px;
 }
 
 @keyframes wetsand1 {
-	from {
-		bottom: -280px;
-	}
-
-	to {
-		bottom: -140px;
-	}
+    from {
+        bottom: -280px;
+    }
+    to {
+        bottom: -140px;
+    }
 }
 
 #wetsand1 {
-	animation: wetsand1 var(--waves-speed) ease 1.2s infinite alternate;
-	bottom: -280px;
+    animation: wetsand1 var(--waves-speed) ease 1.2s infinite alternate;
+    bottom: -280px;
 }
 
 @keyframes surf3 {
-	from {
-		bottom: -280px;
-	}
-
-	to {
-		bottom: 80px;
-	}
+    from {
+        bottom: -280px;
+    }
+    to {
+        bottom: 80px;
+    }
 }
 
 #surf3 {
-	animation: surf3 var(--waves-speed) ease 0.5s infinite alternate;
-	bottom: -280px;
+    animation: surf3 var(--waves-speed) ease 0.5s infinite alternate;
+    bottom: -280px;
 }
 
 @keyframes surf2 {
-	from {
-		bottom: -250px;
-	}
-
-	to {
-		bottom: 30px;
-	}
+    from {
+        bottom: -250px;
+    }
+    to {
+        bottom: 30px;
+    }
 }
 
 #surf2 {
-	animation: surf2 var(--waves-speed) ease 0.3s infinite alternate;
-	bottom: -250px;
+    animation: surf2 var(--waves-speed) ease 0.3s infinite alternate;
+    bottom: -250px;
 }
 
 @keyframes surf1 {
-	from {
-		bottom: -200px;
-	}
-
-	to {
-		bottom: 0px;
-	}
+    from {
+        bottom: -200px;
+    }
+    to {
+        bottom: 0px;
+    }
 }
 
 #surf1 {
-	animation: surf1 var(--waves-speed) ease 0s infinite alternate;
-	bottom: 0px;
-	z-index: 2;
+    animation: surf1 var(--waves-speed) ease 0s infinite alternate;
+    bottom: 0px;
+    z-index: 2;
 }
 
 @keyframes starfish {
-	0% {
-		bottom: -40px;
-	}
-
-	45% {
-		bottom: -40px;
-	}
-
-	58% {
-		bottom: -30px;
-	}
-
-	60% {
-		bottom: -30px;
-	}
-
-	90% {
-		bottom: -40px;
-	}
-
-	100% {
-		bottom: -40px;
-	}
+    0% {
+        bottom: -40px;
+    }
+    45% {
+        bottom: -40px;
+    }
+    58% {
+        bottom: -30px;
+    }
+    60% {
+        bottom: -30px;
+    }
+    90% {
+        bottom: -40px;
+    }
+    100% {
+        bottom: -40px;
+    }
 }
 
 #starfish {
-	left: 15vw;
-	margin-bottom: 13%;
-	width: 130px;
-	min-width: inherit;
-	z-index: 1;
-	animation: starfish 6s ease infinite;
+    left: 15vw;
+    margin-bottom: 13%;
+    width: 130px;
+    min-width: inherit;
+    z-index: 1;
+    animation: starfish 6s ease infinite;
 }
 
 @keyframes shell {
-	from {
-		bottom: -250px;
-	}
-
-	to {
-		bottom: 0px;
-	}
+    from {
+        bottom: -250px;
+    }
+    to {
+        bottom: 0px;
+    }
 }
 
 #shell {
-	left: 35%;
-	width: 80px;
-	min-width: inherit;
-	margin-bottom: 3.3%;
-	bottom: -250px;
-	z-index: 1;
-	animation: shell var(--waves-speed) 0.1s infinite alternate;
+    left: 35%;
+    width: 80px;
+    min-width: inherit;
+    margin-bottom: 3.3%;
+    bottom: -250px;
+    z-index: 1;
+    animation: shell var(--waves-speed) 0.1s infinite alternate;
 }
 
 @keyframes surfboard {
-	0% {
-		bottom: -15px;
-		right: -17px;
-	}
-
-	50% {
-		right: -15px;
-	}
-
-	100% {
-		bottom: -1px;
-		right: -10px;
-	}
+    0% {
+        bottom: -15px;
+        right: -17px;
+    }
+    50% {
+        right: -15px;
+    }
+    100% {
+        bottom: -1px;
+        right: -10px;
+    }
 }
 
 #surfboard {
-	background: transparent url('../imgs/frontpage/surfboard-full.svg') center no-repeat;
-	background-size: 100% 100%;
-	width: 260px;
-	height: 370px;
-	right: -10px;
-	bottom: -1px;
-	z-index: 2;
-	pointer-events: auto;
-	animation: surfboard var(--waves-speed) ease 0s infinite alternate;
+    background: transparent url('../imgs/frontpage/surfboard-full.svg') center no-repeat;
+    background-size: 100% 100%;
+    width: 260px;
+    height: 370px;
+    right: -10px;
+    bottom: -1px;
+    z-index: 2;
+    pointer-events: auto;
+    animation: surfboard var(--waves-speed) ease 0s infinite alternate;
 }
 
 #surfboard>* {
-	width: 30px;
-	pointer-events: auto;
-	cursor: pointer;
-	position: absolute;
-	opacity: 0;
+    width: 30px;
+    pointer-events: auto;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
 }
 
 #surfboard>*:hover {
-	filter: brightness(200%);
+    filter: brightness(200%);
 }
 
 #upe {
-	left: 71px;
-	bottom: 76px;
-	width: 115px !important;
+    left: 71px;
+    bottom: 76px;
+    width: 115px !important;
 }
 
 #discord {
-	left: 83px;
-	bottom: 30px;
+    left: 83px;
+    bottom: 30px;
 }
 
 #facebook {
-	left: 120px;
-	bottom: 47px;
+    left: 120px;
+    bottom: 47px;
 }
 
 #twitter {
-	left: 154px;
-	bottom: 65px;
+    left: 154px;
+    bottom: 65px;
 }
 
 #instagram {
-	left: 190px;
-	bottom: 82p
+    left: 190px;
+    bottom: 82p
 }
 
 
 /*End background objects*/
 
 #main {
-	/**/
+    /**/
 }
 
 .container {
-	font-family: "Montserrat", sans-serif;
-	height: 100vh;
-	width: 100vw;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	z-index: 7;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 7;
 }
 
 #brand {
-	width: 800px;
-	max-width: 80%;
-	margin-bottom: -10px;
-	z-index: 3;
+    width: 800px;
+    max-width: 80%;
+    margin-bottom: -10px;
+    z-index: 3;
 }
 
 .featuring {
-	padding-right: 25px;
-	color: #252628;
-	height: auto;
-	max-width: 160px;
+    padding-right: 25px;
+    color: #252628;
+    height: auto;
+    max-width: 160px;
 }
 
 .spotify {
-	height: auto;
-	width: 210px;
+    height: auto;
+    width: 210px;
 }
 
 .cohost {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #details {
-	margin-top: 100px !important;
-	margin-bottom: 30px;
-	width: 500px;
-	color: var(--tertiary-color);
-	font-size: 23px;
-	display: block;
-	font-weight: bold;
+    margin-top: 100px !important;
+    margin-bottom: 30px;
+    width: 500px;
+    color: var(--tertiary-color);
+    font-size: 23px;
+    display: block;
+    font-weight: bold;
 }
 
 #footer {
-	position: absolute;
-	bottom: 0;
+    position: absolute;
+    bottom: 0;
 }
 
 .buttonsContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .buttonsContainer>.buttons {
-	background-color: var(--gradient-bg);
-	background-color: rgba(0, 0, 0, 0.5) !important;
-	background-size: 1000% 1000%;
-	height: 70px;
-	width: 320px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50px;
-	border: 0 !important;
+    background-color: var(--gradient-bg);
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-size: 1000% 1000%;
+    height: 70px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 0 !important;
 }
 
 .buttonsContainer>.buttons:hover {
-	animation: GradientBackground 15s infinite;
-	background: var(--gradient-bg);
-	background-size: 900% 900%;
+    animation: GradientBackground 15s infinite;
+    background: var(--gradient-bg);
+    background-size: 900% 900%;
 }
 
 .buttonsContainer>.buttons>* {
-	margin-bottom: -2px;
-	font-size: 33px;
-	font-weight: 800;
+    margin-bottom: -2px;
+    font-size: 33px;
+    font-weight: 800;
 }
 
 #register>* {
-	width: 79%;
+    width: 79%;
 }
 
 #sponsor>* {
-	width: 54%;
+    width: 54%;
 }
 
 @media only screen and (max-width: 1800px) {
-	#seat1 {
-		width: 290px;
-	}
-
-	#seat2 {
-		width: 220px;
-	}
-
-	#beachball {
-		left: 40%;
-		top: 60px;
-		width: 90px;
-	}
-
-	#sandals {
-		right: 7%;
-		top: 480px;
-		width: 115px;
-	}
-
-	#starfish {
-		left: 5%;
-		width: 100px;
-		margin-bottom: 265px;
-	}
-
-	#surfboard {
-		width: 230px;
-		height: 325px;
-	}
-
-	#shell {
-		left: 15%;
-		width: 60px;
-	}
+    #seat1 {
+        width: 290px;
+    }
+    #seat2 {
+        width: 220px;
+    }
+    #beachball {
+        left: 40%;
+        top: 60px;
+        width: 90px;
+    }
+    #sandals {
+        right: 7%;
+        top: 480px;
+        width: 115px;
+    }
+    #starfish {
+        left: 5%;
+        width: 100px;
+        margin-bottom: 265px;
+    }
+    #surfboard {
+        width: 230px;
+        height: 325px;
+    }
+    #shell {
+        left: 15%;
+        width: 60px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
-	.buttonsContainer {
-		flex-direction: column;
-	}
+    .buttonsContainer {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 769px) {
-
-	#seat2,
-	#beachball {
-		display: none;
-	}
-
-	#brand {
-		margin-bottom: -7px;
-	}
-
-	.featuring {
-		padding-right: 15px;
-		width: 20vw;
-	}
-
-	.spotify {
-		padding-right: 10px;
-		width: 25vw;
-	}
-
-	#seat1 {
-		width: 300px;
-	}
-
-	#sandals {
-		top: 170px;
-		right: 60px;
-		width: 110px;
-	}
-
-	#shell {
-		left: 420px;
-	}
-
-	#surfboard {
-		width: 200px;
-		height: 260px;
-	}
-
-	.buttonsContainer>.buttons {
-		height: 40px;
-		width: 190px;
-		padding: 0px;
-	}
-
-	#shore {
-		margin-bottom: -30px;
-		left: -50%;
-	}
-
-	#details {
-		font-size: 15px;
-		margin-bottom: 15px;
-	}
-
-	#starfish {
-		left: 350px;
-		width: 100px;
-		margin-bottom: 265px;
-	}
+    #seat2,
+    #beachball {
+        display: none;
+    }
+    #brand {
+        margin-bottom: -7px;
+    }
+    .featuring {
+        padding-right: 15px;
+        width: 20vw;
+    }
+    .spotify {
+        padding-right: 10px;
+        width: 25vw;
+    }
+    #seat1 {
+        width: 300px;
+    }
+    #sandals {
+        top: 170px;
+        right: 60px;
+        width: 110px;
+    }
+    #shell {
+        left: 420px;
+    }
+    #surfboard {
+        width: 200px;
+        height: 260px;
+    }
+    .buttonsContainer>.buttons {
+        height: 40px;
+        width: 190px;
+        padding: 0px;
+    }
+    #shore {
+        margin-bottom: -30px;
+        left: -50%;
+    }
+    #details {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    #starfish {
+        left: 350px;
+        width: 100px;
+        margin-bottom: 265px;
+    }
 }
 
 .buttonsContainer>.buttons:hover>* {
-	/*	filter: invert(1);*/
-	margin-bottom: -2px;
+    /*	filter: invert(1);*/
+    margin-bottom: -2px;
 }
 
 .buttons {
-	margin: 10px;
-	height: 45px;
-	width: 200px;
-	-webkit-border-radius: 30px;
-	border-radius: 50px;
-	font-size: 15px;
-	font-weight: 700;
-	background-color: black;
-	color: white;
-	border: solid 3px transparent;
-	outline: none;
-	cursor: pointer;
+    margin: 10px;
+    height: 45px;
+    width: 200px;
+    -webkit-border-radius: 30px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border: solid 3px transparent;
+    outline: none;
+    cursor: pointer;
 }
 
 .buttons:hover {
-	background-color: var(--primary-color);
-	/*	box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.5);*/
-	border: solid 3px pink;
+    background-color: var(--primary-color);
+    /*	box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.5);*/
+    border: solid 3px pink;
 }
 
 input,
 select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	margin: 10px 0;
-	height: 40px !important;
-	-webkit-border-radius: 30px;
-	border-radius: 20px;
-	font-size: 16px;
-	background-color: #eee;
-	color: black;
-	border: solid 1px transparent;
-	outline: none;
-	padding: 0 10px;
-	max-width: 420px;
-	width: 100%;
-	margin: 0 !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 10px 0;
+    height: 40px !important;
+    -webkit-border-radius: 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #eee;
+    color: black;
+    border: solid 1px transparent;
+    outline: none;
+    padding: 0 10px;
+    max-width: 420px;
+    width: 100%;
+    margin: 0 !important;
 }
 
 select {
-	/* add custom arrow */
-	background: #eee url("../imgs/chevron.svg") no-repeat;
-	background-position: calc(100% - 10px) 10px;
-	background-size: 20px;
-	padding-right: 35px;
-	cursor: pointer;
-	min-width: 440px;
+    /* add custom arrow */
+    background: #eee url("../imgs/chevron.svg") no-repeat;
+    background-position: calc(100% - 10px) 10px;
+    background-size: 20px;
+    padding-right: 35px;
+    cursor: pointer;
+    min-width: 440px;
 }
 
 select::-ms-expand {
-	display: none;
-	/* hide the default arrow in ie10 and ie11 */
+    display: none;
+    /* hide the default arrow in ie10 and ie11 */
 }

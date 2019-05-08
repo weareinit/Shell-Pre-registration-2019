@@ -88,43 +88,6 @@ body {
 }
 
 
-/* Registration form
-
-#registerForm {
-    margin: 0 auto;
-    padding: 15px 0px;
-    overflow-y: scroll;
-    height: 100vh;
-    width: 100vw;
-}
-
-#registerForm label {
-    margin: 0 10px 0 20px;
-}
-
-#registerForm>div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 15px;
-}
-
-#registerForm>div>label {
-    align-self: baseline;
-    margin: 7px 0;
-    margin-left: calc(50vw - 200px);
-}
-
-@media only screen and (max-width: 420px) {
-    label {
-        margin: 7px 0 !important;
-    }
-} */
-
-
-/*End registration form*/
-
-
 /*Background objects*/
 
 #backgroundObjects {
@@ -158,7 +121,7 @@ body {
 
 #sandals {
     right: 360px;
-    top: 430px;
+    top: 190px;
     width: 150px;
 }
 
@@ -522,7 +485,7 @@ body {
     }
     #sandals {
         right: 10%;
-        top: 370px;
+        top: 190px;
         width: 115px;
     }
     #starfish {
