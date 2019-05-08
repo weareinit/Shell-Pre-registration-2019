@@ -405,6 +405,7 @@ body {
     font-size: 23px;
     display: block;
     font-weight: 500;
+    line-height: 1.1em;
 }
 
 #countDown {
@@ -437,8 +438,8 @@ body {
     background-color: var(--gradient-bg);
     background-color: rgba(0, 0, 0, 0.5) !important;
     background-size: 1000% 1000%;
-    height: 70px;
-    width: 320px;
+    height: 55px;
+    width: 270px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -454,8 +455,8 @@ body {
 
 .buttonsContainer>.buttons>* {
     margin-bottom: -2px;
-    font-size: 33px;
-    font-weight: 800;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 
@@ -576,8 +577,11 @@ body {
         height: 213px;
     }
     #sandals {
-        right: 2px;
-        top: 180px;
+        left: 130px;
+        top: 60px;
+    }
+    #seat1 {
+        display: none;
     }
 }
 
@@ -687,6 +691,7 @@ select::-ms-expand {
 }
 
 .link-group {
+    font-size: 1em;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -696,5 +701,5 @@ select::-ms-expand {
 }
 
 .link-group a {
-    color: white;
+    color: #9E8D7D;
 }
