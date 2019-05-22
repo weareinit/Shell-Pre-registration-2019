@@ -192,11 +192,18 @@ textarea:hover {
 }
 
 .submit {
-    font-size: 25px;
+    font-size: 100%;
     font-weight: 900;
     border-radius: 50px!important;
-    width: 230px!important;
+    width: 45%!important;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 55px!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 0 !important;
 }
 
 .submit:hover,
