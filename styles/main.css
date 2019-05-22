@@ -426,7 +426,7 @@ body {
     /* ^ CESAR SAID SO! */
 }
 
-.buttonsContainer {
+.buttons-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -434,35 +434,33 @@ body {
     width: 100%;
 }
 
-.buttonsContainer>.buttons {
+.buttons-container>.buttons {
+    color: white;
+    font-size: 120%!important;
+    font-weight: 700;
     background-color: var(--gradient-bg);
     background-color: rgba(0, 0, 0, 0.5) !important;
-    background-size: 1000% 1000%;
     height: 55px;
-    width: 270px;
+    width: 230px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
     border: 0 !important;
+    margin: 10px;
+    height: 45px;
+    -webkit-border-radius: 30px;
+    border-radius: 50px;
+    border: solid 3px transparent;
+    outline: none;
+    cursor: pointer;
 }
 
-.buttonsContainer>.buttons:hover {
+.buttons-container>.buttons:hover {
     animation: GradientBackground 15s infinite;
     background: var(--gradient-bg);
     background-size: 900% 900%;
 }
-
-.buttonsContainer>.buttons>* {
-    margin-bottom: -2px;
-    font-size: 1em;
-    font-weight: 500;
-}
-
-
-/* #register {
-	cursor: not-allowed;
-} */
 
 #register>* {
     width: 79%;
@@ -505,7 +503,7 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-    .buttonsContainer {
+    .buttons-container {
         flex-direction: column;
     }
 }
@@ -541,7 +539,7 @@ body {
         width: 200px;
         height: 260px;
     }
-    .buttonsContainer>.buttons {
+    .buttons-container>.buttons {
         height: 40px;
         width: 190px;
         padding: 0px;
@@ -585,24 +583,8 @@ body {
     }
 }
 
-.buttonsContainer>.buttons:hover>* {
-    /*	filter: invert(1);*/
+.buttons-container>.buttons:hover>* {
     margin-bottom: -2px;
-}
-
-.buttons {
-    margin: 10px;
-    height: 45px;
-    width: 200px;
-    -webkit-border-radius: 30px;
-    border-radius: 50px;
-    font-size: 15px;
-    font-weight: 700;
-    background-color: black;
-    color: white;
-    border: solid 3px transparent;
-    outline: none;
-    cursor: pointer;
 }
 
 .buttons:hover {

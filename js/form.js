@@ -26,7 +26,7 @@ firebase.initializeApp(config);
 var formRef = firebase.database().ref('preRegistration');
 
 function isSuccessful() {
-    var form = document.getElementById('container');
+    var form = document.getElementById('form-container');
     var success = document.getElementById('success');
 
     if (success.style.display === "none") {
@@ -39,9 +39,7 @@ function isSuccessful() {
 }
 
 function showError() {
-    $('html, body,div').animate({
-        scrollTop: $("#container").offset().top - 20
-    }, 2000);
+    $('html, body,div').animate({ scrollTop: 0 }, 'slow');
     $("#errorMessage").show()
 }
 
@@ -55,7 +53,7 @@ function getInputVal(id) {
 
     if (input.value.trim() == null || input.value.trim() == "") {
         showError();
-        console.log("error")
+        console.log("error " + id)
 
     } else {
         hideError();
@@ -72,7 +70,7 @@ function getArrayInputVal(id) {
     }
 
     if (array === undefined || array.length == 0) {
-        console.log(array.toString())
+        console.log("error " + id)
         showError();
 
     } else {
@@ -82,22 +80,25 @@ function getArrayInputVal(id) {
 }
 
 //submit form
-function submit(e) {
-    e.preventDefault();
+function submit() {
+
     console.log("Submitting data...");
 
     var fname = getInputVal('fname');
     var lname = getInputVal('lname');
     var email = getInputVal('email');
     var message = getInputVal('message');
-    var workshops = getArrayInputVal('#workshop').slice();
-    var hardware = getArrayInputVal('#hardware'.slice());
-    var activities = getArrayInputVal('#activity').slice();
-    var swag = getArrayInputVal('#swag').slice();
+    var workshops = getArrayInputVal('#workshop').concat();
+    var hardware = getArrayInputVal('#hardware'.concat());
+    var activities = getArrayInputVal('#activity').concat();
+    var swag = getArrayInputVal('#swag').concat();
+
+    console.log("data inputs are corect...");
 
     try {
         saveToFirebase(lname, fname, email, workshops, hardware, activities, swag, message);
-        submitBtn.disabled = "disabled";
+        // submitBtn.disabled = "disabled";
+        // submitBtn.disabled = true;
         isSuccessful();
         console.log("submitted successfully");
     } catch (error) {
@@ -106,6 +107,7 @@ function submit(e) {
 
 }
 
+//constructor
 function Profile(fname, lname, email, workshop, hardware, activities, swag, message) {
     return {
         fname: fname,
@@ -119,10 +121,9 @@ function Profile(fname, lname, email, workshop, hardware, activities, swag, mess
     }
 }
 
+//submit to database
 function saveToFirebase(fname, lname, email, workshop, hardware, activities, swag, message) {
     var newFormRef = formRef.push();
     newFormRef.set(
         Profile(fname, lname, email, workshop, hardware, activities, swag, message));
-    submitBtn.disabled = true;
-
 }

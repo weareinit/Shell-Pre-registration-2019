@@ -191,19 +191,24 @@ textarea:hover {
     outline: 0;
 }
 
+#submit,
+#cancel {
+    padding: 0px!important;
+}
+
 .submit {
-    font-size: 100%;
-    font-weight: 900;
+    font-size: 120%;
+    font-weight: 700;
     border-radius: 50px!important;
     width: 45%!important;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 55px!important;
-    display: flex;
+    height: 45px!important;
+    display: flex!important;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
     border: 0 !important;
+    margin: 10px;
 }
 
 .submit:hover,
@@ -245,7 +250,6 @@ textarea:hover {
 #errorMessage {
     color: white!important;
     margin: 8px;
-    padding: 20px;
     margin-bottom: 40px;
     background: #ff4545;
     border-radius: 5px;

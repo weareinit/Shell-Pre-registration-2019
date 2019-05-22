@@ -78,22 +78,22 @@
     <!--Background End-->
 
     <!-- Main content -->
-    <div class="form-container" id="">
+    <div class="form-container" id="form-container">
         <h1 class="brand"> <i class="em-svg em-beach_with_umbrella"></i> Pre-Registration<br /></h1>
         <h3 class="details">Can't wait for ShellHacks? Pre-register to keep up with the wave! </h3>
         <h3 id="errorMessage" style="display:none"><i class="em em-warning"></i> Something's wrong! Make sure you filled out all the fields</h3>
         <form class="fade-in one" autocomplete="on" id="form">
             <div class="txtInput">
                 <label>First Name<br /></label>
-                <input id="fname" placeholder="John" required>
+                <input id="fname" placeholder="John" autocomplete="on" required>
             </div>
             <div class="txtInput">
                 <label>Last Name<br /></label>
-                <input id="lname" placeholder="Doe" required>
+                <input id="lname" placeholder="Doe" autocomplete="on" required>
             </div>
             <div class="txtInput">
                 <label>School Email Address<br /></label>
-                <input id="email" type="email" placeholder="roary001@fiu.edu" required>
+                <input id="email" type="email" placeholder="roary001@fiu.edu" autocomplete="on" required>
             </div>
             <div class="selectBox">
                 <label class="selectBoxLabel">Any workshops you would like to see?<br /></label>
@@ -189,7 +189,7 @@
             </div>
             <div class="txtInput">
                 <label>Anything else you'd like to see?<br /></label>
-                <textarea id="message" placeholder="Drop those sweet ideas here!"></textarea>
+                <textarea id="message" autocomplete="on" placeholder="Drop those sweet ideas here!"></textarea>
             </div>
 
             <div class="bottomButtons">
