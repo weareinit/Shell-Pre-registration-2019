@@ -248,6 +248,7 @@ textarea:hover {
 }
 
 #errorMessage {
+    padding: 20px;
     color: white!important;
     margin: 8px;
     margin-bottom: 40px;

@@ -38,9 +38,43 @@ function isSuccessful() {
 
 }
 
-function showError() {
+function showError(id) {
+    let errorMess = ''
+
+    switch (id) {
+        case 'fname':
+            errorMess = 'Something\'s wrong! Make sure to add your first name'
+            break;
+        case 'lname':
+            errorMess = 'Something\'s wrong! Make sure to add your last name'
+            break;
+        case 'email':
+            errorMess = 'Something\'s wrong! Make sure to add your email address'
+            break;
+
+        case 'message':
+            errorMess = 'Something\'s wrong! Make sure to fill the last text box'
+            break;
+        case '#activity':
+            errorMess = 'Something\'s wrong! Make sure to select at least one activity'
+            break;
+        case '#hardware':
+            errorMess = 'Something\'s wrong! Make sure to select at least one hardware'
+            break;
+        case '#workshop':
+            errorMess = 'Something\'s wrong! Make sure to select at least one workshop'
+            break;
+        case '#swag':
+            errorMess = 'Something\'s wrong! Make sure to select at least one swag'
+            break;
+        default: errorMess = "something's wrong, check everything and try again."
+            break;
+    }
+    
     $('html, body,div').animate({ scrollTop: 0 }, 'slow');
     $("#errorMessage").show()
+    document.getElementById('error-text').innerHTML = errorMess;
+
 }
 
 function hideError() {
@@ -52,7 +86,7 @@ function getInputVal(id) {
     const input = document.getElementById(id);
 
     if (input.value.trim() == null || input.value.trim() == "") {
-        showError();
+        showError(id);
         console.log("error " + id)
 
     } else {
@@ -71,7 +105,7 @@ function getArrayInputVal(id) {
 
     if (array === undefined || array.length == 0) {
         console.log("error " + id)
-        showError();
+        showError(id);
 
     } else {
         hideError();
