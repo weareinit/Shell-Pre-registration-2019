@@ -1,3 +1,4 @@
+const FORM_URL = "https://us-central1-preregistration-fc98c.cloudfunctions.net/widgets"
 //select2 multi selection
 $(document).ready(function () {
     $('.selectpicker').select2();
@@ -12,18 +13,6 @@ cancelBtn.addEventListener("click", function () {
     window.location.href = "index.html";
 });
 
-//Initialize Firebase
-const config = {
-    apiKey: "AIzaSyBx01mLugiaWjyNLml5NSVs-XX_LgmdP-M",
-    authDomain: "shellpre-53931.firebaseapp.com",
-    databaseURL: "https://shellpre-53931.firebaseio.com",
-    projectId: "shellpre-53931",
-    storageBucket: "shellpre-53931.appspot.com",
-    messagingSenderId: "413474432056"
-};
-
-firebase.initializeApp(config);
-var formRef = firebase.database().ref('preRegistration');
 
 function isSuccessful() {
     var form = document.getElementById('form-container');
@@ -70,7 +59,7 @@ function showError(id) {
         default: errorMess = "something's wrong, check everything and try again."
             break;
     }
-    
+
     $('html, body,div').animate({ scrollTop: 0 }, 'slow');
     $("#errorMessage").show()
     document.getElementById('error-text').innerHTML = errorMess;
@@ -127,37 +116,40 @@ function submit() {
     var activities = getArrayInputVal('#activity').concat();
     var swag = getArrayInputVal('#swag').concat();
 
-    console.log("data inputs are corect...");
+    function formVals(fname, lname, email, workshops, hardware, activities, swag, message) {
+        return {
+            fname: fname,
+            lname: lname,
+            email: email,
+            workshop: workshops,
+            hardware: hardware,
+            activities: activities,
+            swag: swag,
+            message: message,
+        }
+    }
 
     try {
-        saveToFirebase(lname, fname, email, workshops, hardware, activities, swag, message);
-        // submitBtn.disabled = "disabled";
-        // submitBtn.disabled = true;
+        var data = formVals(fname, lname, email, workshops, hardware, activities, swag, message);
+        console.log(data)
+        saveToFirebase(data);
         isSuccessful();
-        console.log("submitted successfully");
+        console.log("submitted successfully" + JSON.parse(data));
     } catch (error) {
         showError();
     }
 
 }
 
-//constructor
-function Profile(fname, lname, email, workshop, hardware, activities, swag, message) {
-    return {
-        fname: fname,
-        lname: lname,
-        email: email,
-        workshop: workshop,
-        hardware: hardware,
-        activities: activities,
-        swag: swag,
-        message: message,
-    }
-}
-
 //submit to database
-function saveToFirebase(fname, lname, email, workshop, hardware, activities, swag, message) {
-    var newFormRef = formRef.push();
-    newFormRef.set(
-        Profile(fname, lname, email, workshop, hardware, activities, swag, message));
+function saveToFirebase(data) {
+    const Http = new XMLHttpRequest();
+    
+    Http.open("POST", FORM_URL);
+    console.log(data)
+    Http.send(JSON.stringify(data));
+
+    Http.onreadystatechange = (e) => {
+        console.log(Http.responseText)
+    }
 }
