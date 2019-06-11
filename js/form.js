@@ -1,6 +1,7 @@
-const FORM_URL = "https://us-central1-preregistration-fc98c.cloudfunctions.net/widgets"
+const FORM_URL = "https://us-central1-preregistration-fc98c.cloudfunctions.net/widgets";
+
 //select2 multi selection
-$(document).ready(function () {
+$(document).ready(function() {
     $('.selectpicker').select2();
 });
 
@@ -9,24 +10,25 @@ const cancelBtn = document.getElementById("cancel");
 const submitBtn = document.getElementById("submit");
 
 submitBtn.addEventListener("click", submit);
-cancelBtn.addEventListener("click", function () {
+cancelBtn.addEventListener("click", function() {
     window.location.href = "index.html";
 });
 
-
+//successful submition
 function isSuccessful() {
     var form = document.getElementById('form-container');
     var success = document.getElementById('success');
 
     if (success.style.display === "none") {
         form.parentNode.removeChild(form);
-        success.style.display = "flex", 2000
+        success.style.display = "flex", 3000
     } else {
         success.style.display = "none";
     }
 
 }
 
+//shows error message
 function showError(id) {
     let errorMess = ''
 
@@ -42,7 +44,7 @@ function showError(id) {
             break;
 
         case 'message':
-            errorMess = 'Something\'s wrong! Make sure to fill the last text box'
+            errorMess = 'Something\'s wrong! Please add some suggestions'
             break;
         case '#activity':
             errorMess = 'Something\'s wrong! Make sure to select at least one activity'
@@ -56,7 +58,8 @@ function showError(id) {
         case '#swag':
             errorMess = 'Something\'s wrong! Make sure to select at least one swag'
             break;
-        default: errorMess = "something's wrong, check everything and try again."
+        default:
+            errorMess = "something's wrong, check everything and try again."
             break;
     }
 
@@ -66,6 +69,7 @@ function showError(id) {
 
 }
 
+//hides error message
 function hideError() {
     $("#errorMessage").hide()
 }
@@ -75,8 +79,7 @@ function getInputVal(id) {
     const input = document.getElementById(id);
 
     if (input.value.trim() == null || input.value.trim() == "") {
-        showError(id);
-        console.log("error " + id)
+        throw showError(id);
 
     } else {
         hideError();
@@ -91,11 +94,8 @@ function getArrayInputVal(id) {
     for (const element of $(id)[0].selectedOptions) {
         array.push(element.text);
     }
-
     if (array === undefined || array.length == 0) {
-        console.log("error " + id)
-        showError(id);
-
+        throw showError(id);
     } else {
         hideError();
         return array;
@@ -105,18 +105,17 @@ function getArrayInputVal(id) {
 //submit form
 function submit() {
 
-    console.log("Submitting data...");
-
     var fname = getInputVal('fname');
     var lname = getInputVal('lname');
     var email = getInputVal('email');
-    var message = getInputVal('message');
     var workshops = getArrayInputVal('#workshop').concat();
     var hardware = getArrayInputVal('#hardware'.concat());
     var activities = getArrayInputVal('#activity').concat();
     var swag = getArrayInputVal('#swag').concat();
+    var message = getInputVal('message');
 
     function formVals(fname, lname, email, workshops, hardware, activities, swag, message) {
+
         return {
             fname: fname,
             lname: lname,
@@ -131,20 +130,17 @@ function submit() {
 
     try {
         var data = formVals(fname, lname, email, workshops, hardware, activities, swag, message);
-        console.log(data)
-        saveToFirebase(data);
-        isSuccessful();
-        console.log("submitted successfully" + JSON.parse(data));
+        postData(data);
     } catch (error) {
-        showError();
+        showError("");
     }
 
 }
 
 //submit to database
-function saveToFirebase(data) {
+function postData(data) {
     const Http = new XMLHttpRequest();
-    
+
     Http.open("POST", FORM_URL);
     console.log(data)
     Http.send(JSON.stringify(data));
