@@ -33,6 +33,9 @@ function showError(id) {
     let errorMess = ''
 
     switch (id) {
+        case 'custom':
+            errorMess = "Your email address is not valid, try again"; //not so custom :D
+            break;
         case 'fname':
             errorMess = 'Something\'s wrong! Make sure to add your first name'
             break;
@@ -82,9 +85,21 @@ function getInputVal(id) {
         throw showError(id);
 
     } else {
+        if (id === 'email' && !(ValidateEmail(input.value.trim()))) {
+            throw showError("custom");
+        }
+
         hideError();
         return input.value;
     }
+}
+
+function ValidateEmail(mail) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+        return (true)
+    }
+    // alert("You have entered an invalid email address!")
+    return (false)
 }
 
 //copying needed values only and check if field is empty
