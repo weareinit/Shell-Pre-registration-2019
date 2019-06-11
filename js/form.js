@@ -146,6 +146,7 @@ function submit() {
     try {
         var data = formVals(fname, lname, email, workshops, hardware, activities, swag, message);
         postData(data);
+        isSuccessful();
     } catch (error) {
         showError("");
     }
